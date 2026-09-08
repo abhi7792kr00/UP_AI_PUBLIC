@@ -1,0 +1,76 @@
+district_code,district_name,homepage_url,block_tehsil_url,link_text,status
+118,Agra,https://agra.nic.in,,,not_found
+119,Aligarh,https://aligarh.nic.in,,,not_found
+120,Prayagraj,https://prayagraj.nic.in,https://prayagraj.nic.in/development-block/,Development Block,verified_tables=1
+121,Ambedkar Nagar,https://ambedkarnagar.nic.in,,,not_found
+122,Auraiya,https://auraiya.nic.in,,,homepage_error
+123,Azamgarh,https://azamgarh.nic.in,,,homepage_error
+124,Baghpat,https://bagpat.nic.in,,,not_found
+125,Bahraich,https://bahraich.nic.in,,,not_found
+126,Ballia,https://ballia.nic.in,,,not_found
+127,Balrampur,https://balrampur.nic.in,,,not_found
+128,Banda,https://banda.nic.in,,,not_found
+129,Bara Banki,https://barabanki.nic.in,,,not_found
+130,Bareilly,https://bareilly.nic.in,,,not_found
+131,Basti,https://basti.nic.in,,,not_found
+132,Bijnor,https://bijnor.nic.in,,,homepage_error
+133,Budaun,https://budaun.nic.in,,,not_found
+134,Bulandshahr,https://bulandshahar.nic.in,,,not_found
+135,Chandauli,https://chandauli.nic.in,,,not_found
+136,Chitrakoot,https://chitrakoot.nic.in,,,not_found
+137,Deoria,https://deoria.nic.in,,,not_found
+138,Etah,https://etah.nic.in,,,not_found
+139,Etawah,https://etawah.nic.in,,,not_found
+140,Ayodhya,https://ayodhya.nic.in,,,not_found
+141,Farrukhabad,https://farrukhabad.nic.in,,,not_found
+142,Fatehpur,https://fatehpur.nic.in,,,not_found
+143,Firozabad,https://firozabad.nic.in,,,not_found
+144,Gautam Buddha Nagar,https://gbnagar.nic.in,,,not_found
+145,Ghaziabad,https://ghaziabad.nic.in,,,not_found
+146,Ghazipur,https://ghazipur.nic.in,,,not_found
+147,Gonda,https://gonda.nic.in,,,not_found
+148,Gorakhpur,https://gorakhpur.nic.in,,,not_found
+149,Hamirpur,https://hamirpur.nic.in,,,not_found
+150,Hardoi,https://hardoi.nic.in,,,not_found
+151,Jalaun,https://jalaun.nic.in,,,not_found
+152,Jaunpur,https://jaunpur.nic.in,,,not_found
+153,Jhansi,https://jhansi.nic.in,,,not_found
+154,Amroha,https://amroha.nic.in,,,not_found
+155,Kannauj,https://kannauj.nic.in,,,not_found
+156,Kanpur Dehat,https://kanpurdehat.nic.in,,,not_found
+157,Kanpur Nagar,https://kanpurnagar.nic.in,https://kanpurnagar.nic.in/subdivision-blocks/,Development Blocks,verified_tables=1
+158,Kaushambi,https://kaushambi.nic.in,,,not_found
+159,Kheri,https://kheri.nic.in,,,not_found
+160,Kushinagar,https://kushinagar.nic.in,,,not_found
+161,Lalitpur,https://lalitpur.nic.in,,,not_found
+162,Lucknow,https://lucknow.nic.in,,,not_found
+163,Hathras,https://hathras.nic.in,,,not_found
+164,Mahrajganj,https://maharajganj.nic.in,,,not_found
+165,Mahoba,https://mahoba.nic.in,,,not_found
+166,Mainpuri,https://mainpuri.nic.in,,,not_found
+167,Mathura,https://mathura.nic.in,,,not_found
+168,Mau,https://mau.nic.in,,,not_found
+169,Meerut,https://meerut.nic.in,,,not_found
+170,Mirzapur,https://mirzapur.nic.in,,,not_found
+171,Moradabad,https://moradabad.nic.in,,,homepage_error
+172,Muzaffarnagar,https://muzaffarnagar.nic.in,,,not_found
+173,Pilibhit,https://pilibhit.nic.in,,,not_found
+174,Pratapgarh,https://pratapgarh.nic.in,,,not_found
+175,Rae Bareli,https://raebareli.nic.in,,,not_found
+176,Rampur,https://rampur.nic.in,,,not_found
+177,Saharanpur,https://saharanpur.nic.in,,,not_found
+178,Sant Kabir Nagar,https://sknagar.nic.in,,,not_found
+179,Bhadohi,https://bhadohi.nic.in,,,not_found
+180,Shahjahanpur,https://shahjahanpur.nic.in,,,not_found
+181,Shrawasti,https://shravasti.nic.in,,,not_found
+182,Siddharthnagar,https://siddharthnagar.nic.in,,,not_found
+183,Sitapur,https://sitapur.nic.in,,,not_found
+184,Sonbhadra,https://sonbhadra.nic.in,,,not_found
+185,Sultanpur,https://sultanpur.nic.in,,,not_found
+186,Unnao,https://unnao.nic.in,,,homepage_error
+187,Varanasi,https://varanasi.nic.in,,,homepage_error
+633,Kasganj,https://kasganj.nic.in,,,not_found
+640,Amethi,https://amethi.nic.in,,,not_found
+659,Sambhal,https://sambhal.nic.in,,,not_found
+660,Shamli,https://shamli.nic.in,,,not_found
+661,Hapur,https://hapur.nic.in,,,not_found

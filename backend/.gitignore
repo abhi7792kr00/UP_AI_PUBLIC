@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual Environment
+venv/
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+
+# Build
+dist/
+build/
+
+# Environment
+.env.*
+
+# Alembic cache
+alembic/__pycache__/
+
+# SQLite runtime / local databases
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+database/sqlite/*.backup

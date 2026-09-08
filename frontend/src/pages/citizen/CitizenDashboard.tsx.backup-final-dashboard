@@ -1,0 +1,872 @@
+import { useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  Bell,
+  Bot,
+  Building2,
+  ChevronDown,
+  ChevronRight,
+  CircleHelp,
+  FileText,
+  Globe2,
+  Home,
+  LogOut,
+  Menu,
+  Mic,
+  Plus,
+  Search,
+  Settings,
+  ShieldCheck,
+  UserRound,
+  X,
+  Zap,
+  CheckCircle2,
+  Clock3,
+  LoaderCircle,
+  MapPin,
+} from "lucide-react";
+
+import "./citizen-dashboard.css";
+import { getCitizenTranslations } from "../../i18n/citizenTranslations";
+
+import { useMyComplaints } from "../../features/citizen/hooks/useCitizenComplaints";
+import { useLogout } from "../../features/auth/hooks/useLogout";
+import { mapCitizenComplaint } from "../../features/citizen/utils/complaint-mapper";
+
+import {
+  useComplaintCategories,
+  useDepartments,
+  useComplaintStatuses,
+} from "../../features/complaints/hooks/useComplaintMasterData";
+
+export type CitizenDashboardUser = {
+  fullName: string;
+  roleLabel?: string;
+  avatarUrl?: string;
+  preferredLanguage?: "Hindi" | "English";
+};
+
+export type CitizenDashboardComplaint = {
+  complaintNumber: string;
+  subject: string;
+  category: string;
+  department: string;
+  status: "In Progress" | "Resolved" | "Pending";
+  date: string;
+  icon?: "electricity" | "road" | "water" | "revenue" | "health";
+};
+
+export type CitizenNotification = {
+  id: string | number;
+  title: string;
+  time: string;
+  tone: "blue" | "orange" | "green";
+  unread?: boolean;
+};
+
+export type CitizenDashboardProps = {
+  user?: CitizenDashboardUser;
+  notifications?: CitizenNotification[];
+
+  onNewComplaint?: () => void;
+  onTrackComplaint?: (complaintNumber: string) => void;
+  onOpenAI?: () => void;
+  onOpenVoiceAI?: () => void;
+  onLogout?: () => void;
+};
+
+const DEFAULT_USER: CitizenDashboardUser = {
+  fullName: "Citizen",
+  roleLabel: "Citizen",
+  preferredLanguage: "Hindi",
+};
+
+const DEFAULT_NOTIFICATIONS: CitizenNotification[] = [];
+
+function complaintIcon(
+  icon: CitizenDashboardComplaint["icon"],
+) {
+  const common = {
+    size: 20,
+    strokeWidth: 2,
+  };
+
+  switch (icon) {
+    case "electricity":
+      return <Zap {...common} />;
+
+    case "road":
+      return <Building2 {...common} />;
+
+    case "water":
+      return (
+        <span className="citizen-dashboard-emoji">
+          💧
+        </span>
+      );
+
+    case "revenue":
+      return <Building2 {...common} />;
+
+    case "health":
+      return (
+        <span className="citizen-dashboard-emoji">
+          ✚
+        </span>
+      );
+
+    default:
+      return <FileText {...common} />;
+  }
+}
+
+function statusClass(
+  status: CitizenDashboardComplaint["status"],
+) {
+  if (status === "Resolved") {
+    return "status-resolved";
+  }
+
+  if (status === "Pending") {
+    return "status-pending";
+  }
+
+  return "status-progress";
+}
+
+export function CitizenDashboard({
+  user = DEFAULT_USER,
+  notifications = DEFAULT_NOTIFICATIONS,
+  onNewComplaint,
+  onTrackComplaint,
+  onOpenAI,
+  onOpenVoiceAI,
+  onLogout,
+}: CitizenDashboardProps) {
+  const logout = useLogout();
+  const navigate = useNavigate();
+
+  const handleNewComplaint = () => {
+    navigate("/citizen/complaints/new");
+    setSidebarOpen(false);
+  };
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [language, setLanguage] = useState(
+    user.preferredLanguage ?? "Hindi",
+  );
+  const [showNotifications, setShowNotifications] =
+    useState(false);
+
+  /*
+   * ==============================
+   * REAL BACKEND DATA
+   * ==============================
+   */
+
+  const {
+    data: apiComplaints,
+    isLoading: complaintsLoading,
+    isError: complaintsError,
+  } = useMyComplaints();
+
+  const {
+    data: categories = [],
+  } = useComplaintCategories();
+
+  const {
+    data: departments = [],
+  } = useDepartments();
+
+  const {
+    data: statuses = [],
+  } = useComplaintStatuses();
+
+  /*
+   * Backend complaints contain IDs.
+   *
+   * Dashboard requires human-readable:
+   * category
+   * department
+   * status
+   *
+   * Mapper converts API response into dashboard data.
+   */
+
+  const realComplaints = useMemo<CitizenDashboardComplaint[]>(
+    () =>
+      (apiComplaints ?? []).map((complaint) =>
+        mapCitizenComplaint(
+          complaint,
+          categories,
+          departments,
+          statuses,
+        ),
+      ),
+    [
+      apiComplaints,
+      categories,
+      departments,
+      statuses,
+    ],
+  );
+
+  /*
+   * ==============================
+   * DASHBOARD STATISTICS
+   * ==============================
+   */
+
+  const stats = useMemo(() => {
+    const total = realComplaints.length;
+
+    const pending = realComplaints.filter(
+      (complaint) =>
+        complaint.status === "Pending",
+    ).length;
+
+    const inProgress = realComplaints.filter(
+      (complaint) =>
+        complaint.status === "In Progress",
+    ).length;
+
+    const resolved = realComplaints.filter(
+      (complaint) =>
+        complaint.status === "Resolved",
+    ).length;
+
+    return {
+      total,
+      pending,
+      inProgress,
+      resolved,
+    };
+  }, [realComplaints]);
+
+  const unreadCount = notifications.filter(
+    (notification) => notification.unread,
+  ).length;
+
+  return (
+      <main className="citizen-main">
+
+        {/* Welcome */}
+
+        <section className="citizen-welcome">
+
+          <div className="citizen-welcome-copy">
+
+            <h1>
+              Namaste, {user.fullName}{" "}
+              <span>👋</span>
+            </h1>
+
+            <h2>
+              Aapki sevaon mein hum aapke saath.
+            </h2>
+
+            <p>
+              Uttar Pradesh ki behtar aur digital
+              sarkar ke liye aapka yogdaan
+              mahatvapurn hai.
+            </p>
+
+          </div>
+
+          <div
+            className="citizen-welcome-art"
+            aria-hidden="true"
+          >
+            <div className="art-dome">
+              ♜
+            </div>
+
+            <div className="art-building">
+              ✦
+            </div>
+
+            <div className="art-building small">
+              ♜
+            </div>
+          </div>
+
+        </section>
+
+        {/* =========================================
+            CONTENT GRID
+        ========================================== */}
+
+        <section className="citizen-content-grid">
+
+          <div className="citizen-primary-column">
+
+            {/* =====================================
+                STATISTICS
+            ====================================== */}
+
+            <section className="citizen-stat-grid">
+
+              <article className="citizen-stat-card">
+
+                <div className="stat-icon stat-blue">
+                  <FileText size={24} />
+                </div>
+
+                <div>
+                  <span>
+                    Total Complaints
+                  </span>
+
+                  <strong>
+                    {complaintsLoading
+                      ? "—"
+                      : stats.total}
+                  </strong>
+
+                  <small>
+                    Aap dwara darj ki gayi
+                    shikayatein
+                  </small>
+                </div>
+
+              </article>
+
+              <article className="citizen-stat-card">
+
+                <div className="stat-icon stat-orange">
+                  <Clock3 size={25} />
+                </div>
+
+                <div>
+                  <span>Pending</span>
+
+                  <strong>
+                    {complaintsLoading
+                      ? "—"
+                      : stats.pending}
+                  </strong>
+
+                  <small>
+                    Prarambhik star par
+                  </small>
+                </div>
+
+              </article>
+
+              <article className="citizen-stat-card">
+
+                <div className="stat-icon stat-blue">
+                  <LoaderCircle size={25} />
+                </div>
+
+                <div>
+                  <span>In Progress</span>
+
+                  <strong>
+                    {complaintsLoading
+                      ? "—"
+                      : stats.inProgress}
+                  </strong>
+
+                  <small>
+                    Karyavahi jaari hai
+                  </small>
+                </div>
+
+              </article>
+
+              <article className="citizen-stat-card">
+
+                <div className="stat-icon stat-green">
+                  <CheckCircle2 size={25} />
+                </div>
+
+                <div>
+                  <span>Resolved</span>
+
+                  <strong>
+                    {complaintsLoading
+                      ? "—"
+                      : stats.resolved}
+                  </strong>
+
+                  <small>
+                    Safalta se niptaayi gayi
+                  </small>
+                </div>
+
+              </article>
+
+            </section>
+
+            {/* =====================================
+                ACTIONS
+            ====================================== */}
+
+            <section className="citizen-action-row">
+
+
+              <button
+                className="citizen-secondary-action"
+                type="button"
+                onClick={onOpenAI}
+              >
+                <Bot size={23} />
+                <span>
+                  AI Assistant
+                </span>
+              </button>
+
+              <button
+                className="citizen-secondary-action"
+                type="button"
+                onClick={onOpenVoiceAI}
+              >
+                <Mic size={23} />
+                <span>
+                  Voice Assistant
+                </span>
+              </button>
+
+            </section>
+
+            {/* =====================================
+                COMPLAINTS
+            ====================================== */}
+
+            <section
+              className="citizen-card complaints-card"
+              id="complaints"
+            >
+
+              <div className="citizen-section-heading">
+
+                <div>
+                  <h2>
+                    <FileText size={23} />
+                    Recent Complaints
+                  </h2>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    document
+                      .getElementById(
+                        "complaints",
+                      )
+                      ?.scrollIntoView({
+                        behavior: "smooth",
+                      })
+                  }
+                >
+                  View All
+                  <ChevronRight size={17} />
+                </button>
+
+              </div>
+
+              {/* Loading */}
+
+              {complaintsLoading && (
+                <div className="citizen-empty-state">
+
+                  <LoaderCircle
+                    size={25}
+                    className="animate-spin"
+                  />
+
+                  <span>
+                    Complaints loading...
+                  </span>
+
+                </div>
+              )}
+
+              {/* Error */}
+
+              {!complaintsLoading &&
+                complaintsError && (
+                  <div className="citizen-empty-state">
+
+                    <FileText size={25} />
+
+                    <span>
+                      Complaints load nahi
+                      ho paayi.
+                    </span>
+
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.location.reload()
+                      }
+                    >
+                      Retry
+                    </button>
+
+                  </div>
+                )}
+
+              {/* Empty */}
+
+              {!complaintsLoading &&
+                !complaintsError &&
+                realComplaints.length === 0 && (
+                  <div className="citizen-empty-state">
+
+                    <FileText size={25} />
+
+                    <span>
+                      Abhi koi complaint
+                      nahi hai.
+                    </span>
+
+                    
+                  </div>
+                )}
+
+              {/* Table */}
+
+              {!complaintsLoading &&
+                !complaintsError &&
+                realComplaints.length > 0 && (
+                  <div className="complaints-table-wrap">
+
+                    <table className="complaints-table">
+
+                      <thead>
+                        <tr>
+                          <th>
+                            Complaint No.
+                          </th>
+
+                          <th>
+                            Subject / Category
+                          </th>
+
+                          <th>
+                            Department
+                          </th>
+
+                          <th>
+                            Status
+                          </th>
+
+                          <th>
+                            Date
+                          </th>
+
+                          <th />
+                        </tr>
+                      </thead>
+
+                      <tbody>
+
+                        {realComplaints.map(
+                          (complaint) => (
+                            <tr
+                              key={
+                                complaint.complaintNumber
+                              }
+                              onClick={() =>
+                                navigate(
+                                  `/complaints/${encodeURIComponent(
+                                    complaint.complaintNumber,
+                                  )}`,
+                                )
+                              }
+                            >
+
+                              <td>
+                                <strong>
+                                  {
+                                    complaint.complaintNumber
+                                  }
+                                </strong>
+                              </td>
+
+                              <td>
+
+                                <span
+                                  className={`complaint-category-icon ${
+                                    complaint.icon ??
+                                    "default"
+                                  }`}
+                                >
+                                  {complaintIcon(
+                                    complaint.icon,
+                                  )}
+                                </span>
+
+                                <span>
+                                  {
+                                    complaint.category
+                                  }
+                                </span>
+
+                              </td>
+
+                              <td>
+                                {
+                                  complaint.department
+                                }
+                              </td>
+
+                              <td>
+
+                                <span
+                                  className={`complaint-status ${statusClass(
+                                    complaint.status,
+                                  )}`}
+                                >
+                                  <i />
+
+                                  {
+                                    complaint.status
+                                  }
+                                </span>
+
+                              </td>
+
+                              <td>
+                                {complaint.date}
+                              </td>
+
+                              <td>
+                                <ChevronRight
+                                  size={19}
+                                />
+                              </td>
+
+                            </tr>
+                          ),
+                        )}
+
+                      </tbody>
+
+                    </table>
+
+                  </div>
+                )}
+
+            </section>
+
+          </div>
+
+          {/* =====================================
+              RIGHT COLUMN
+          ====================================== */}
+
+          <aside className="citizen-right-column">
+
+            {/* Notifications */}
+
+            <section className="citizen-card notification-card">
+
+              <div className="citizen-section-heading">
+
+                <h2>
+                  <Bell size={20} />
+                  Important Notifications
+                </h2>
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    setShowNotifications(true)
+                  }
+                >
+                  View All
+                </button>
+
+              </div>
+
+              <div className="notification-list">
+
+                {notifications.length === 0 ? (
+                  <div className="notification-item">
+
+                    <span className="notification-icon blue">
+                      <Bell size={19} />
+                    </span>
+
+                    <div>
+                      <strong>
+                        No notifications
+                      </strong>
+                    </div>
+
+                  </div>
+                ) : (
+                  notifications.map(
+                    (notification) => (
+                      <div
+                        className="notification-item"
+                        key={notification.id}
+                      >
+
+                        <span
+                          className={`notification-icon ${notification.tone}`}
+                        >
+                          {notification.tone ===
+                          "green" ? (
+                            <CheckCircle2
+                              size={19}
+                            />
+                          ) : (
+                            <FileText
+                              size={19}
+                            />
+                          )}
+                        </span>
+
+                        <div>
+
+                          <strong>
+                            {
+                              notification.title
+                            }
+                          </strong>
+
+                          <small>
+                            {notification.time}
+                          </small>
+
+                        </div>
+
+                        {notification.unread && (
+                          <span className="notification-unread" />
+                        )}
+
+                      </div>
+                    ),
+                  )
+                )}
+
+              </div>
+
+            </section>
+
+            {/* AI */}
+
+            <section className="citizen-card ai-card">
+
+              <div className="ai-card-heading">
+
+                <h2>
+                  <Bot size={21} />
+                  AI Assistant
+                </h2>
+
+                <Zap size={21} />
+
+              </div>
+
+              <div className="ai-message">
+                Namaste! मैं आपका AI सहायक हूँ।
+                <br />
+                आप मुझसे अपनी शिकायत, सरकारी
+                सेवाओं या योजनाओं के बारे में पूछ
+                सकते हैं।
+              </div>
+
+              <div className="ai-input-row">
+
+                <input
+                  type="text"
+                  placeholder="Apna prashn yahan likhen..."
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter") {
+                      onOpenAI?.();
+                    }
+                  }}
+                />
+
+                <button
+                  type="button"
+                  aria-label="Ask AI"
+                  onClick={onOpenAI}
+                >
+                  <ChevronRight size={22} />
+                </button>
+
+              </div>
+
+              <div className="ai-suggestions">
+
+                <button
+                  type="button"
+                  onClick={onOpenAI}
+                >
+                  मेरी शिकायत का क्या हुआ?
+                </button>
+
+                <button
+                  type="button"
+                  onClick={onOpenAI}
+                >
+                  जाति प्रमाण पत्र कैसे बनवाएं?
+                </button>
+
+              </div>
+
+            </section>
+
+            {/* Voice AI */}
+
+            <section className="citizen-card voice-card">
+
+              <div className="voice-heading">
+
+                <h2>
+                  <Mic size={21} />
+                  Voice Assistant
+                </h2>
+
+                <span>
+                  बोलकर अपनी शिकायत दर्ज करें
+                </span>
+
+              </div>
+
+              <div
+                className="voice-visualizer"
+                aria-hidden="true"
+              >
+
+                <span />
+                <span />
+                <span />
+                <span />
+
+                <button
+                  type="button"
+                  aria-label="Start voice assistant"
+                  onClick={onOpenVoiceAI}
+                >
+                  <Mic size={28} />
+                </button>
+
+                <span />
+                <span />
+                <span />
+                <span />
+
+              </div>
+
+              <p>
+                बोलना शुरू करने के लिए
+                माइक्रोफोन पर क्लिक करें
+              </p>
+
+            </section>
+
+          </aside>
+
+        </section>
+
+      </main>
+  );
+}
+
+export default CitizenDashboard;

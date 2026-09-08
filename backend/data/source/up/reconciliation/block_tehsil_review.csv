@@ -1,0 +1,9 @@
+district_code,district_name,source_block_name,source_tehsil_name,best_lgd_block_code,best_lgd_block_name,block_score,best_lgd_tehsil_code,best_lgd_tehsil_name,tehsil_score
+120,Prayagraj,Bahariya,Phulpur,831,Bahria,0.857,,,
+120,Prayagraj,Kaundhiyara,Karchhana,838,Kaudhiyara,0.952,,,
+120,Prayagraj,Uruwa,Meja,849,Uruwan,0.909,,,
+120,Prayagraj,Shringverpur Dham,Soroan,7361,Sringverpur Dham,0.970,888,Soraon,0.833
+120,Prayagraj,Bhagwatpur,Soroan,,,,888,Soraon,0.833
+157,Kanpur Nagar,Kalyanpur,Kanpur Sadar,,,,849,Kanpur,0.667
+157,Kanpur Nagar,Vidhnu,Kanpur Sadar,1285,Vidhunu,0.923,849,Kanpur,0.667
+157,Kanpur Nagar,Sarsaul,Narwal,1283,Sarsol,0.769,,,

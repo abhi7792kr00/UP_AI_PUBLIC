@@ -1,0 +1,15 @@
+from database.models.complaint.complaint_category import ComplaintCategory
+from database.models.complaint.complaint_priority import ComplaintPriority
+from database.models.complaint.complaint_status import ComplaintStatus
+from database.models.complaint.complaint_category_mapping import ComplaintCategoryMapping
+
+from database.models.complaint.complaint import Complaint
+
+from database.models.complaint.complaint_timeline import ComplaintTimeline
+from database.models.complaint.complaint_assignment import ComplaintAssignment
+from database.models.complaint.complaint_attachment import ComplaintAttachment
+from database.models.complaint.complaint_escalation import ComplaintEscalation
+from database.models.complaint.complaint_otp import ComplaintOTP
+from database.models.complaint.complaint_feedback import ComplaintFeedback
+from database.models.complaint.complaint_subcategory import ComplaintSubCategory
+from database.models.complaint.complaint_subcategory_mapping import ComplaintSubCategoryMapping

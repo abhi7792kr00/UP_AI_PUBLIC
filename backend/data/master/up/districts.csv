@@ -1,0 +1,76 @@
+district_code,district_name,division_code
+118,Agra,AGRA
+119,Aligarh,ALIGARH
+120,Prayagraj,PRAYAGRAJ
+121,Ambedkar Nagar,AYODHYA
+122,Auraiya,KANPUR
+123,Azamgarh,AZAMGARH
+124,Baghpat,MEERUT
+125,Bahraich,DEVIPATAN
+126,Ballia,AZAMGARH
+127,Balrampur,DEVIPATAN
+128,Banda,CHITRAKOOT
+129,Bara Banki,AYODHYA
+130,Bareilly,BAREILLY
+131,Basti,BASTI
+132,Bijnor,MORADABAD
+133,Budaun,BAREILLY
+134,Bulandshahr,MEERUT
+135,Chandauli,VARANASI
+136,Chitrakoot,CHITRAKOOT
+137,Deoria,GORAKHPUR
+138,Etah,ALIGARH
+139,Etawah,KANPUR
+140,Ayodhya,AYODHYA
+141,Farrukhabad,KANPUR
+142,Fatehpur,PRAYAGRAJ
+143,Firozabad,AGRA
+144,Gautam Buddha Nagar,MEERUT
+145,Ghaziabad,MEERUT
+146,Ghazipur,VARANASI
+147,Gonda,DEVIPATAN
+148,Gorakhpur,GORAKHPUR
+149,Hamirpur,CHITRAKOOT
+150,Hardoi,LUCKNOW
+151,Jalaun,JHANSI
+152,Jaunpur,VARANASI
+153,Jhansi,JHANSI
+154,Amroha,MORADABAD
+155,Kannauj,KANPUR
+156,Kanpur Dehat,KANPUR
+157,Kanpur Nagar,KANPUR
+158,Kaushambi,PRAYAGRAJ
+159,Kheri,LUCKNOW
+160,Kushinagar,GORAKHPUR
+161,Lalitpur,JHANSI
+162,Lucknow,LUCKNOW
+163,Hathras,ALIGARH
+164,Mahrajganj,GORAKHPUR
+165,Mahoba,CHITRAKOOT
+166,Mainpuri,AGRA
+167,Mathura,AGRA
+168,Mau,AZAMGARH
+169,Meerut,MEERUT
+170,Mirzapur,MIRZAPUR
+171,Moradabad,MORADABAD
+172,Muzaffarnagar,SAHARANPUR
+173,Pilibhit,BAREILLY
+174,Pratapgarh,PRAYAGRAJ
+175,Rae Bareli,LUCKNOW
+176,Rampur,MORADABAD
+177,Saharanpur,SAHARANPUR
+178,Sant Kabir Nagar,BASTI
+179,Bhadohi,MIRZAPUR
+180,Shahjahanpur,BAREILLY
+181,Shrawasti,DEVIPATAN
+182,Siddharthnagar,BASTI
+183,Sitapur,LUCKNOW
+184,Sonbhadra,MIRZAPUR
+185,Sultanpur,AYODHYA
+186,Unnao,LUCKNOW
+187,Varanasi,VARANASI
+633,Kasganj,ALIGARH
+640,Amethi,AYODHYA
+659,Sambhal,MORADABAD
+660,Shamli,SAHARANPUR
+661,Hapur,MEERUT

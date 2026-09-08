@@ -1,0 +1,12 @@
+district_name,report_url,status
+Agra,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=AGRA&ReportType=Filled,verified
+Aligarh,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=ALIGARH&ReportType=Filled,discovered
+Baghpat,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=BAGHPAT&ReportType=Filled,verified
+Banda,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=BANDA&ReportType=Filled,verified
+Deoria,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=DEORIA&ReportType=Filled,verified
+Gonda,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=GONDA&ReportType=Filled,verified
+Lucknow,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=LUCKNOW&ReportType=Filled,verified
+Mau,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=MAU&ReportType=Filled,verified
+Pilibhit,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=PILIBHIT&ReportType=Filled,verified
+Sambhal,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=SAMBHAL&ReportType=Filled,verified
+Varanasi,https://panchayatiraj.up.nic.in/pblc_pg/Reports/PB2FormReport?District=VARANASI&ReportType=Filled,verified

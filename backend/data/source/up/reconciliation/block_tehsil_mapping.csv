@@ -1,0 +1,34 @@
+district_code,district_name,block_code,block_name,tehsil_code,tehsil_name,source_block_name,source_tehsil_name,source_url,resolution
+120,Prayagraj,839,Kaurihar,888,Soraon,Kaurihar,Soraon,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,835,Holagarh,888,Soraon,Holagarh,Soraon,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,842,Mauaima,888,Soraon,Mauaima,Soraon,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,848,Soraon,888,Soraon,Soraon,Soraon,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,831,Bahria,889,Phulpur,Bahariya,Phulpur,https://prayagraj.nic.in/development-block/,verified_name_variant
+120,Prayagraj,844,Phulpur,889,Phulpur,Phulpur,Phulpur,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,830,Bahadurpur,889,Phulpur,Bahadurpur,Phulpur,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,845,Pratappur,893,Handia,Pratappur,Handia,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,846,Saidabad,893,Handia,Saidabad,Handia,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,833,Dhanupur,893,Handia,Dhanupur,Handia,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,834,Handia,893,Handia,Handia,Handia,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,836,Jasra,891,Bara,Jasra,Bara,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,847,Shankargarh,891,Bara,Shankargarh,Bara,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,832,Chaka,892,Karchhana,Chaka,Karchhana,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,837,Karchhana,892,Karchhana,Karchhana,Karchhana,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,838,Kaudhiyara,892,Karchhana,Kaundhiyara,Karchhana,https://prayagraj.nic.in/development-block/,verified_name_variant
+120,Prayagraj,849,Uruwan,894,Meja,Uruwa,Meja,https://prayagraj.nic.in/development-block/,verified_name_variant
+120,Prayagraj,843,Meja,894,Meja,Meja,Meja,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,840,Koraon,895,Koraon,Koraon,Koraon,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,841,Manda,894,Meja,Manda,Meja,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,7360,Sahson,889,Phulpur,Sahson,Phulpur,https://prayagraj.nic.in/development-block/,exact
+120,Prayagraj,7361,Sringverpur Dham,888,Soraon,Shringverpur Dham,Soroan,https://prayagraj.nic.in/development-block/,verified_name_variant
+120,Prayagraj,7359,Bhagwatpur,888,Soraon,Bhagwatpur,Soroan,https://prayagraj.nic.in/development-block/,verified_name_variant
+157,Kanpur Nagar,1280,Kakwan,848,Bilhaur,Kakwan,Bilhaur,https://kanpurnagar.nic.in/subdivision-blocks/,exact
+157,Kanpur Nagar,1277,Bilhaur,848,Bilhaur,Bilhaur,Bilhaur,https://kanpurnagar.nic.in/subdivision-blocks/,exact
+157,Kanpur Nagar,1284,Shivrajpur,848,Bilhaur,Shivrajpur,Bilhaur,https://kanpurnagar.nic.in/subdivision-blocks/,exact
+157,Kanpur Nagar,1278,Chaubeypur,848,Bilhaur,Chaubeypur,Bilhaur,https://kanpurnagar.nic.in/subdivision-blocks/,exact
+157,Kanpur Nagar,1281,Kalyanpur,849,Kanpur,Kalyanpur,Kanpur Sadar,https://kanpurnagar.nic.in/subdivision-blocks/,verified_name_variant
+157,Kanpur Nagar,1285,Vidhunu,849,Kanpur,Vidhnu,Kanpur Sadar,https://kanpurnagar.nic.in/subdivision-blocks/,verified_name_variant
+157,Kanpur Nagar,1283,Sarsol,6163,Narwal,Sarsaul,Narwal,https://kanpurnagar.nic.in/subdivision-blocks/,verified_name_variant
+157,Kanpur Nagar,1276,Bhitargaon,6163,Narwal,Bhitargaon,Narwal,https://kanpurnagar.nic.in/subdivision-blocks/,exact
+157,Kanpur Nagar,1282,Patara,850,Ghatampur,Patara,Ghatampur,https://kanpurnagar.nic.in/subdivision-blocks/,exact
+157,Kanpur Nagar,1279,Ghatampur,850,Ghatampur,Ghatampur,Ghatampur,https://kanpurnagar.nic.in/subdivision-blocks/,exact

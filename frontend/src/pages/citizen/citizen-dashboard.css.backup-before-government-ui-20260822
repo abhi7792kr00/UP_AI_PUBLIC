@@ -1,0 +1,4595 @@
+/* UP_AI Citizen Dashboard
+   Pixel-oriented responsive implementation based on the supplied reference UI.
+   Keep component-specific CSS here so it is easy to maintain/replace later.
+*/
+
+:root {
+  --citizen-navy: #07194d;
+  --citizen-navy-2: #0b236b;
+  --citizen-blue: #1769ff;
+  --citizen-blue-2: #2b76f4;
+  --citizen-text: #14224c;
+  --citizen-muted: #7080a5;
+  --citizen-border: #dbe5f5;
+  --citizen-bg: #f4f8ff;
+  --citizen-card: #ffffff;
+  --citizen-green: #0b9b57;
+  --citizen-orange: #ee9a13;
+  --citizen-shadow: 0 8px 25px rgba(20, 52, 110, 0.07);
+}
+
+.citizen-dashboard {
+  min-height: 100vh;
+  background: var(--citizen-bg);
+  color: var(--citizen-text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.citizen-dashboard button,
+.citizen-dashboard input {
+  font: inherit;
+}
+
+.citizen-dashboard button {
+  cursor: pointer;
+}
+
+.citizen-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 70px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background: linear-gradient(100deg, #061645 0%, #0b2168 58%, #091b59 100%);
+  box-shadow: 0 2px 12px rgba(2, 14, 54, 0.2);
+}
+
+.citizen-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.citizen-emblem {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.5);
+  background: rgba(255,255,255,.08);
+}
+
+.citizen-brand-copy > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  line-height: 1;
+}
+
+.citizen-brand-copy strong {
+  font-size: 28px;
+  letter-spacing: -.7px;
+}
+
+.citizen-brand-copy .portal-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.brand-divider {
+  opacity: .6;
+  font-size: 23px;
+}
+
+.citizen-brand-copy small {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255,255,255,.8);
+  font-size: 12px;
+}
+
+.citizen-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.citizen-icon-button,
+.citizen-language-button,
+.citizen-user-menu,
+.citizen-mobile-menu {
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.07);
+  color: #fff;
+}
+
+.citizen-icon-button {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+}
+
+.notification-button span {
+  position: absolute;
+  top: -3px;
+  right: -2px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #f23c4c;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.citizen-language-button {
+  height: 43px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 11px;
+  font-size: 14px;
+}
+
+.citizen-user-menu {
+  min-width: 160px;
+  height: 47px;
+  padding: 4px 9px 4px 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.citizen-user-menu img,
+.citizen-avatar {
+  width: 37px;
+  height: 37px;
+  flex: 0 0 37px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #eef4ff, #d9e5ff);
+  color: #2b68df;
+  object-fit: cover;
+}
+
+.citizen-user-menu > span:nth-child(2) {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.citizen-user-menu strong {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.citizen-user-menu small {
+  margin-top: 2px;
+  opacity: .72;
+  font-size: 11px;
+}
+
+.citizen-mobile-menu {
+  display: none;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.citizen-sidebar {
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  width: 235px;
+  padding: 17px 12px;
+  background: linear-gradient(180deg, #0b276f 0%, #07184d 100%);
+  color: #fff;
+}
+
+.citizen-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.citizen-nav-item {
+  width: 100%;
+  min-height: 47px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: rgba(255,255,255,.93);
+  text-decoration: none;
+  font-size: 15px;
+  text-align: left;
+  transition: background .16s ease, transform .16s ease;
+}
+
+.citizen-nav-item:hover {
+  background: rgba(255,255,255,.08);
+}
+
+.citizen-nav-item.active {
+  background: linear-gradient(90deg, #1a61d9, #1951c4);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+}
+
+.citizen-nav-with-badge .nav-icon-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.citizen-nav-with-badge b {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  min-width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f13c4c;
+  font-size: 10px;
+}
+
+.citizen-logout {
+  margin-top: 7px;
+}
+
+.citizen-sidebar-mobile-head {
+  display: none;
+}
+
+.citizen-main {
+  margin-left: 235px;
+  padding: 20px 28px 30px;
+}
+
+.citizen-welcome {
+  min-height: 182px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 36px;
+  border: 1px solid #d6e3f8;
+  border-radius: 16px;
+  background: linear-gradient(105deg, #e9f3ff 0%, #eef7ff 55%, #f8fbff 100%);
+  box-shadow: var(--citizen-shadow);
+}
+
+.citizen-welcome-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.citizen-welcome h1 {
+  margin: 0;
+  font-size: 31px;
+  letter-spacing: -.7px;
+}
+
+.citizen-welcome h1 span {
+  font-size: 28px;
+}
+
+.citizen-welcome h2 {
+  margin: 4px 0 4px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.citizen-welcome p {
+  margin: 0;
+  color: #314878;
+  font-size: 14px;
+}
+
+.citizen-welcome-art {
+  position: absolute;
+  right: 10px;
+  bottom: -42px;
+  width: 380px;
+  height: 230px;
+  color: rgba(70, 136, 239, .13);
+  font-size: 145px;
+}
+
+.art-dome {
+  position: absolute;
+  right: 160px;
+  bottom: 0;
+}
+
+.art-building {
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+  font-size: 210px;
+}
+
+.art-building.small {
+  right: 290px;
+  bottom: 5px;
+  font-size: 100px;
+}
+
+.citizen-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 382px;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.citizen-primary-column,
+.citizen-right-column {
+  min-width: 0;
+}
+
+.citizen-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.citizen-stat-card,
+.citizen-card {
+  border: 1px solid var(--citizen-border);
+  background: var(--citizen-card);
+  border-radius: 15px;
+  box-shadow: var(--citizen-shadow);
+}
+
+.citizen-stat-card {
+  min-height: 135px;
+  padding: 18px 16px;
+  display: flex;
+  gap: 14px;
+}
+
+.stat-icon {
+  width: 45px;
+  height: 45px;
+  flex: 0 0 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+}
+
+.stat-blue {
+  color: #1961e8;
+  background: #e7f0ff;
+}
+
+.stat-orange {
+  color: #ee9710;
+  background: #fff0d7;
+}
+
+.stat-green {
+  color: #078f50;
+  background: #dcf6e9;
+}
+
+.citizen-stat-card > div:last-child {
+  min-width: 0;
+}
+
+.citizen-stat-card span {
+  display: block;
+  font-size: 14px;
+  color: #1c2b52;
+}
+
+.citizen-stat-card strong {
+  display: block;
+  margin: 5px 0;
+  font-size: 29px;
+  line-height: 1;
+}
+
+.citizen-stat-card small {
+  display: block;
+  color: #7b89a9;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.citizen-action-row {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr 1fr;
+  gap: 16px;
+  margin: 18px 0 22px;
+}
+
+.citizen-primary-action,
+.citizen-secondary-action {
+  height: 59px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.citizen-primary-action {
+  border: 0;
+  color: #fff;
+  background: linear-gradient(105deg, #1b66ff, #1c5ce7);
+  box-shadow: 0 7px 17px rgba(23, 105, 255, .19);
+}
+
+.citizen-secondary-action {
+  color: #14295c;
+  border: 1px solid #cddcf6;
+  background: #fff;
+}
+
+.citizen-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.citizen-section-heading h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 17px;
+}
+
+.citizen-section-heading > button,
+.notification-card .citizen-section-heading button {
+  border: 0;
+  background: transparent;
+  color: #1762e4;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.complaints-card {
+  padding: 16px 18px 8px;
+}
+
+.complaints-table-wrap {
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+.complaints-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.complaints-table thead th {
+  padding: 12px 10px;
+  color: #1d2b55;
+  background: #f2f6fd;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.complaints-table thead th:first-child {
+  border-radius: 9px 0 0 9px;
+}
+
+.complaints-table thead th:last-child {
+  border-radius: 0 9px 9px 0;
+}
+
+.complaints-table tbody tr {
+  cursor: pointer;
+  transition: background .14s ease;
+}
+
+.complaints-table tbody tr:hover {
+  background: #f7faff;
+}
+
+.complaints-table td {
+  height: 57px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e4ebf7;
+  color: #2a3a62;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.complaints-table td:first-child strong {
+  color: #182d60;
+  font-size: 12px;
+}
+
+.complaints-table td:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.complaint-category-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+}
+
+.complaint-category-icon.electricity {
+  color: #ffb200;
+  background: #fff1cf;
+}
+
+.complaint-category-icon.road {
+  color: #315aa8;
+  background: #e9effb;
+}
+
+.complaint-category-icon.water {
+  color: #1685ef;
+  background: #e7f4ff;
+}
+
+.complaint-category-icon.revenue {
+  color: #4d679c;
+  background: #edf1f8;
+}
+
+.complaint-category-icon.health {
+  color: #f04467;
+  background: #ffe8ee;
+}
+
+.citizen-dashboard-emoji {
+  font-size: 17px;
+}
+
+.complaint-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.complaint-status i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.status-progress {
+  color: #1b5ddc;
+  background: #e7f0ff;
+}
+
+.status-resolved {
+  color: #168c4e;
+  background: #ddf6e9;
+}
+
+.status-pending {
+  color: #d88a05;
+  background: #fff0d7;
+}
+
+.citizen-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notification-card {
+  padding: 17px 14px 12px;
+}
+
+.notification-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.notification-item {
+  position: relative;
+  min-height: 66px;
+  display: flex;
+  gap: 10px;
+  padding: 9px 10px;
+  border: 1px solid #e5ebf5;
+  border-radius: 11px;
+  background: #fbfdff;
+}
+
+.notification-icon {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+}
+
+.notification-icon.blue {
+  color: #1967e8;
+  background: #e7f0ff;
+}
+
+.notification-icon.orange {
+  color: #e7910d;
+  background: #fff0d8;
+}
+
+.notification-icon.green {
+  color: #0c9653;
+  background: #ddf5e8;
+}
+
+.notification-item > div {
+  min-width: 0;
+}
+
+.notification-item strong {
+  display: block;
+  color: #172653;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.notification-item small {
+  display: block;
+  margin-top: 3px;
+  color: #8490aa;
+  font-size: 10px;
+}
+
+.notification-unread {
+  position: absolute;
+  right: 9px;
+  top: 13px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #1666e8;
+}
+
+.ai-card {
+  padding: 17px 15px 14px;
+}
+
+.ai-card-heading,
+.voice-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ai-card-heading h2,
+.voice-heading h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.ai-card-heading > svg {
+  color: #226cff;
+}
+
+.ai-message {
+  margin: 13px 0;
+  padding: 12px 13px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #edf4ff, #e1edff);
+  color: #21345f;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.ai-input-row {
+  display: flex;
+  gap: 6px;
+}
+
+.ai-input-row input {
+  min-width: 0;
+  flex: 1;
+  height: 39px;
+  padding: 0 12px;
+  border: 1px solid #cbdcf7;
+  border-radius: 10px;
+  outline: none;
+  color: #26385e;
+  background: #fff;
+  font-size: 11px;
+}
+
+.ai-input-row input:focus {
+  border-color: #4e83ef;
+  box-shadow: 0 0 0 3px rgba(49, 112, 234, .1);
+}
+
+.ai-input-row button {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  background: #246be7;
+}
+
+.ai-suggestions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  overflow-x: auto;
+}
+
+.ai-suggestions button {
+  flex: 0 0 auto;
+  padding: 7px 9px;
+  border: 1px solid #cbdcf7;
+  border-radius: 999px;
+  color: #38517d;
+  background: #f8fbff;
+  font-size: 9px;
+}
+
+.voice-card {
+  min-height: 180px;
+  padding: 17px 15px 14px;
+  border-color: #d4eedf;
+  background: linear-gradient(145deg, #f2fff8, #eafbf3);
+}
+
+.voice-heading {
+  align-items: flex-start;
+}
+
+.voice-heading h2 {
+  color: #126a48;
+}
+
+.voice-heading span {
+  margin-top: 24px;
+  color: #396f5b;
+  font-size: 10px;
+}
+
+.voice-visualizer {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.voice-visualizer > span {
+  width: 3px;
+  border-radius: 4px;
+  background: #4fca8c;
+  animation: voice-bars 1.1s ease-in-out infinite alternate;
+}
+
+.voice-visualizer > span:nth-child(1),
+.voice-visualizer > span:nth-child(8) { height: 12px; }
+.voice-visualizer > span:nth-child(2),
+.voice-visualizer > span:nth-child(7) { height: 23px; animation-delay: .15s; }
+.voice-visualizer > span:nth-child(3),
+.voice-visualizer > span:nth-child(6) { height: 35px; animation-delay: .25s; }
+.voice-visualizer > span:nth-child(4),
+.voice-visualizer > span:nth-child(5) { height: 48px; animation-delay: .35s; }
+
+.voice-visualizer button {
+  width: 58px;
+  height: 58px;
+  margin: 0 5px;
+  display: grid;
+  place-items: center;
+  border: 7px solid #a8edc9;
+  border-radius: 50%;
+  color: #fff;
+  background: #10ad63;
+  box-shadow: 0 4px 15px rgba(10, 153, 82, .2);
+}
+
+.voice-card p {
+  margin: 0;
+  text-align: center;
+  color: #39725c;
+  font-size: 10px;
+}
+
+@keyframes voice-bars {
+  to { transform: scaleY(.55); opacity: .7; }
+}
+
+.citizen-notification-popover {
+  position: fixed;
+  z-index: 80;
+  top: 64px;
+  right: 170px;
+  width: 365px;
+  padding: 12px;
+  border: 1px solid #d8e3f5;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(18, 41, 87, .2);
+}
+
+.citizen-popover-title {
+  padding: 5px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7edf7;
+}
+
+.citizen-popover-title button {
+  border: 0;
+  background: transparent;
+}
+
+.citizen-popover-item {
+  display: flex;
+  gap: 9px;
+  padding: 11px 4px;
+}
+
+.citizen-popover-item strong {
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.citizen-popover-item small {
+  display: block;
+  margin-top: 3px;
+  color: #8490aa;
+  font-size: 10px;
+}
+
+.notification-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.notification-dot.blue { background: #216cf0; }
+.notification-dot.orange { background: #ee9711; }
+.notification-dot.green { background: #0c9954; }
+
+.citizen-sidebar-overlay {
+  display: none;
+}
+
+.citizen-help {
+  position: fixed;
+  right: 18px;
+  bottom: 16px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 12px;
+  border: 1px solid #d7e2f4;
+  border-radius: 999px;
+  color: #35527f;
+  background: rgba(255,255,255,.95);
+  box-shadow: 0 5px 18px rgba(15, 44, 94, .1);
+  font-size: 11px;
+}
+
+@media (max-width: 1250px) {
+  .citizen-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-right-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .voice-card {
+    grid-column: span 2;
+  }
+
+  .citizen-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .citizen-topbar {
+    height: 64px;
+    padding: 0 15px;
+  }
+
+  .citizen-brand-copy .portal-name,
+  .brand-divider {
+    display: none;
+  }
+
+  .citizen-brand-copy strong {
+    font-size: 22px;
+  }
+
+  .citizen-sidebar {
+    top: 64px;
+    transform: translateX(-100%);
+    transition: transform .22s ease;
+  }
+
+  .citizen-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .citizen-sidebar-mobile-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 7px 16px;
+  }
+
+  .citizen-sidebar-mobile-head button {
+    border: 0;
+    color: #fff;
+    background: transparent;
+  }
+
+  .citizen-mobile-menu {
+    display: grid;
+  }
+
+  .citizen-sidebar-overlay {
+    position: fixed;
+    inset: 64px 0 0;
+    z-index: 35;
+    display: block;
+    border: 0;
+    background: rgba(3, 16, 48, .45);
+  }
+
+  .citizen-main {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .citizen-welcome {
+    min-height: 165px;
+    padding: 24px;
+  }
+
+  .citizen-welcome-art {
+    opacity: .6;
+  }
+
+  .citizen-right-column {
+    grid-template-columns: 1fr;
+  }
+
+  .voice-card {
+    grid-column: auto;
+  }
+
+  .citizen-language-button {
+    display: none;
+  }
+
+  .citizen-notification-popover {
+    right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .citizen-topbar {
+    padding: 0 10px;
+  }
+
+  .citizen-emblem {
+    width: 37px;
+    height: 37px;
+  }
+
+  .citizen-brand-copy strong {
+    font-size: 19px;
+  }
+
+  .citizen-brand-copy small {
+    font-size: 9px;
+  }
+
+  .citizen-user-menu {
+    min-width: 0;
+    width: 44px;
+    padding: 3px;
+  }
+
+  .citizen-user-menu > span:nth-child(2),
+  .citizen-user-menu > svg {
+    display: none;
+  }
+
+  .citizen-welcome {
+    min-height: 185px;
+    padding: 20px;
+  }
+
+  .citizen-welcome h1 {
+    font-size: 24px;
+  }
+
+  .citizen-welcome h2 {
+    font-size: 17px;
+  }
+
+  .citizen-welcome p {
+    max-width: 240px;
+    font-size: 12px;
+  }
+
+  .citizen-welcome-art {
+    right: -90px;
+    opacity: .4;
+  }
+
+  .citizen-stat-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+
+  .citizen-stat-card {
+    min-height: 122px;
+    padding: 12px;
+    gap: 9px;
+  }
+
+  .stat-icon {
+    width: 37px;
+    height: 37px;
+    flex-basis: 37px;
+  }
+
+  .citizen-stat-card strong {
+    font-size: 23px;
+  }
+
+  .citizen-stat-card span {
+    font-size: 11px;
+  }
+
+  .citizen-stat-card small {
+    font-size: 9px;
+  }
+
+  .citizen-action-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .citizen-primary-action,
+  .citizen-secondary-action {
+    height: 50px;
+  }
+
+  .citizen-right-column {
+    gap: 10px;
+  }
+
+  .citizen-notification-popover {
+    left: 10px;
+    right: 10px;
+    width: auto;
+  }
+
+  .citizen-help {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   CITIZEN COMPLAINTS PAGE
+   ========================================================= */
+
+.citizen-complaints-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+  padding: 30px 34px;
+  min-height: 150px;
+  overflow: hidden;
+
+  border: 1px solid rgba(109, 72, 255, 0.16);
+  border-radius: 22px;
+
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(99, 75, 255, 0.16),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f7f9ff 0%,
+      #eef4ff 55%,
+      #f8faff 100%
+    );
+
+  box-shadow:
+    0 18px 45px rgba(45, 30, 120, 0.10),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.citizen-complaints-hero::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+  background: rgba(91, 61, 255, 0.08);
+  filter: blur(2px);
+}
+
+.citizen-complaints-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.citizen-complaints-eyebrow,
+.panel-eyebrow {
+  display: block;
+  margin-bottom: 7px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  color: #6846ff;
+}
+
+.citizen-complaints-hero h1 {
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.15;
+  color: #171344;
+}
+
+.citizen-complaints-hero p {
+  max-width: 650px;
+  margin: 9px 0 0;
+
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64618a;
+}
+
+.citizen-complaints-hero-action {
+  position: relative;
+  z-index: 3;
+}
+
+.citizen-complaints-hero-action button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 13px 20px;
+
+  border: 0;
+  border-radius: 13px;
+
+  background: linear-gradient(
+    135deg,
+    #4d00ff,
+    #6e2bff
+  );
+
+  color: white;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 22px rgba(79, 25, 255, 0.30),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.citizen-complaints-hero-action button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 15px 30px rgba(79, 25, 255, 0.36),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+
+/* =========================================================
+   SUMMARY CARDS
+   ========================================================= */
+
+.citizen-complaint-summary {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.complaint-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  min-height: 88px;
+  padding: 17px 18px;
+
+  border: 1px solid rgba(60, 45, 130, 0.10);
+  border-radius: 17px;
+
+  background: rgba(255,255,255,0.92);
+
+  box-shadow:
+    0 12px 30px rgba(41, 28, 108, 0.08),
+    0 3px 7px rgba(41, 28, 108, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.complaint-summary-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 35px rgba(41, 28, 108, 0.12),
+    0 5px 10px rgba(41, 28, 108, 0.06);
+}
+
+.summary-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+
+  border-radius: 14px;
+}
+
+.summary-total {
+  color: #5630ff;
+  background: #efebff;
+}
+
+.summary-pending {
+  color: #d88900;
+  background: #fff4d8;
+}
+
+.summary-progress {
+  color: #435cff;
+  background: #edf0ff;
+}
+
+.summary-resolved {
+  color: #008f65;
+  background: #e4faf2;
+}
+
+.summary-resolved span {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.complaint-summary-card span {
+  display: block;
+  font-size: 12px;
+  color: #7b7896;
+}
+
+.complaint-summary-card strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 23px;
+  color: #21194c;
+}
+
+
+/* =========================================================
+   MAIN PANEL
+   ========================================================= */
+
+.citizen-complaints-panel {
+  padding: 22px;
+
+  border: 1px solid rgba(67, 48, 145, 0.10);
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.94);
+
+  box-shadow:
+    0 18px 50px rgba(41, 28, 108, 0.09),
+    0 4px 10px rgba(41, 28, 108, 0.04);
+}
+
+.citizen-complaints-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2px 3px 19px;
+  border-bottom: 1px solid #eeeef7;
+}
+
+.citizen-complaints-panel-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+  color: #21194c;
+}
+
+.citizen-complaints-panel-header p {
+  margin: 4px 0 0;
+
+  font-size: 12px;
+  color: #8a87a3;
+}
+
+.complaint-count {
+  padding: 8px 13px;
+
+  border-radius: 20px;
+
+  background: #f1edff;
+  color: #6039ff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ORDERED COMPLAINT LIST
+   ========================================================= */
+
+.citizen-complaint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  padding-top: 18px;
+}
+
+.citizen-complaint-card {
+  position: relative;
+
+  display: grid;
+  grid-template-columns:
+    42px 52px minmax(0, 1fr) auto;
+
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+  min-height: 108px;
+
+  padding: 16px 17px;
+
+  text-align: left;
+
+  border: 1px solid #e9e7f4;
+  border-radius: 17px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fbfaff 100%
+    );
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(46, 32, 119, 0.06),
+    0 2px 5px rgba(46, 32, 119, 0.04);
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.citizen-complaint-card:hover {
+  transform:
+    translateY(-4px)
+    perspective(700px)
+    rotateX(0.5deg);
+
+  border-color: #d9d0ff;
+
+  box-shadow:
+    0 18px 35px rgba(59, 36, 170, 0.13),
+    0 6px 12px rgba(59, 36, 170, 0.07);
+}
+
+.citizen-complaint-card:active {
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ORDER NUMBER
+   ========================================================= */
+
+.complaint-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complaint-order span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 11px;
+
+  background: linear-gradient(
+    145deg,
+    #f2efff,
+    #e7e1ff
+  );
+
+  color: #6945ff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.8),
+    0 4px 8px rgba(87, 57, 211, 0.08);
+}
+
+
+/* =========================================================
+   COMPLAINT ICON
+   ========================================================= */
+
+.complaint-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f0edff,
+      #e3ddff
+    );
+
+  color: #633cff;
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.9),
+    0 8px 15px rgba(82, 52, 201, 0.10);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.complaint-card-content {
+  min-width: 0;
+}
+
+.complaint-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.complaint-number {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #6543e8;
+}
+
+.complaint-card-content h3 {
+  overflow: hidden;
+
+  margin: 6px 0 6px;
+
+  color: #242044;
+
+  font-size: 15px;
+  font-weight: 750;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.complaint-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #77738f;
+
+  font-size: 12px;
+}
+
+.complaint-card-meta i {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background: #aaa6bd;
+}
+
+.complaint-card-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 8px;
+
+  color: #9995aa;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.complaint-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.complaint-status.resolved {
+  color: #008c63;
+  background: #e6faf2;
+}
+
+.complaint-status.resolved .status-dot {
+  background: #00a875;
+}
+
+.complaint-status.pending {
+  color: #bd7600;
+  background: #fff3d6;
+}
+
+.complaint-status.pending .status-dot {
+  background: #e39a00;
+}
+
+.complaint-status.progress {
+  color: #4b43d8;
+  background: #eeedff;
+}
+
+.complaint-status.progress .status-dot {
+  background: #5d54ef;
+}
+
+
+/* =========================================================
+   ACTION
+   ========================================================= */
+
+.complaint-card-action {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: #6945ff;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  white-space: nowrap;
+}
+
+.complaint-card-action svg {
+  transition: transform 0.2s ease;
+}
+
+.citizen-complaint-card:hover
+.complaint-card-action svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   STATES
+   ========================================================= */
+
+.complaints-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 280px;
+  gap: 8px;
+
+  color: #74718e;
+}
+
+.complaints-state strong {
+  color: #29234d;
+  font-size: 15px;
+}
+
+.complaints-state span {
+  font-size: 12px;
+}
+
+.complaints-spinner {
+  animation: citizenComplaintSpin 1s linear infinite;
+  color: #633cff;
+}
+
+@keyframes citizenComplaintSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.complaints-error {
+  color: #c04444;
+}
+
+.complaints-error strong {
+  color: #b63232;
+}
+
+.empty-complaint-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+
+  margin-bottom: 6px;
+
+  border-radius: 20px;
+
+  background: #f0edff;
+  color: #6844ff;
+
+  box-shadow:
+    0 12px 25px rgba(76, 47, 196, 0.12);
+}
+
+.complaints-state button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-top: 12px;
+  padding: 11px 17px;
+
+  border: 0;
+  border-radius: 11px;
+
+  background: linear-gradient(
+    135deg,
+    #4d00ff,
+    #7134ff
+  );
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 9px 20px rgba(79, 25, 255, 0.25);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .citizen-complaint-summary {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .citizen-complaint-card {
+    grid-template-columns:
+      38px 48px minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .complaint-card-action span {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .citizen-complaints-hero {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .citizen-complaints-hero h1 {
+    font-size: 26px;
+  }
+
+  .citizen-complaints-hero-action {
+    width: 100%;
+  }
+
+  .citizen-complaints-hero-action button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .citizen-complaint-summary {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .citizen-complaints-panel {
+    padding: 15px;
+  }
+
+  .citizen-complaint-card {
+    grid-template-columns:
+      36px 46px minmax(0, 1fr);
+
+    padding: 14px;
+  }
+
+  .complaint-card-action {
+    display: none;
+  }
+
+  .complaint-card-content h3 {
+    white-space: normal;
+  }
+
+  .complaint-card-meta {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .citizen-complaint-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-complaint-card {
+    grid-template-columns:
+      34px minmax(0, 1fr);
+  }
+
+  .complaint-card-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .complaint-card-content {
+    grid-column: 2;
+  }
+
+  .complaint-card-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+/* =========================================================
+   CITIZEN PORTAL — RESPONSIVE SLIDING SIDEBAR
+   ========================================================= */
+
+:root {
+  --citizen-sidebar-expanded: 202px;
+  --citizen-sidebar-collapsed: 72px;
+  --citizen-topbar-height: 62px;
+}
+
+/* Prevent the whole application from creating horizontal scroll */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+/* Main citizen shell */
+.citizen-dashboard {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.citizen-topbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: var(--citizen-topbar-height);
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.citizen-sidebar {
+  position: fixed;
+  z-index: 950;
+
+  top: var(--citizen-topbar-height);
+  left: 0;
+  bottom: 0;
+
+  width: var(--citizen-sidebar-collapsed);
+
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  transition:
+    width 220ms ease,
+    transform 220ms ease;
+
+  scrollbar-width: thin;
+}
+
+/* Expand sidebar when mouse is over it */
+.citizen-sidebar:hover {
+  width: var(--citizen-sidebar-expanded);
+}
+
+/* Keep navigation content inside sidebar */
+.citizen-sidebar-nav {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation items */
+.citizen-nav-item {
+  width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Icon stays visible when collapsed */
+.citizen-nav-item > svg,
+.citizen-nav-item > span:first-child {
+  flex: 0 0 24px;
+}
+
+/* Text disappears in collapsed state */
+.citizen-sidebar:not(:hover) .citizen-nav-item > span:not(:first-child) {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* Text comes back when expanded */
+.citizen-sidebar:hover .citizen-nav-item > span:not(:first-child) {
+  opacity: 1;
+  width: auto;
+}
+
+/* Mobile sidebar header */
+.citizen-sidebar-mobile-head {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.citizen-main {
+  position: relative;
+
+  box-sizing: border-box;
+
+  width: calc(100% - var(--citizen-sidebar-collapsed));
+
+  max-width: calc(100% - var(--citizen-sidebar-collapsed));
+
+  min-width: 0;
+
+  margin-left: var(--citizen-sidebar-collapsed);
+
+  padding-top: var(--citizen-topbar-height);
+
+  overflow-x: hidden;
+
+  transition:
+    margin-left 220ms ease,
+    width 220ms ease,
+    max-width 220ms ease;
+}
+
+/*
+ * When sidebar is hovered, give main content enough room.
+ * This prevents content from hiding underneath expanded sidebar.
+ */
+.citizen-sidebar:hover ~ .citizen-main {
+  margin-left: var(--citizen-sidebar-expanded);
+
+  width: calc(100% - var(--citizen-sidebar-expanded));
+
+  max-width: calc(100% - var(--citizen-sidebar-expanded));
+}
+
+/* Every direct child must be shrinkable */
+.citizen-main > * {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   COMPLAINT / PAGE CONTENT SAFETY
+   ========================================================= */
+
+.citizen-main .page,
+.citizen-main .page-header,
+.citizen-main .form-layout,
+.citizen-main .form-card,
+.citizen-main .card {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Prevent oversized grids from creating horizontal scroll */
+.citizen-main .form-layout {
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .citizen-sidebar {
+    width: 260px;
+
+    transform: translateX(-100%);
+
+    box-shadow: 12px 0 30px rgba(0, 0, 0, 0.18);
+  }
+
+  .citizen-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .citizen-sidebar:hover {
+    width: 260px;
+  }
+
+  .citizen-sidebar:not(:hover) .citizen-nav-item > span:not(:first-child),
+  .citizen-sidebar:hover .citizen-nav-item > span:not(:first-child) {
+    opacity: 1;
+    width: auto;
+  }
+
+  .citizen-main,
+  .citizen-sidebar:hover ~ .citizen-main {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .citizen-sidebar-overlay {
+    position: fixed;
+    inset: var(--citizen-topbar-height) 0 0 0;
+
+    z-index: 940;
+
+    display: block;
+
+    background: rgba(10, 5, 35, 0.35);
+
+    border: 0;
+    padding: 0;
+  }
+
+  .citizen-mobile-menu {
+    display: inline-flex;
+  }
+
+  .citizen-main .form-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  :root {
+    --citizen-topbar-height: 58px;
+  }
+
+  .citizen-topbar {
+    height: var(--citizen-topbar-height);
+  }
+
+  .citizen-main {
+    padding-top: var(--citizen-topbar-height);
+  }
+
+  .citizen-main .page {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/* =========================================================
+   REMOVE HORIZONTAL SCROLLBAR
+   ========================================================= */
+
+.citizen-dashboard,
+.citizen-main,
+.citizen-main > *,
+.citizen-main .form-layout {
+  overflow-x: clip;
+}
+
+
+/* =========================================================
+   FINAL CITIZEN DASHBOARD WIDTH / GRID FIX
+   Prevent right column from escaping viewport
+   ========================================================= */
+
+.citizen-main {
+  width: calc(100% - var(--citizen-sidebar-collapsed));
+  max-width: calc(100% - var(--citizen-sidebar-collapsed));
+  min-width: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.citizen-sidebar:hover ~ .citizen-main {
+  width: calc(100% - var(--citizen-sidebar-expanded));
+  max-width: calc(100% - var(--citizen-sidebar-expanded));
+  margin-left: var(--citizen-sidebar-expanded);
+}
+
+/* Main dashboard two-column area */
+.citizen-content-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 330px);
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  gap: 18px;
+
+  overflow: hidden;
+}
+
+/* Left side */
+.citizen-primary-column {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Right side */
+.citizen-right-column {
+  min-width: 0;
+  width: 100%;
+  max-width: 330px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+/* Cards inside right column */
+.citizen-right-column > *,
+.citizen-right-column .citizen-card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent tables/content from forcing parent wider */
+.citizen-primary-column,
+.citizen-primary-column > *,
+.citizen-card,
+.citizen-section-heading,
+.citizen-stat-grid,
+.citizen-action-row {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Recent complaints table */
+.citizen-card {
+  overflow: hidden;
+}
+
+/* =========================================================
+   TABLE RESPONSIVENESS
+   ========================================================= */
+
+.citizen-card table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+}
+
+.citizen-card th,
+.citizen-card td {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================================================
+   MEDIUM SCREEN
+   ========================================================= */
+
+@media (max-width: 1150px) {
+
+  .citizen-content-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .citizen-right-column {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    max-width: 100%;
+  }
+
+  .citizen-right-column > * {
+    min-width: 0;
+  }
+}
+
+/* =========================================================
+   TABLET / SMALL SCREEN
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .citizen-content-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .citizen-right-column {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .citizen-primary-column {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .citizen-stat-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .citizen-action-row {
+    grid-template-columns:
+      minmax(0, 1fr);
+  }
+}
+
+/* =========================================================
+   VERY SMALL SCREEN
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+  .citizen-stat-grid {
+    grid-template-columns:
+      minmax(0, 1fr);
+  }
+
+  .citizen-main {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .citizen-content-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* =========================================================
+   ABSOLUTE SAFETY
+   ========================================================= */
+
+.citizen-dashboard * {
+  box-sizing: border-box;
+}
+
+.citizen-dashboard img,
+.citizen-dashboard svg,
+.citizen-dashboard input,
+.citizen-dashboard textarea,
+.citizen-dashboard select,
+.citizen-dashboard button {
+  max-width: 100%;
+}
+
+
+/* ============================================================
+   CITIZEN PORTAL — FINAL RESPONSIVE SHELL FIX
+   ============================================================ */
+
+/* Never allow the citizen application itself to create
+   horizontal scrolling */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+/* Main citizen application */
+.citizen-dashboard {
+  width: 100% !important;
+  max-width: 100vw !important;
+  min-width: 0 !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.citizen-sidebar {
+  box-sizing: border-box !important;
+  max-width: 100vw !important;
+}
+
+/* ============================================================
+   MAIN AREA
+
+   IMPORTANT:
+   Do NOT use a fixed width here.
+   Main content must occupy only the remaining viewport.
+   ============================================================ */
+
+.citizen-main {
+  box-sizing: border-box !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  margin-left: 0 !important;
+
+  overflow-x: hidden !important;
+}
+
+/* If sidebar is fixed, main content naturally sits beside it */
+.citizen-sidebar + .citizen-main {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+/* ============================================================
+   CONTENT WRAPPER
+   ============================================================ */
+
+.citizen-content-grid {
+  display: grid !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 300px) !important;
+
+  gap: 18px !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ============================================================
+   LEFT CONTENT
+   ============================================================ */
+
+.citizen-primary-column {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  overflow: hidden !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ============================================================
+   RIGHT CONTENT
+   ============================================================ */
+
+.citizen-right-column {
+  width: 100% !important;
+  max-width: 300px !important;
+  min-width: 0 !important;
+
+  overflow: hidden !important;
+
+  box-sizing: border-box !important;
+}
+
+.citizen-right-column > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ============================================================
+   ALL CARDS MUST RESPECT GRID WIDTH
+   ============================================================ */
+
+.citizen-card,
+.citizen-stat-card,
+.citizen-welcome,
+.citizen-section-heading,
+.citizen-action-row,
+.citizen-stat-grid {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* ============================================================
+   STAT CARDS
+   ============================================================ */
+
+.citizen-stat-grid {
+  display: grid !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr)) !important;
+
+  gap: 14px !important;
+}
+
+/* ============================================================
+   TABLE
+   ============================================================ */
+
+.citizen-primary-column table {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  table-layout: fixed !important;
+}
+
+.citizen-primary-column th,
+.citizen-primary-column td {
+  min-width: 0 !important;
+
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   ACTION BUTTONS
+   ============================================================ */
+
+.citizen-action-row {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+/* ============================================================
+   DESKTOP
+   ============================================================ */
+
+@media (min-width: 1200px) {
+
+  .citizen-content-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 300px) !important;
+  }
+
+  .citizen-right-column {
+    max-width: 300px !important;
+  }
+}
+
+/* ============================================================
+   LAPTOP
+   ============================================================ */
+
+@media (max-width: 1199px) {
+
+  .citizen-content-grid {
+    grid-template-columns:
+      minmax(0, 1fr) !important;
+  }
+
+  .citizen-right-column {
+    display: grid !important;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 16px !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 850px) {
+
+  .citizen-stat-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .citizen-right-column {
+    grid-template-columns:
+      minmax(0, 1fr) !important;
+  }
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .citizen-stat-grid {
+    grid-template-columns:
+      minmax(0, 1fr) !important;
+  }
+
+  .citizen-content-grid {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .citizen-primary-column,
+  .citizen-right-column {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .citizen-right-column {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+/* ============================================================
+   KILL COMMON FIXED-WIDTH PROBLEMS
+   ============================================================ */
+
+.citizen-dashboard .page,
+.citizen-dashboard main,
+.citizen-dashboard section,
+.citizen-dashboard article {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Prevent children from expanding the grid */
+.citizen-dashboard * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* ============================================================
+   NO HORIZONTAL SCROLL
+   ============================================================ */
+
+.citizen-dashboard,
+.citizen-main,
+.citizen-content-grid,
+.citizen-primary-column,
+.citizen-right-column {
+  overflow-x: clip !important;
+}
+
+
+/* ============================================================
+   CITIZEN PORTAL — SIDEBAR / MAIN ALIGNMENT FINAL FIX
+   ============================================================ */
+
+:root {
+  --citizen-sidebar-expanded: 174px;
+  --citizen-sidebar-collapsed: 62px;
+  --citizen-topbar-height: 62px;
+}
+
+/* ------------------------------------------------------------
+   ROOT
+   ------------------------------------------------------------ */
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+.citizen-dashboard {
+  width: 100% !important;
+  max-width: 100vw !important;
+  min-width: 0 !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* ------------------------------------------------------------
+   TOPBAR
+   ------------------------------------------------------------ */
+
+.citizen-topbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+
+  width: 100% !important;
+  height: var(--citizen-topbar-height) !important;
+
+  z-index: 1000 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ------------------------------------------------------------
+   SIDEBAR
+   ------------------------------------------------------------ */
+
+.citizen-sidebar {
+  position: fixed !important;
+
+  top: var(--citizen-topbar-height) !important;
+  left: 0 !important;
+  bottom: 0 !important;
+
+  width: var(--citizen-sidebar-expanded) !important;
+  max-width: var(--citizen-sidebar-expanded) !important;
+  min-width: var(--citizen-sidebar-expanded) !important;
+
+  z-index: 900 !important;
+
+  box-sizing: border-box !important;
+
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+
+  transition:
+    width 0.22s ease,
+    min-width 0.22s ease,
+    max-width 0.22s ease !important;
+}
+
+/* ------------------------------------------------------------
+   COLLAPSED SIDEBAR
+   Supports the common class/state names already used by
+   citizen layouts.
+   ------------------------------------------------------------ */
+
+.citizen-sidebar.collapsed,
+.citizen-sidebar.is-collapsed,
+.citizen-sidebar[data-collapsed="true"],
+.citizen-sidebar[aria-expanded="false"] {
+  width: var(--citizen-sidebar-collapsed) !important;
+  max-width: var(--citizen-sidebar-collapsed) !important;
+  min-width: var(--citizen-sidebar-collapsed) !important;
+}
+
+/* ------------------------------------------------------------
+   MAIN CONTENT
+
+   IMPORTANT:
+   Main must start AFTER the sidebar.
+   ------------------------------------------------------------ */
+
+.citizen-main {
+  position: relative !important;
+
+  margin-left: var(--citizen-sidebar-expanded) !important;
+
+  width: calc(
+    100% - var(--citizen-sidebar-expanded)
+  ) !important;
+
+  max-width: calc(
+    100% - var(--citizen-sidebar-expanded)
+  ) !important;
+
+  min-width: 0 !important;
+
+  padding-top: var(--citizen-topbar-height) !important;
+
+  box-sizing: border-box !important;
+
+  overflow-x: hidden !important;
+
+  transition:
+    margin-left 0.22s ease,
+    width 0.22s ease,
+    max-width 0.22s ease !important;
+}
+
+/* Main when sidebar is collapsed */
+
+.citizen-sidebar.collapsed ~ .citizen-main,
+.citizen-sidebar.is-collapsed ~ .citizen-main,
+.citizen-sidebar[data-collapsed="true"] ~ .citizen-main,
+.citizen-sidebar[aria-expanded="false"] ~ .citizen-main {
+  margin-left: var(--citizen-sidebar-collapsed) !important;
+
+  width: calc(
+    100% - var(--citizen-sidebar-collapsed)
+  ) !important;
+
+  max-width: calc(
+    100% - var(--citizen-sidebar-collapsed)
+  ) !important;
+}
+
+/* ------------------------------------------------------------
+   MAIN INNER CONTENT
+   ------------------------------------------------------------ */
+
+.citizen-main > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ------------------------------------------------------------
+   CONTENT GRID
+   ------------------------------------------------------------ */
+
+.citizen-content-grid {
+  display: grid !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(270px, 300px) !important;
+
+  gap: 18px !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Left column */
+
+.citizen-primary-column {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+
+  overflow: hidden !important;
+}
+
+/* Right column */
+
+.citizen-right-column {
+  width: 100% !important;
+  max-width: 300px !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+
+  overflow: hidden !important;
+}
+
+/* Right cards */
+
+.citizen-right-column > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ------------------------------------------------------------
+   STAT CARDS
+   ------------------------------------------------------------ */
+
+.citizen-stat-grid {
+  display: grid !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr)) !important;
+
+  gap: 14px !important;
+
+  box-sizing: border-box !important;
+}
+
+.citizen-stat-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ------------------------------------------------------------
+   WELCOME CARD
+   ------------------------------------------------------------ */
+
+.citizen-welcome {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+
+  overflow: hidden !important;
+}
+
+/* ------------------------------------------------------------
+   RECENT COMPLAINTS TABLE
+   ------------------------------------------------------------ */
+
+.citizen-primary-column table {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  table-layout: fixed !important;
+}
+
+.citizen-primary-column th,
+.citizen-primary-column td {
+  min-width: 0 !important;
+
+  overflow: hidden !important;
+
+  text-overflow: ellipsis !important;
+
+  white-space: nowrap !important;
+}
+
+/* ------------------------------------------------------------
+   ACTION ROW
+   ------------------------------------------------------------ */
+
+.citizen-action-row {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* ------------------------------------------------------------
+   EVERYTHING INSIDE CITIZEN MAIN
+   ------------------------------------------------------------ */
+
+.citizen-main *,
+.citizen-content-grid *,
+.citizen-primary-column *,
+.citizen-right-column * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* ------------------------------------------------------------
+   LAPTOP
+   ------------------------------------------------------------ */
+
+@media (max-width: 1200px) {
+
+  .citizen-content-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(250px, 280px) !important;
+
+    gap: 14px !important;
+  }
+
+  .citizen-right-column {
+    max-width: 280px !important;
+  }
+}
+
+/* ------------------------------------------------------------
+   TABLET
+   ------------------------------------------------------------ */
+
+@media (max-width: 900px) {
+
+  .citizen-content-grid {
+    grid-template-columns:
+      minmax(0, 1fr) !important;
+  }
+
+  .citizen-right-column {
+    display: grid !important;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    max-width: 100% !important;
+
+    gap: 14px !important;
+  }
+
+  .citizen-stat-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 650px) {
+
+  .citizen-sidebar {
+    width: var(--citizen-sidebar-collapsed) !important;
+    max-width: var(--citizen-sidebar-collapsed) !important;
+    min-width: var(--citizen-sidebar-collapsed) !important;
+  }
+
+  .citizen-main {
+    margin-left: var(--citizen-sidebar-collapsed) !important;
+
+    width: calc(
+      100% - var(--citizen-sidebar-collapsed)
+    ) !important;
+
+    max-width: calc(
+      100% - var(--citizen-sidebar-collapsed)
+    ) !important;
+  }
+
+  .citizen-content-grid {
+    display: block !important;
+  }
+
+  .citizen-primary-column,
+  .citizen-right-column {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .citizen-right-column {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .citizen-stat-grid {
+    grid-template-columns:
+      minmax(0, 1fr) !important;
+  }
+}
+
+/* ------------------------------------------------------------
+   KILL HORIZONTAL OVERFLOW
+   ------------------------------------------------------------ */
+
+.citizen-dashboard,
+.citizen-main,
+.citizen-content-grid {
+  overflow-x: clip !important;
+}
+
+
+
+/* =============================================================
+   UP_AI CITIZEN PORTAL — FINAL LAYOUT SYSTEM
+   ============================================================= */
+
+
+/* =============================================================
+   UP_AI CITIZEN PORTAL — FINAL LAYOUT SYSTEM
+   Clean 3D / Sliding Navigation
+   ============================================================= */
+
+:root {
+  --citizen-topbar-height: 64px;
+  --citizen-sidebar-width: 218px;
+  --citizen-sidebar-collapsed-width: 72px;
+  --citizen-purple: #31006f;
+  --citizen-purple-2: #5b00d6;
+  --citizen-purple-3: #7c19ff;
+  --citizen-bg: #f4f6ff;
+}
+
+
+/* =============================================================
+   ROOT
+   ============================================================= */
+
+.citizen-dashboard {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(124, 25, 255, 0.06),
+      transparent 30%
+    ),
+    #f4f6ff;
+}
+
+
+/* =============================================================
+   TOP BAR
+   ============================================================= */
+
+.citizen-topbar {
+  position: fixed !important;
+  inset: 0 0 auto 0 !important;
+
+  width: 100% !important;
+  height: var(--citizen-topbar-height) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 0 24px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #25005b 0%,
+      #390083 50%,
+      #26005e 100%
+    ) !important;
+
+  color: white !important;
+
+  z-index: 1000 !important;
+
+  box-shadow:
+    0 8px 25px rgba(39, 0, 92, 0.28),
+    0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* =============================================================
+   BRAND
+   ============================================================= */
+
+.citizen-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 11px !important;
+  min-width: 0 !important;
+}
+
+.citizen-emblem {
+  width: 42px !important;
+  height: 42px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  border-radius: 14px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.25),
+      rgba(255,255,255,.06)
+    ) !important;
+
+  border: 1px solid rgba(255,255,255,.25) !important;
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,.25),
+    0 6px 15px rgba(0,0,0,.18) !important;
+}
+
+.citizen-brand-copy > div {
+  display: flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+}
+
+.citizen-brand-copy strong {
+  font-size: 20px !important;
+  letter-spacing: -.4px !important;
+}
+
+.citizen-brand-copy .portal-name {
+  font-size: 19px !important;
+}
+
+.citizen-brand-copy .brand-divider {
+  opacity: .55 !important;
+}
+
+.citizen-brand-copy small {
+  display: block !important;
+  margin-top: 1px !important;
+  font-size: 9px !important;
+  opacity: .72 !important;
+}
+
+
+/* =============================================================
+   TOP ACTIONS
+   ============================================================= */
+
+.citizen-topbar-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.citizen-icon-button,
+.citizen-language-button,
+.citizen-user-menu,
+.citizen-desktop-menu,
+.citizen-mobile-menu {
+  border: 1px solid rgba(255,255,255,.16) !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.13),
+      rgba(255,255,255,.045)
+    ) !important;
+
+  color: white !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    0 4px 12px rgba(0,0,0,.12) !important;
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    box-shadow .2s ease !important;
+}
+
+.citizen-icon-button:hover,
+.citizen-language-button:hover,
+.citizen-user-menu:hover,
+.citizen-desktop-menu:hover,
+.citizen-mobile-menu:hover {
+  transform: translateY(-1px) !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.21),
+      rgba(255,255,255,.08)
+    ) !important;
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.18) !important;
+}
+
+.citizen-icon-button {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 12px !important;
+}
+
+.citizen-language-button {
+  height: 40px !important;
+  padding: 0 13px !important;
+  border-radius: 12px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+}
+
+.citizen-user-menu {
+  min-height: 40px !important;
+  padding: 4px 10px 4px 5px !important;
+
+  border-radius: 13px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  text-align: left !important;
+}
+
+.citizen-avatar {
+  width: 31px !important;
+  height: 31px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  border-radius: 50% !important;
+
+  background: #eee9ff !important;
+  color: #4d0cb4 !important;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.9),
+    0 3px 8px rgba(0,0,0,.2) !important;
+}
+
+.citizen-user-copy strong,
+.citizen-user-copy small {
+  display: block !important;
+}
+
+.citizen-user-copy strong {
+  font-size: 11px !important;
+}
+
+.citizen-user-copy small {
+  font-size: 8px !important;
+  opacity: .65 !important;
+}
+
+.citizen-desktop-menu {
+  width: 40px !important;
+  height: 40px !important;
+
+  border-radius: 12px !important;
+
+  display: grid !important;
+  place-items: center !important;
+}
+
+.citizen-mobile-menu {
+  display: none !important;
+}
+
+
+/* =============================================================
+   SIDEBAR
+   ============================================================= */
+
+.citizen-sidebar {
+  position: fixed !important;
+
+  left: 0 !important;
+  top: var(--citizen-topbar-height) !important;
+  bottom: 0 !important;
+
+  width: var(--citizen-sidebar-width) !important;
+  max-width: var(--citizen-sidebar-width) !important;
+  min-width: var(--citizen-sidebar-width) !important;
+
+  padding: 12px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #25005d 0%,
+      #300071 48%,
+      #24005a 100%
+    ) !important;
+
+  color: white !important;
+
+  border-right: 1px solid rgba(255,255,255,.08) !important;
+
+  z-index: 900 !important;
+
+  overflow: hidden !important;
+
+  transition:
+    width .28s cubic-bezier(.22,1,.36,1),
+    max-width .28s cubic-bezier(.22,1,.36,1),
+    min-width .28s cubic-bezier(.22,1,.36,1),
+    transform .28s ease !important;
+
+  box-shadow:
+    12px 0 30px rgba(36,0,90,.18),
+    inset -1px 0 0 rgba(255,255,255,.05) !important;
+}
+
+
+/* =============================================================
+   COLLAPSED DESKTOP SIDEBAR
+   ============================================================= */
+
+.citizen-sidebar-collapsed .citizen-sidebar {
+  width: var(--citizen-sidebar-collapsed-width) !important;
+  max-width: var(--citizen-sidebar-collapsed-width) !important;
+  min-width: var(--citizen-sidebar-collapsed-width) !important;
+}
+
+.citizen-sidebar-collapsed .citizen-sidebar-section-title,
+.citizen-sidebar-collapsed .citizen-nav-label,
+.citizen-sidebar-collapsed .citizen-sidebar-footer {
+  opacity: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+}
+
+
+/* =============================================================
+   SIDEBAR INNER
+   ============================================================= */
+
+.citizen-sidebar-inner {
+  height: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-width: 0 !important;
+}
+
+.citizen-sidebar-section-title {
+  height: 30px !important;
+
+  padding: 8px 10px 4px !important;
+
+  font-size: 8px !important;
+  font-weight: 800 !important;
+
+  letter-spacing: 1.5px !important;
+
+  color: rgba(255,255,255,.42) !important;
+
+  transition: opacity .2s ease !important;
+}
+
+.citizen-sidebar-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+
+  width: 100% !important;
+}
+
+
+/* =============================================================
+   NAV ITEM — 3D
+   ============================================================= */
+
+.citizen-nav-item {
+  position: relative !important;
+
+  width: 100% !important;
+  min-height: 46px !important;
+
+  padding: 0 11px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  gap: 11px !important;
+
+  border: 1px solid transparent !important;
+  border-radius: 13px !important;
+
+  background: transparent !important;
+
+  color: rgba(255,255,255,.76) !important;
+
+  cursor: pointer !important;
+
+  text-align: left !important;
+
+  transition:
+    transform .18s ease,
+    background .2s ease,
+    color .2s ease,
+    box-shadow .2s ease,
+    border-color .2s ease !important;
+}
+
+.citizen-nav-item::before {
+  content: "" !important;
+
+  position: absolute !important;
+  left: 0 !important;
+  top: 8px !important;
+  bottom: 8px !important;
+
+  width: 3px !important;
+
+  border-radius: 0 5px 5px 0 !important;
+
+  background: transparent !important;
+
+  transition: background .2s ease !important;
+}
+
+.citizen-nav-item:hover {
+  transform: translateX(3px) translateY(-1px) !important;
+
+  color: white !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.15),
+      rgba(255,255,255,.045)
+    ) !important;
+
+  border-color: rgba(255,255,255,.09) !important;
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.1) !important;
+}
+
+.citizen-nav-item.active {
+  transform: translateX(3px) !important;
+
+  color: white !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(142,73,255,.55),
+      rgba(86,0,170,.48)
+    ) !important;
+
+  border-color: rgba(191,150,255,.2) !important;
+
+  box-shadow:
+    0 9px 20px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.16),
+    inset 0 -1px 0 rgba(0,0,0,.12) !important;
+}
+
+.citizen-nav-item.active::before {
+  background: #d9c2ff !important;
+  box-shadow: 0 0 12px rgba(216,194,255,.9) !important;
+}
+
+.citizen-nav-icon {
+  flex: 0 0 34px !important;
+
+  width: 34px !important;
+  height: 34px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  border-radius: 10px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.13),
+      rgba(255,255,255,.035)
+    ) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    0 4px 8px rgba(0,0,0,.12) !important;
+}
+
+.citizen-nav-item.active .citizen-nav-icon {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.26),
+      rgba(255,255,255,.09)
+    ) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.2),
+    0 5px 12px rgba(0,0,0,.18) !important;
+}
+
+.citizen-nav-label {
+  white-space: nowrap !important;
+
+  font-size: 13px !important;
+  font-weight: 500 !important;
+
+  transition:
+    opacity .18s ease,
+    width .18s ease !important;
+}
+
+
+/* =============================================================
+   SIDEBAR FOOTER
+   ============================================================= */
+
+.citizen-sidebar-footer {
+  margin-top: auto !important;
+
+  padding-top: 10px !important;
+
+  border-top: 1px solid rgba(255,255,255,.09) !important;
+
+  transition:
+    opacity .18s ease,
+    width .18s ease !important;
+}
+
+.citizen-logout {
+  color: rgba(255,220,220,.82) !important;
+}
+
+.citizen-logout:hover {
+  color: white !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,75,95,.2),
+      rgba(255,75,95,.06)
+    ) !important;
+}
+
+
+/* =============================================================
+   PAGE CONTENT
+   ============================================================= */
+
+.citizen-content {
+  position: relative !important;
+
+  min-height: calc(100vh - var(--citizen-topbar-height)) !important;
+
+  width: calc(
+    100% - var(--citizen-sidebar-width)
+  ) !important;
+
+  margin-left: var(--citizen-sidebar-width) !important;
+
+  margin-top: var(--citizen-topbar-height) !important;
+
+  padding: 0 !important;
+
+  box-sizing: border-box !important;
+
+  transition:
+    width .28s cubic-bezier(.22,1,.36,1),
+    margin-left .28s cubic-bezier(.22,1,.36,1) !important;
+
+  overflow-x: hidden !important;
+}
+
+
+/* collapsed content */
+
+.citizen-sidebar-collapsed .citizen-content {
+  width: calc(
+    100% - var(--citizen-sidebar-collapsed-width)
+  ) !important;
+
+  margin-left: var(--citizen-sidebar-collapsed-width) !important;
+}
+
+
+/* =============================================================
+   IMPORTANT:
+   CHILD PAGE MUST NOT CREATE ANOTHER LAYOUT OFFSET
+   ============================================================= */
+
+.citizen-content > .citizen-main {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.citizen-content > .page {
+  width: 100% !important;
+  max-width: none !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =============================================================
+   REMOVE HORIZONTAL OVERFLOW FROM CHILD PAGES
+   ============================================================= */
+
+.citizen-content *,
+.citizen-content {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.citizen-content table {
+  max-width: 100% !important;
+}
+
+
+/* =============================================================
+   MOBILE SIDEBAR HEADER
+   ============================================================= */
+
+.citizen-sidebar-mobile-head {
+  display: none !important;
+}
+
+
+/* =============================================================
+   MOBILE
+   ============================================================= */
+
+@media (max-width: 900px) {
+  .citizen-topbar {
+    padding: 0 12px !important;
+  }
+
+  .citizen-brand-copy .portal-name,
+  .citizen-brand-copy .brand-divider {
+    display: none !important;
+  }
+
+  .citizen-brand-copy strong {
+    font-size: 18px !important;
+  }
+
+  .citizen-user-copy,
+  .citizen-desktop-menu {
+    display: none !important;
+  }
+
+  .citizen-mobile-menu {
+    width: 40px !important;
+    height: 40px !important;
+
+    display: grid !important;
+    place-items: center !important;
+
+    border-radius: 12px !important;
+  }
+
+  .citizen-sidebar,
+  .citizen-sidebar-collapsed .citizen-sidebar {
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+
+    width: 260px !important;
+    max-width: 260px !important;
+    min-width: 260px !important;
+
+    transform: translateX(-105%) !important;
+
+    border-radius: 0 22px 22px 0 !important;
+
+    z-index: 1200 !important;
+  }
+
+  .citizen-sidebar.is-open {
+    transform: translateX(0) !important;
+
+    box-shadow:
+      18px 0 45px rgba(22,0,65,.32),
+      inset -1px 0 0 rgba(255,255,255,.06) !important;
+  }
+
+  .citizen-sidebar-mobile-head {
+    height: 64px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    padding: 0 7px 0 12px !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.1) !important;
+  }
+
+  .citizen-mobile-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .citizen-sidebar-section-title {
+    opacity: 1 !important;
+    width: auto !important;
+  }
+
+  .citizen-sidebar-footer {
+    opacity: 1 !important;
+    width: auto !important;
+  }
+
+  .citizen-nav-label {
+    opacity: 1 !important;
+    width: auto !important;
+  }
+
+  .citizen-content,
+  .citizen-sidebar-collapsed .citizen-content {
+    width: 100% !important;
+    margin-left: 0 !important;
+
+    margin-top: var(--citizen-topbar-height) !important;
+  }
+
+  .citizen-sidebar-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+
+    display: block !important;
+
+    background: rgba(18,0,45,.45) !important;
+
+    backdrop-filter: blur(3px) !important;
+
+    border: 0 !important;
+
+    z-index: 1100 !important;
+  }
+}
+
+
+/* =============================================================
+   SMALL MOBILE
+   ============================================================= */
+
+@media (max-width: 560px) {
+  .citizen-topbar {
+    height: 58px !important;
+  }
+
+  .citizen-content {
+    margin-top: 58px !important;
+  }
+
+  .citizen-brand-copy small {
+    display: none !important;
+  }
+
+  .citizen-emblem {
+    width: 37px !important;
+    height: 37px !important;
+  }
+
+  .citizen-language-button span {
+    display: none !important;
+  }
+
+  .citizen-user-menu {
+    display: none !important;
+  }
+}
+
+
+/* =============================================================
+   DESKTOP — HIDE MOBILE OVERLAY
+   ============================================================= */
+
+@media (min-width: 901px) {
+  .citizen-sidebar-overlay {
+    display: none !important;
+  }
+}
+
+
+/* =============================================================
+   UP_AI CITIZEN PORTAL
+   FINAL 3D COLLAPSIBLE SIDEBAR + ALIGNMENT FIX
+   ============================================================= */
+
+:root {
+  --citizen-topbar-height: 64px;
+  --citizen-sidebar-collapsed-width: 72px;
+  --citizen-sidebar-expanded-width: 222px;
+}
+
+
+/* =============================================================
+   ROOT
+   ============================================================= */
+
+.citizen-dashboard {
+  min-height: 100vh !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+}
+
+
+/* =============================================================
+   TOP BAR
+   ============================================================= */
+
+.citizen-topbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+
+  width: 100% !important;
+  height: var(--citizen-topbar-height) !important;
+
+  z-index: 1000 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =============================================================
+   SIDEBAR — COLLAPSED
+   ============================================================= */
+
+@media (min-width: 901px) {
+
+  .citizen-sidebar {
+    position: fixed !important;
+
+    top: var(--citizen-topbar-height) !important;
+    left: 0 !important;
+    bottom: 0 !important;
+
+    width: var(--citizen-sidebar-collapsed-width) !important;
+    min-width: var(--citizen-sidebar-collapsed-width) !important;
+    max-width: var(--citizen-sidebar-collapsed-width) !important;
+
+    height: calc(100vh - var(--citizen-topbar-height)) !important;
+
+    z-index: 900 !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+      width 260ms cubic-bezier(.22, 1, .36, 1),
+      box-shadow 260ms ease,
+      border-radius 260ms ease !important;
+
+    border-radius: 0 22px 22px 0 !important;
+
+    box-shadow:
+      8px 0 25px rgba(40, 0, 90, .16),
+      inset -1px 0 0 rgba(255,255,255,.08) !important;
+  }
+
+
+  /* =========================================================
+     HOVER → EXPAND
+     ========================================================= */
+
+  .citizen-sidebar:hover {
+    width: var(--citizen-sidebar-expanded-width) !important;
+    min-width: var(--citizen-sidebar-expanded-width) !important;
+    max-width: var(--citizen-sidebar-expanded-width) !important;
+
+    box-shadow:
+      18px 0 45px rgba(35, 0, 90, .30),
+      0 12px 35px rgba(100, 0, 180, .15),
+      inset -1px 0 0 rgba(255,255,255,.10) !important;
+  }
+
+
+  /* =========================================================
+     NAV CONTAINER
+     ========================================================= */
+
+  .citizen-sidebar-nav {
+    width: 100% !important;
+
+    padding:
+      14px 10px
+      18px 10px !important;
+
+    box-sizing: border-box !important;
+
+    overflow: visible !important;
+  }
+
+
+  /* =========================================================
+     NAV ITEM
+     ========================================================= */
+
+  .citizen-nav-item {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 46px !important;
+
+    margin: 5px 0 !important;
+
+    padding: 0 11px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 14px !important;
+
+    border: 1px solid transparent !important;
+    border-radius: 14px !important;
+
+    box-sizing: border-box !important;
+
+    overflow: visible !important;
+
+    transition:
+      background .2s ease,
+      transform .2s ease,
+      box-shadow .2s ease,
+      border-color .2s ease !important;
+  }
+
+
+  /* =========================================================
+     ICON
+     ========================================================= */
+
+  .citizen-nav-item > svg,
+  .citizen-nav-item > span:first-child {
+    flex: 0 0 30px !important;
+
+    width: 30px !important;
+    min-width: 30px !important;
+
+    height: 30px !important;
+
+    display: grid !important;
+    place-items: center !important;
+
+    border-radius: 10px !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+      transform .2s ease,
+      background .2s ease,
+      box-shadow .2s ease !important;
+  }
+
+
+  /* =========================================================
+     TEXT — HIDDEN IN COLLAPSED STATE
+     ========================================================= */
+
+  .citizen-nav-label {
+    display: block !important;
+
+    opacity: 0 !important;
+
+    width: 0 !important;
+    max-width: 0 !important;
+
+    overflow: hidden !important;
+
+    white-space: nowrap !important;
+
+    transform: translateX(-8px) !important;
+
+    transition:
+      opacity 160ms ease,
+      width 260ms cubic-bezier(.22,1,.36,1),
+      max-width 260ms cubic-bezier(.22,1,.36,1),
+      transform 220ms ease !important;
+  }
+
+
+  /* =========================================================
+     TEXT — SHOW WHEN SIDEBAR EXPANDS
+     ========================================================= */
+
+  .citizen-sidebar:hover .citizen-nav-label {
+    opacity: 1 !important;
+
+    width: auto !important;
+    max-width: 150px !important;
+
+    transform: translateX(0) !important;
+  }
+
+
+  /* =========================================================
+     ACTIVE ITEM
+     ========================================================= */
+
+  .citizen-nav-item.active,
+  .citizen-nav-item[aria-current="page"] {
+    background:
+      linear-gradient(
+        135deg,
+        rgba(137, 43, 255, .95),
+        rgba(82, 0, 190, .92)
+      ) !important;
+
+    border-color:
+      rgba(255,255,255,.18) !important;
+
+    box-shadow:
+      0 8px 20px rgba(98, 0, 220, .30),
+      inset 0 1px 0 rgba(255,255,255,.20),
+      inset 0 -1px 0 rgba(0,0,0,.10) !important;
+
+    transform: translateX(2px) !important;
+  }
+
+
+  /* =========================================================
+     HOVER ITEM
+     ========================================================= */
+
+  .citizen-nav-item:hover {
+    background:
+      linear-gradient(
+        135deg,
+        rgba(255,255,255,.13),
+        rgba(255,255,255,.05)
+      ) !important;
+
+    border-color:
+      rgba(255,255,255,.10) !important;
+
+    transform:
+      translateX(3px)
+      translateY(-1px) !important;
+
+    box-shadow:
+      0 8px 18px rgba(20,0,60,.18),
+      inset 0 1px 0 rgba(255,255,255,.08) !important;
+  }
+
+
+  .citizen-nav-item:hover > svg,
+  .citizen-nav-item:hover > span:first-child {
+    transform: scale(1.06) translateZ(0) !important;
+
+    box-shadow:
+      0 5px 12px rgba(0,0,0,.16) !important;
+  }
+
+
+  /* =========================================================
+     COLLAPSED TOOLTIP
+     ========================================================= */
+
+  .citizen-sidebar:not(:hover) .citizen-nav-item::after {
+    content: attr(data-label);
+
+    position: absolute;
+
+    left: calc(100% + 12px);
+    top: 50%;
+
+    transform:
+      translateY(-50%)
+      translateX(-6px)
+      scale(.96);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    white-space: nowrap;
+
+    padding: 9px 13px;
+
+    border-radius: 10px;
+
+    color: #fff;
+
+    background:
+      linear-gradient(
+        135deg,
+        rgba(43,0,91,.97),
+        rgba(112,0,220,.97)
+      );
+
+    border:
+      1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+      0 12px 30px rgba(38,0,90,.30),
+      inset 0 1px 0 rgba(255,255,255,.16);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    z-index: 2000;
+
+    transition:
+      opacity 150ms ease,
+      transform 150ms ease;
+  }
+
+
+  .citizen-sidebar:not(:hover) .citizen-nav-item:hover::after {
+    opacity: 1;
+
+    transform:
+      translateY(-50%)
+      translateX(0)
+      scale(1);
+  }
+
+
+  /* =========================================================
+     CONTENT ALIGNMENT
+     ========================================================= */
+
+  .citizen-content {
+    width: calc(
+      100% - var(--citizen-sidebar-collapsed-width)
+    ) !important;
+
+    max-width: calc(
+      100% - var(--citizen-sidebar-collapsed-width)
+    ) !important;
+
+    margin-left:
+      var(--citizen-sidebar-collapsed-width) !important;
+
+    margin-top:
+      var(--citizen-topbar-height) !important;
+
+    box-sizing: border-box !important;
+
+    overflow-x: hidden !important;
+
+    transition:
+      margin-left 260ms cubic-bezier(.22,1,.36,1),
+      width 260ms cubic-bezier(.22,1,.36,1) !important;
+  }
+
+
+  /* IMPORTANT:
+     Sidebar expands OVER content.
+     Content does NOT move.
+  */
+
+  .citizen-sidebar:hover ~ .citizen-content {
+    margin-left:
+      var(--citizen-sidebar-collapsed-width) !important;
+
+    width: calc(
+      100% - var(--citizen-sidebar-collapsed-width)
+    ) !important;
+  }
+
+
+  /* =========================================================
+     SIDEBAR FOOTER
+     ========================================================= */
+
+  .citizen-sidebar-footer {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    overflow: visible !important;
+  }
+
+
+  .citizen-sidebar-footer .citizen-nav-item {
+    margin-top: 8px !important;
+  }
+
+
+  /* =========================================================
+     SECTION TITLE
+     ========================================================= */
+
+  .citizen-sidebar-section-title {
+    overflow: hidden !important;
+
+    white-space: nowrap !important;
+
+    opacity: 0 !important;
+
+    height: 0 !important;
+
+    margin: 0 !important;
+
+    transition:
+      opacity 180ms ease,
+      height 220ms ease !important;
+  }
+
+
+  .citizen-sidebar:hover .citizen-sidebar-section-title {
+    opacity: .65 !important;
+
+    height: auto !important;
+
+    margin:
+      8px 10px
+      6px !important;
+  }
+}
+
+
+/* =============================================================
+   PAGE WIDTH SAFETY
+   ============================================================= */
+
+.citizen-content,
+.citizen-content > *,
+.citizen-content .page,
+.citizen-content main {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+
+/* =============================================================
+   REMOVE ACCIDENTAL HORIZONTAL SCROLL
+   ============================================================= */
+
+html,
+body,
+#root {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+
+/* =============================================================
+   DESKTOP — KEEP TOPBAR ABOVE EVERYTHING
+   ============================================================= */
+
+@media (min-width: 901px) {
+  .citizen-topbar {
+    z-index: 1500 !important;
+  }
+
+  .citizen-sidebar {
+    z-index: 1400 !important;
+  }
+
+  .citizen-content {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+}
+
+
+/* =============================================================
+   MOBILE — RESTORE DRAWER BEHAVIOUR
+   ============================================================= */
+
+@media (max-width: 900px) {
+
+  .citizen-sidebar {
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+
+    transform: translateX(-105%) !important;
+
+    top: 0 !important;
+
+    z-index: 2000 !important;
+  }
+
+  .citizen-sidebar.is-open {
+    transform: translateX(0) !important;
+  }
+
+  .citizen-nav-label {
+    opacity: 1 !important;
+
+    width: auto !important;
+    max-width: none !important;
+
+    transform: none !important;
+  }
+
+  .citizen-sidebar-section-title {
+    opacity: 1 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .citizen-content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: 0 !important;
+
+    margin-top: var(--citizen-topbar-height) !important;
+  }
+
+  .citizen-sidebar:not(:hover) .citizen-nav-item::after {
+    display: none !important;
+  }
+}
+
+
+/* =============================================================
+   3D PAGE CARDS
+   ============================================================= */
+
+.citizen-content .card,
+.citizen-content .form-card,
+.citizen-content .complaint-card,
+.citizen-content .stat-card {
+  box-shadow:
+    0 10px 30px rgba(55, 0, 120, .08),
+    inset 0 1px 0 rgba(255,255,255,.75) !important;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease !important;
+}
+
+.citizen-content .card:hover,
+.citizen-content .complaint-card:hover,
+.citizen-content .stat-card:hover {
+  transform: translateY(-2px) !important;
+
+  box-shadow:
+    0 16px 38px rgba(55, 0, 120, .13),
+    inset 0 1px 0 rgba(255,255,255,.85) !important;
+}
+
+
+
+/* =============================================================
+   FINAL SIDEBAR BEHAVIOUR
+   Sidebar expands -> page content compresses
+   ============================================================= */
+
+@media (min-width: 901px) {
+
+  /* ---------------------------------------------------------
+     SIDEBAR
+     --------------------------------------------------------- */
+
+  .citizen-sidebar {
+    width: 72px !important;
+    min-width: 72px !important;
+    max-width: 72px !important;
+
+    transition:
+      width 280ms cubic-bezier(.22, 1, .36, 1),
+      box-shadow 280ms ease !important;
+  }
+
+  .citizen-sidebar:hover {
+    width: 222px !important;
+    min-width: 222px !important;
+    max-width: 222px !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     MAIN PAGE — COLLAPSED SIDEBAR
+     --------------------------------------------------------- */
+
+  .citizen-content {
+    width: calc(100% - 72px) !important;
+    max-width: calc(100% - 72px) !important;
+
+    margin-left: 72px !important;
+
+    transition:
+      width 280ms cubic-bezier(.22, 1, .36, 1),
+      max-width 280ms cubic-bezier(.22, 1, .36, 1),
+      margin-left 280ms cubic-bezier(.22, 1, .36, 1) !important;
+
+    box-sizing: border-box !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     MAIN PAGE — EXPANDED SIDEBAR
+     --------------------------------------------------------- */
+
+  .citizen-sidebar:hover ~ .citizen-content {
+    width: calc(100% - 222px) !important;
+    max-width: calc(100% - 222px) !important;
+
+    margin-left: 222px !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     IMPORTANT:
+     Prevent children from keeping old oversized width
+     --------------------------------------------------------- */
+
+  .citizen-content > * {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+
+  .citizen-content table,
+  .citizen-content .complaints-table,
+  .citizen-content .dashboard-grid,
+  .citizen-content .page-grid {
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     RIGHT SIDE PANELS
+     --------------------------------------------------------- */
+
+  .citizen-content [class*="right"],
+  .citizen-content [class*="Right"],
+  .citizen-content [class*="sidebar"] {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     NO HORIZONTAL OVERFLOW
+     --------------------------------------------------------- */
+
+  .citizen-dashboard,
+  .citizen-content {
+    overflow-x: hidden !important;
+  }
+}
+
+
+/* =============================================================
+   REMOVE TOP-RIGHT SIDEBAR TOGGLE
+   ============================================================= */
+
+@media (min-width: 901px) {
+
+  .citizen-mobile-menu {
+    display: none !important;
+  }
+
+}
+
+
+/* =============================================================
+   LANGUAGE FONT SYSTEM
+   ============================================================= */
+
+/* English */
+.citizen-language-english {
+  font-family:
+    Inter,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif !important;
+}
+
+
+/* Hindi / Devanagari */
+.citizen-language-hindi {
+  font-family:
+    "Noto Sans Devanagari",
+    "Nirmala UI",
+    "Mangal",
+    "Segoe UI",
+    sans-serif !important;
+}
+
+
+/* Hindi typography refinement */
+.citizen-language-hindi
+  .citizen-content {
+  letter-spacing: 0 !important;
+}
+
+
+/* Hindi headings */
+.citizen-language-hindi
+  h1,
+.citizen-language-hindi
+  h2,
+.citizen-language-hindi
+  h3,
+.citizen-language-hindi
+  h4,
+.citizen-language-hindi
+  h5,
+.citizen-language-hindi
+  h6 {
+  letter-spacing: 0 !important;
+  line-height: 1.45 !important;
+}
+
+
+/* Hindi navigation */
+.citizen-language-hindi
+  .citizen-nav-label,
+.citizen-language-hindi
+  .citizen-sidebar,
+.citizen-language-hindi
+  .citizen-topbar {
+  letter-spacing: 0 !important;
+}
+
+
+/* Hindi buttons */
+.citizen-language-hindi
+  button {
+  letter-spacing: 0 !important;
+}
+
+
+/* Hindi small text */
+.citizen-language-hindi
+  small,
+.citizen-language-hindi
+  .citizen-sidebar-section-title {
+  line-height: 1.5 !important;
+}

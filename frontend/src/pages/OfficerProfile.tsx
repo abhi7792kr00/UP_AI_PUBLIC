@@ -1,0 +1,16 @@
+import { useParams, Link } from "react-router-dom";
+import { ArrowLeft, CalendarDays, CheckCircle2, Clock3, MapPin, Star, UserRound } from "lucide-react";
+import { officers } from "../data/mock";
+import { Badge, Card, PageHeader, StatCard } from "../components/ui";
+
+export function OfficerProfile() {
+  const { id } = useParams();
+  const officer = officers.find(o => o.id === id) ?? officers[0];
+  return <div className="container page">
+    <Link className="back-link" to="/officers"><ArrowLeft size={16}/> Officer directory</Link>
+    <div className="profile-hero"><div className="profile-avatar">{officer.name.split(" ").map(x=>x[0]).join("")}</div><div className="profile-main"><div className="eyebrow">PUBLIC OFFICER PROFILE</div><h1>{officer.name}</h1><p>{officer.designation} · {officer.department}</p><div className="profile-tags"><span><MapPin size={15}/>{officer.office}, {officer.district}</span><span><CalendarDays size={15}/> Joined {officer.joined}</span><span><Star size={15}/> {officer.rating}/5 citizen rating</span></div></div></div>
+    <div className="stats-grid four"><StatCard label="Complaints received" value={officer.complaints} /><StatCard label="Resolved" value={officer.resolved} trend="Current service record" /><StatCard label="SLA compliance" value={`${officer.sla}%`} /><StatCard label="Citizen rating" value={`${officer.rating}/5`} /></div>
+    <div className="profile-grid"><Card><div className="card-heading"><div><h3>Service information</h3><p>Publicly publishable information can be supplied by the backend profile API.</p></div></div><div className="info-list"><div><UserRound/><span>Designation<strong>{officer.designation}</strong></span></div><div><MapPin/><span>Current posting<strong>{officer.office}</strong></span></div><div><CalendarDays/><span>Joining date<strong>{officer.joined}</strong></span></div><div><Clock3/><span>Department<strong>{officer.department}</strong></span></div></div></Card><Card><div className="card-heading"><div><h3>Citizen feedback</h3><p>Aggregated feedback and service metrics.</p></div></div><div className="rating-big"><Star size={28}/><strong>{officer.rating}</strong><span>/ 5</span></div><div className="feedback-bars"><div><span>★★★★★</span><div><i style={{width:"78%"}}/></div><b>78%</b></div><div><span>★★★★</span><div><i style={{width:"15%"}}/></div><b>15%</b></div><div><span>★★★</span><div><i style={{width:"5%"}}/></div><b>5%</b></div></div></Card></div>
+    <Card><div className="card-heading"><div><h3>Performance signals</h3><p>Final scoring rules will be calculated by the backend from verified service data.</p></div><Badge tone="success"><CheckCircle2 size={14}/> Good standing</Badge></div><div className="performance-row"><span>Resolution rate</span><div className="progress"><div style={{width:`${Math.round(officer.resolved/officer.complaints*100)}%`}}/></div><strong>{Math.round(officer.resolved/officer.complaints*100)}%</strong></div><div className="performance-row"><span>SLA compliance</span><div className="progress"><div style={{width:`${officer.sla}%`}}/></div><strong>{officer.sla}%</strong></div></Card>
+  </div>;
+}

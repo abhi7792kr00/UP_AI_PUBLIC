@@ -1,0 +1,76 @@
+district_code,district_name,division_code,division_name
+118,Agra,AGRA,Agra
+119,Aligarh,ALIGARH,Aligarh
+120,Prayagraj,PRAYAGRAJ,Prayagraj
+121,Ambedkar Nagar,AYODHYA,Ayodhya
+122,Auraiya,KANPUR,Kanpur
+123,Azamgarh,AZAMGARH,Azamgarh
+124,Baghpat,MEERUT,Meerut
+125,Bahraich,DEVIPATAN,Devipatan
+126,Ballia,AZAMGARH,Azamgarh
+127,Balrampur,DEVIPATAN,Devipatan
+128,Banda,CHITRAKOOT,Chitrakoot
+129,Bara Banki,AYODHYA,Ayodhya
+130,Bareilly,BAREILLY,Bareilly
+131,Basti,BASTI,Basti
+132,Bijnor,MORADABAD,Moradabad
+133,Budaun,BAREILLY,Bareilly
+134,Bulandshahr,MEERUT,Meerut
+135,Chandauli,VARANASI,Varanasi
+136,Chitrakoot,CHITRAKOOT,Chitrakoot
+137,Deoria,GORAKHPUR,Gorakhpur
+138,Etah,ALIGARH,Aligarh
+139,Etawah,KANPUR,Kanpur
+140,Ayodhya,AYODHYA,Ayodhya
+141,Farrukhabad,KANPUR,Kanpur
+142,Fatehpur,PRAYAGRAJ,Prayagraj
+143,Firozabad,AGRA,Agra
+144,Gautam Buddha Nagar,MEERUT,Meerut
+145,Ghaziabad,MEERUT,Meerut
+146,Ghazipur,VARANASI,Varanasi
+147,Gonda,DEVIPATAN,Devipatan
+148,Gorakhpur,GORAKHPUR,Gorakhpur
+149,Hamirpur,CHITRAKOOT,Chitrakoot
+150,Hardoi,LUCKNOW,Lucknow
+151,Jalaun,JHANSI,Jhansi
+152,Jaunpur,VARANASI,Varanasi
+153,Jhansi,JHANSI,Jhansi
+154,Amroha,MORADABAD,Moradabad
+155,Kannauj,KANPUR,Kanpur
+156,Kanpur Dehat,KANPUR,Kanpur
+157,Kanpur Nagar,KANPUR,Kanpur
+158,Kaushambi,PRAYAGRAJ,Prayagraj
+159,Kheri,LUCKNOW,Lucknow
+160,Kushinagar,GORAKHPUR,Gorakhpur
+161,Lalitpur,JHANSI,Jhansi
+162,Lucknow,LUCKNOW,Lucknow
+163,Hathras,ALIGARH,Aligarh
+164,Mahrajganj,GORAKHPUR,Gorakhpur
+165,Mahoba,CHITRAKOOT,Chitrakoot
+166,Mainpuri,AGRA,Agra
+167,Mathura,AGRA,Agra
+168,Mau,AZAMGARH,Azamgarh
+169,Meerut,MEERUT,Meerut
+170,Mirzapur,MIRZAPUR,Mirzapur
+171,Moradabad,MORADABAD,Moradabad
+172,Muzaffarnagar,SAHARANPUR,Saharanpur
+173,Pilibhit,BAREILLY,Bareilly
+174,Pratapgarh,PRAYAGRAJ,Prayagraj
+175,Rae Bareli,LUCKNOW,Lucknow
+176,Rampur,MORADABAD,Moradabad
+177,Saharanpur,SAHARANPUR,Saharanpur
+178,Sant Kabir Nagar,BASTI,Basti
+179,Bhadohi,MIRZAPUR,Mirzapur
+180,Shahjahanpur,BAREILLY,Bareilly
+181,Shrawasti,DEVIPATAN,Devipatan
+182,Siddharthnagar,BASTI,Basti
+183,Sitapur,LUCKNOW,Lucknow
+184,Sonbhadra,MIRZAPUR,Mirzapur
+185,Sultanpur,AYODHYA,Ayodhya
+186,Unnao,LUCKNOW,Lucknow
+187,Varanasi,VARANASI,Varanasi
+633,Kasganj,ALIGARH,Aligarh
+640,Amethi,AYODHYA,Ayodhya
+659,Sambhal,MORADABAD,Moradabad
+660,Shamli,SAHARANPUR,Saharanpur
+661,Hapur,MEERUT,Meerut

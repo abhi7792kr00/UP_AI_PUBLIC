@@ -1,0 +1,2147 @@
+/* ============================================================
+   UP_AI — CITIZEN AUTHENTICATION
+   Premium 3D Government Digital Experience
+   ============================================================ */
+
+.citizen-auth-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 72% 35%,
+      rgba(124, 58, 237, 0.35),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #09031c 0%,
+      #160637 48%,
+      #26045d 100%
+    );
+}
+
+
+/* ============================================================
+   BACKGROUND
+   ============================================================ */
+
+.citizen-auth-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.citizen-auth-image {
+  position: absolute;
+
+  left: -4%;
+  bottom: -7%;
+
+  width: 66%;
+  height: 92%;
+
+  background-image:
+    url("/images/citizen-auth-building.png");
+
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.86;
+
+  transform:
+    perspective(1400px)
+    rotateY(5deg)
+    scale(1.04);
+
+  filter:
+    saturate(0.88)
+    contrast(1.04);
+}
+
+.citizen-auth-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 2, 24, 0.08) 0%,
+      rgba(10, 2, 28, 0.20) 38%,
+      rgba(12, 2, 35, 0.72) 63%,
+      #12032d 82%,
+      #12032d 100%
+    );
+}
+
+
+/* ============================================================
+   3D ORBS
+   ============================================================ */
+
+.citizen-auth-orb {
+  position: absolute;
+
+  border-radius: 999px;
+
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      rgba(255,255,255,.9),
+      rgba(190,120,255,.5) 12%,
+      rgba(113,35,214,.28) 40%,
+      transparent 72%
+    );
+
+  filter: blur(1px);
+
+  box-shadow:
+    0 0 60px rgba(168,85,247,.35),
+    inset -15px -18px 30px rgba(0,0,0,.18);
+
+  animation:
+    citizen-auth-float 7s ease-in-out infinite;
+}
+
+.citizen-auth-orb-one {
+  width: 170px;
+  height: 170px;
+
+  top: 13%;
+  left: 48%;
+
+  opacity: .30;
+}
+
+.citizen-auth-orb-two {
+  width: 90px;
+  height: 90px;
+
+  top: 63%;
+  left: 55%;
+
+  opacity: .45;
+
+  animation-delay: -2s;
+}
+
+.citizen-auth-orb-three {
+  width: 45px;
+  height: 45px;
+
+  top: 22%;
+  left: 64%;
+
+  opacity: .65;
+
+  animation-delay: -4s;
+}
+
+@keyframes citizen-auth-float {
+  0%,
+  100% {
+    transform: translate3d(0,0,0);
+  }
+
+  50% {
+    transform: translate3d(0,-18px,20px);
+  }
+}
+
+
+/* ============================================================
+   DIGITAL GRID
+   ============================================================ */
+
+.citizen-auth-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: .08;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.4) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.4) 1px,
+      transparent 1px
+    );
+
+  background-size: 60px 60px;
+
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent,
+      black 35%,
+      black 80%,
+      transparent
+    );
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.citizen-auth-header {
+  position: relative;
+  z-index: 10;
+
+  width: min(1450px, calc(100% - 64px));
+  margin: 0 auto;
+
+  padding: 28px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.citizen-auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.citizen-auth-brand-mark {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(168,85,247,.9),
+      rgba(76,29,149,.95)
+    );
+
+  border: 1px solid rgba(255,255,255,.24);
+
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.28),
+    inset 0 1px rgba(255,255,255,.3);
+}
+
+.citizen-auth-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.citizen-auth-brand-text strong {
+  font-size: 22px;
+  letter-spacing: -.4px;
+}
+
+.citizen-auth-brand-text small {
+  font-size: 11px;
+  color: rgba(255,255,255,.62);
+}
+
+.citizen-auth-secure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 15px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.13);
+
+  backdrop-filter: blur(16px);
+
+  color: rgba(255,255,255,.78);
+  font-size: 12px;
+}
+
+
+/* ============================================================
+   MAIN
+   ============================================================ */
+
+.citizen-auth-main {
+  position: relative;
+  z-index: 5;
+
+  flex: 1;
+
+  width: min(1450px, calc(100% - 64px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 470px;
+
+  align-items: center;
+  gap: 90px;
+
+  padding: 30px 0 50px;
+}
+
+
+/* ============================================================
+   INTRO
+   ============================================================ */
+
+.citizen-auth-intro {
+  max-width: 650px;
+
+  transform:
+    perspective(1200px)
+    rotateY(2deg);
+}
+
+.citizen-auth-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #c084fc;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2.4px;
+}
+
+.citizen-auth-eyebrow span {
+  width: 32px;
+  height: 2px;
+
+  background: #c084fc;
+
+  box-shadow: 0 0 14px #c084fc;
+}
+
+.citizen-auth-intro h1 {
+  margin: 18px 0;
+
+  font-size: clamp(48px, 5.5vw, 82px);
+  line-height: .98;
+  letter-spacing: -4px;
+
+  text-shadow:
+    0 12px 35px rgba(0,0,0,.32);
+}
+
+.citizen-auth-intro h1 span {
+  color: #d8b4fe;
+
+  text-shadow:
+    0 0 30px rgba(192,132,252,.35);
+}
+
+.citizen-auth-intro > p {
+  max-width: 570px;
+
+  margin: 0;
+
+  color: rgba(255,255,255,.70);
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+
+/* ============================================================
+   POINTS
+   ============================================================ */
+
+.citizen-auth-points {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 13px;
+
+  margin-top: 30px;
+}
+
+.citizen-auth-points > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 11px 14px;
+
+  border-radius: 15px;
+
+  background: rgba(255,255,255,.055);
+
+  border:
+    1px solid rgba(255,255,255,.10);
+
+  backdrop-filter: blur(15px);
+}
+
+.citizen-auth-points span {
+  width: 28px;
+  height: 28px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 9px;
+
+  color: #d8b4fe;
+
+  background: rgba(168,85,247,.16);
+}
+
+.citizen-auth-points div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.citizen-auth-points strong {
+  font-size: 11px;
+}
+
+.citizen-auth-points small {
+  margin-top: 2px;
+
+  font-size: 9px;
+
+  color: rgba(255,255,255,.45);
+}
+
+
+/* ============================================================
+   AUTH CARD 3D
+   ============================================================ */
+
+.citizen-auth-card-wrap {
+  position: relative;
+
+  perspective: 1600px;
+}
+
+.citizen-auth-card-glow {
+  position: absolute;
+
+  inset: -30px;
+
+  border-radius: 40px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(168,85,247,.38),
+      transparent 68%
+    );
+
+  filter: blur(25px);
+}
+
+.citizen-auth-card {
+  position: relative;
+
+  padding: 30px;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(249,245,255,.93)
+    );
+
+  border:
+    1px solid rgba(255,255,255,.85);
+
+  color: #201044;
+
+  box-shadow:
+    0 45px 90px rgba(0,0,0,.38),
+    0 10px 30px rgba(99,37,180,.18),
+    inset 0 1px rgba(255,255,255,1);
+
+  transform:
+    rotateY(-3deg)
+    rotateX(1deg);
+
+  transition:
+    transform 500ms cubic-bezier(.22,1,.36,1),
+    box-shadow 500ms ease;
+}
+
+.citizen-auth-card:hover {
+  transform:
+    rotateY(0deg)
+    rotateX(0deg)
+    translateY(-5px);
+
+  box-shadow:
+    0 55px 110px rgba(0,0,0,.42),
+    0 15px 45px rgba(124,58,237,.25),
+    inset 0 1px rgba(255,255,255,1);
+}
+
+
+/* ============================================================
+   CARD HEADER
+   ============================================================ */
+
+.citizen-auth-card-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.citizen-auth-card-icon {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 14px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      145deg,
+      #8b5cf6,
+      #5b21b6
+    );
+
+  box-shadow:
+    0 10px 25px rgba(109,40,217,.30),
+    inset 0 1px rgba(255,255,255,.35);
+}
+
+.citizen-auth-card-kicker {
+  color: #7c3aed;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+}
+
+.citizen-auth-card h2 {
+  margin: 3px 0 0;
+
+  font-size: 25px;
+  letter-spacing: -.7px;
+}
+
+
+/* ============================================================
+   MODE SWITCH
+   ============================================================ */
+
+.citizen-auth-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 26px 0 23px;
+
+  padding: 4px;
+
+  border-radius: 13px;
+
+  background: #eee8fa;
+}
+
+.citizen-auth-switch button {
+  height: 39px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: #756b88;
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.citizen-auth-switch button.active {
+  color: #4c1d95;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 12px rgba(52,18,95,.10);
+}
+
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.citizen-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.citizen-auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.citizen-auth-form label > span {
+  color: #514568;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.citizen-auth-input {
+  height: 49px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 13px;
+
+  border-radius: 13px;
+
+  background: rgba(255,255,255,.8);
+
+  border:
+    1px solid #ded5ef;
+
+  color: #866fa8;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.citizen-auth-input:focus-within {
+  border-color: #8b5cf6;
+
+  box-shadow:
+    0 0 0 4px rgba(139,92,246,.10),
+    0 8px 20px rgba(109,40,217,.08);
+
+  transform: translateY(-1px);
+}
+
+.citizen-auth-input input {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #24143f;
+
+  font: inherit;
+  font-size: 12px;
+}
+
+.citizen-auth-input input::placeholder {
+  color: #aaa0ba;
+}
+
+
+/* ============================================================
+   MOBILE OTP
+   ============================================================ */
+
+.citizen-auth-mobile-row {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  align-items: center;
+
+  gap: 8px;
+
+  width: 100%;
+}
+
+.citizen-auth-mobile-row
+.citizen-auth-input {
+  min-width: 0;
+}
+
+.citizen-auth-otp-button {
+  height: 49px;
+
+  padding: 0 15px;
+
+  border: 1px solid #8b5cf6;
+
+  border-radius: 13px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #9333ea
+  );
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+.citizen-auth-otp-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 18px rgba(109,40,217,.18);
+}
+
+.citizen-auth-otp-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.citizen-auth-otp-button:disabled {
+  opacity: .55;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+
+  transform: none;
+}
+
+.citizen-auth-otp-section {
+  display: grid;
+
+  gap: 8px;
+
+  margin-top: -2px;
+
+  padding: 10px 11px 11px;
+
+  border-radius: 13px;
+
+  background: rgba(139,92,246,.055);
+
+  border: 1px solid rgba(139,92,246,.12);
+}
+
+.citizen-auth-otp-row {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.citizen-auth-otp-row
+.citizen-auth-input {
+  min-width: 0;
+}
+
+.citizen-auth-otp-meta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  color: #8d819f;
+
+  font-size: 10px;
+}
+
+.citizen-auth-otp-meta button {
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #7c3aed;
+
+  font: inherit;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.citizen-auth-otp-meta button:hover {
+  text-decoration: underline;
+}
+
+.citizen-auth-submit-hidden-after-otp {
+  display: none;
+}
+
+.citizen-auth-mobile-verified {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: -2px;
+
+  padding: 8px 11px;
+
+  border-radius: 10px;
+
+  background: rgba(34,197,94,.08);
+
+  border: 1px solid rgba(34,197,94,.16);
+
+  color: #15803d;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .citizen-auth-mobile-row,
+  .citizen-auth-otp-row {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-auth-otp-button {
+    width: 100%;
+  }
+
+  .citizen-auth-otp-meta {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 4px;
+  }
+}
+
+
+.citizen-auth-eye {
+  display: grid;
+  place-items: center;
+
+  padding: 4px;
+
+  border: 0;
+  background: transparent;
+
+  color: #8d819f;
+
+  cursor: pointer;
+}
+
+
+/* ============================================================
+   SUBMIT
+   ============================================================ */
+
+.citizen-auth-submit {
+  position: relative;
+
+  height: 53px;
+
+  margin-top: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 17px 0 20px;
+
+  border: 0;
+  border-radius: 14px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #5b21b6
+    );
+
+  box-shadow:
+    0 14px 30px rgba(109,40,217,.28),
+    inset 0 1px rgba(255,255,255,.28);
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.citizen-auth-submit::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 60%;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.20),
+      transparent
+    );
+
+  transform: skewX(-20deg);
+
+  transition: left 550ms ease;
+}
+
+.citizen-auth-submit:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 18px 38px rgba(109,40,217,.36),
+    inset 0 1px rgba(255,255,255,.30);
+}
+
+.citizen-auth-submit:hover::before {
+  left: 140%;
+}
+
+.citizen-auth-submit:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.citizen-auth-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  margin-top: 20px;
+  padding-top: 17px;
+
+  border-top: 1px solid #ebe5f4;
+
+  color: #9389a2;
+
+  font-size: 9px;
+}
+
+.citizen-auth-card-footer svg {
+  color: #7c3aed;
+}
+
+.citizen-auth-footer {
+  position: relative;
+  z-index: 5;
+
+  width: min(1450px, calc(100% - 64px));
+  margin: 0 auto;
+
+  padding: 0 0 22px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+
+  color: rgba(255,255,255,.42);
+
+  font-size: 9px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1100px) {
+
+  .citizen-auth-main {
+    grid-template-columns: minmax(0, 1fr) 410px;
+    gap: 45px;
+  }
+
+  .citizen-auth-intro h1 {
+    font-size: 58px;
+  }
+
+  .citizen-auth-image {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .citizen-auth-page {
+    min-height: 100svh;
+
+    overflow-y: auto;
+  }
+
+  .citizen-auth-header,
+  .citizen-auth-main,
+  .citizen-auth-footer {
+    width: min(100% - 32px, 600px);
+  }
+
+  .citizen-auth-header {
+    padding: 18px 0;
+  }
+
+  .citizen-auth-secure {
+    display: none;
+  }
+
+  .citizen-auth-main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    padding: 25px 0 35px;
+  }
+
+  .citizen-auth-intro {
+    max-width: none;
+
+    transform: none;
+  }
+
+  .citizen-auth-intro h1 {
+    font-size: 48px;
+  }
+
+  .citizen-auth-intro > p {
+    font-size: 14px;
+  }
+
+  .citizen-auth-points {
+    display: none;
+  }
+
+  .citizen-auth-card {
+    transform: none;
+  }
+
+  .citizen-auth-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .citizen-auth-image {
+    width: 100%;
+    height: 55%;
+
+    left: 0;
+    bottom: 0;
+
+    opacity: .38;
+
+    transform: none;
+
+    background-position: center;
+  }
+
+  .citizen-auth-image-overlay {
+    background:
+      linear-gradient(
+        to bottom,
+        #12032d 5%,
+        rgba(18,3,45,.85) 45%,
+        rgba(18,3,45,.45) 100%
+      );
+  }
+
+  .citizen-auth-footer {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 520px) {
+
+  .citizen-auth-header,
+  .citizen-auth-main,
+  .citizen-auth-footer {
+    width: calc(100% - 24px);
+  }
+
+  .citizen-auth-brand-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .citizen-auth-brand-text strong {
+    font-size: 19px;
+  }
+
+  .citizen-auth-brand-text small {
+    display: none;
+  }
+
+  .citizen-auth-intro h1 {
+    margin-top: 13px;
+
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  .citizen-auth-intro > p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .citizen-auth-card {
+    padding: 22px 18px;
+
+    border-radius: 22px;
+  }
+
+  .citizen-auth-card h2 {
+    font-size: 22px;
+  }
+}
+
+/* ============================================================
+   CITIZEN REGISTRATION
+   ============================================================ */
+
+.citizen-auth-card-wrap:has(
+  .citizen-auth-register-form
+) {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.citizen-auth-register-form {
+  max-height: min(
+    700px,
+    calc(100vh - 220px)
+  );
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.citizen-auth-register-form::-webkit-scrollbar {
+  width: 5px;
+}
+
+.citizen-auth-register-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.citizen-auth-register-form::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(124, 58, 237, .25);
+}
+
+.citizen-auth-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.citizen-auth-form-section-title {
+  margin-top: 4px;
+  padding-bottom: 1px;
+
+  color: #6d28d9;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.citizen-auth-select {
+  width: 100%;
+  min-height: 49px;
+  padding: 0 13px;
+
+  border: 1px solid #ded5ef;
+  border-radius: 13px;
+
+  background: rgba(255,255,255,.8);
+  color: #24143f;
+
+  font: inherit;
+  font-size: 12px;
+  outline: none;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.citizen-auth-select:focus {
+  border-color: #8b5cf6;
+  box-shadow:
+    0 0 0 4px rgba(139,92,246,.10),
+    0 8px 20px rgba(109,40,217,.08);
+  transform: translateY(-1px);
+}
+
+.citizen-auth-area-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+
+  padding: 4px;
+  border-radius: 13px;
+
+  background: #eee8fa;
+}
+
+.citizen-auth-area-switch button {
+  height: 38px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: transparent;
+  color: #756b88;
+
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.citizen-auth-area-switch button.active {
+  color: #4c1d95;
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 12px rgba(52,18,95,.10);
+}
+
+@media (max-width: 520px) {
+  .citizen-auth-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-auth-register-form {
+    max-height: calc(100svh - 190px);
+  }
+}
+
+/* ============================================================
+   REGISTRATION CARD — FIXED VIEWPORT + SCROLLING FIELDS
+   ============================================================ */
+
+@media (min-width: 901px) {
+
+  .citizen-auth-card-wrap {
+    align-self: center;
+    height: min(
+      calc(100vh - 150px),
+      820px
+    );
+    min-height: 560px;
+
+    display: flex;
+    align-items: stretch;
+  }
+
+  .citizen-auth-card {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+  }
+
+  .citizen-auth-register-form {
+    flex: 1;
+    min-height: 0;
+
+    max-height: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding-right: 8px;
+    padding-bottom: 8px;
+  }
+
+  .citizen-auth-register-form::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .citizen-auth-register-form::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .citizen-auth-register-form::-webkit-scrollbar-thumb {
+    background: rgba(124, 58, 237, .30);
+    border-radius: 999px;
+  }
+
+  .citizen-auth-card-footer {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .citizen-auth-page {
+    min-height: 100svh;
+    overflow-y: auto;
+  }
+
+  .citizen-auth-card {
+    max-height: none;
+  }
+
+  .citizen-auth-register-form {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/* ============================================================
+   REGISTER SUBMIT — ALWAYS VISIBLE
+   ============================================================ */
+
+@media (min-width: 901px) {
+
+  .citizen-auth-card {
+    position: relative;
+  }
+
+  .citizen-auth-register-form {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 90px;
+  }
+
+  .citizen-auth-register-form .citizen-auth-submit {
+    position: sticky;
+    bottom: 0;
+
+    z-index: 20;
+
+    flex-shrink: 0;
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    background:
+      linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+      );
+
+    box-shadow:
+      0 10px 25px rgba(91,33,182,.28),
+      0 -8px 20px rgba(249,245,255,.92);
+
+  }
+}
+
+@media (max-width: 900px) {
+
+  .citizen-auth-register-form {
+    padding-bottom: 80px;
+  }
+
+  .citizen-auth-register-form
+  .citizen-auth-submit {
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+
+    width: 100%;
+
+    box-shadow:
+      0 10px 25px rgba(91,33,182,.28),
+      0 -8px 20px rgba(249,245,255,.92);
+  }
+}
+
+/* ============================================================
+   COMPACT CITIZEN REGISTRATION LAYOUT
+   ============================================================ */
+
+@media (min-width: 901px) {
+
+  .citizen-auth-register-form {
+    display: grid;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
+
+    column-gap: 12px;
+    row-gap: 10px;
+
+    align-content: start;
+  }
+
+  .citizen-auth-register-form
+  > label {
+    min-width: 0;
+  }
+
+  .citizen-auth-register-form
+  .citizen-auth-form-section-title {
+    grid-column: 1 / -1;
+
+    margin-top: 2px;
+    margin-bottom: 1px;
+  }
+
+  .citizen-auth-register-form
+  .citizen-auth-two-column {
+    grid-column: 1 / -1;
+  }
+
+  .citizen-auth-register-form
+  .citizen-auth-area-switch {
+    min-width: 0;
+  }
+
+  .citizen-auth-register-form
+  .citizen-auth-submit {
+    grid-column: 1 / -1;
+    margin-top: 6px;
+  }
+
+  .citizen-auth-register-form
+  .citizen-auth-input,
+  .citizen-auth-register-form
+  .citizen-auth-select {
+    min-height: 44px;
+    height: 44px;
+  }
+
+  .citizen-auth-register-form
+  label > span {
+    font-size: 10px;
+  }
+
+  .citizen-auth-register-form {
+    gap: 9px 12px;
+    padding-right: 5px;
+  }
+
+  .citizen-auth-card {
+    padding: 24px;
+  }
+}
+
+@media (max-height: 850px) and (min-width: 901px) {
+
+  .citizen-auth-card {
+    padding: 20px;
+  }
+
+  .citizen-auth-register-form {
+    gap: 7px 10px;
+  }
+
+  .citizen-auth-register-form
+  .citizen-auth-input,
+  .citizen-auth-register-form
+  .citizen-auth-select {
+    min-height: 40px;
+    height: 40px;
+  }
+
+  .citizen-auth-register-form
+  label > span {
+    font-size: 9px;
+  }
+}
+
+/* ============================================================
+   REGISTER BUTTON — TRUE BOTTOM OF FORM
+   ============================================================ */
+
+.citizen-auth-register-form
+.citizen-auth-submit {
+  position: static !important;
+
+  grid-column: 1 / -1;
+
+  width: 100%;
+
+  margin-top: 8px;
+  margin-bottom: 4px;
+
+  align-self: end;
+
+  z-index: auto;
+
+  box-shadow:
+    0 8px 18px rgba(91, 33, 182, 0.20);
+}
+
+/* Do not reserve artificial space for sticky button */
+.citizen-auth-register-form {
+  padding-bottom: 8px !important;
+}
+
+/* ============================================================
+   ACCOUNT RECOVERY
+   ============================================================ */
+
+.citizen-auth-form-hidden {
+  display: none !important;
+}
+
+.citizen-auth-forgot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: -4px;
+  margin-bottom: 18px;
+}
+
+.citizen-auth-forgot-row button {
+  border: 0;
+  background: transparent;
+  padding: 2px 0;
+  color: #6d28d9;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.citizen-auth-forgot-row button:hover {
+  color: #4c1d95;
+  text-decoration: underline;
+}
+
+.citizen-auth-recovery {
+  animation: citizen-auth-recovery-in .28s ease both;
+}
+
+@keyframes citizen-auth-recovery-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.citizen-auth-recovery-back {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 22px;
+  color: #6d28d9;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.citizen-auth-recovery-back:hover {
+  text-decoration: underline;
+}
+
+.citizen-auth-recovery-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.citizen-auth-recovery-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: linear-gradient(145deg, #7c3aed, #4c1d95);
+  box-shadow:
+    0 10px 24px rgba(109, 40, 217, .26),
+    inset 0 1px rgba(255,255,255,.4);
+  font-size: 18px;
+}
+
+.citizen-auth-recovery-heading h3 {
+  margin: 3px 0 0;
+  color: #26164d;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.citizen-auth-recovery-text {
+  margin: 0 0 20px;
+  color: #716b83;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.citizen-auth-recovery-success {
+  text-align: center;
+  padding: 8px 0 2px;
+}
+
+.citizen-auth-recovery-success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #22c55e, #15803d);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(22, 163, 74, .24);
+}
+
+.citizen-auth-recovery-success h4 {
+  margin: 0;
+  color: #26164d;
+  font-size: 19px;
+}
+
+.citizen-auth-recovery-success p {
+  margin: 10px 0 20px;
+  color: #716b83;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.citizen-auth-recovered-username {
+  margin: 14px 0;
+  padding: 13px 16px;
+  border-radius: 13px;
+  background: #f2eaff;
+  border: 1px solid #decaff;
+  color: #5b21b6;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: .3px;
+}
+
+/* Recovery mode uses the whole card body */
+.citizen-auth-card:has(.citizen-auth-recovery)
+  .citizen-auth-recovery {
+  margin-top: 8px;
+}
+
+.citizen-auth-recovery-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition:
+    transform .2s ease,
+    color .2s ease;
+}
+
+.citizen-auth-recovery-back:hover {
+  transform: translateX(-3px);
+}
+
+.citizen-auth-recovery .citizen-auth-submit {
+  width: 100%;
+}
+
+.citizen-auth-recovery label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.citizen-auth-recovery label > span {
+  display: block;
+  margin-bottom: 7px;
+  color: #4f4662;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* ============================================================
+   PREMIUM MOBILE + OTP REGISTRATION BLOCK
+   ============================================================ */
+
+.citizen-auth-mobile-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.citizen-auth-mobile-row .citizen-auth-input {
+  min-width: 0;
+}
+
+.citizen-auth-otp-button {
+  min-width: 112px;
+  min-height: 42px;
+  padding: 0 16px;
+
+  border: 1px solid rgba(124, 58, 237, .20);
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #a855f7 0%,
+      #7c3aed 48%,
+      #5b21b6 100%
+    );
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .1px;
+
+  box-shadow:
+    0 10px 22px rgba(109, 40, 217, .20),
+    inset 0 1px 0 rgba(255,255,255,.28);
+
+  cursor: pointer;
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    filter .18s ease;
+}
+
+.citizen-auth-otp-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 14px 28px rgba(109, 40, 217, .28),
+    inset 0 1px 0 rgba(255,255,255,.32);
+
+  filter: brightness(1.03);
+}
+
+.citizen-auth-otp-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.citizen-auth-otp-button:disabled {
+  opacity: .48;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.citizen-auth-otp-section {
+  margin-top: 10px;
+  padding: 13px 14px 12px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(124,58,237,.055),
+      rgba(168,85,247,.025)
+    );
+
+  border:
+    1px solid rgba(124,58,237,.12);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.65),
+    0 7px 18px rgba(76,29,149,.05);
+}
+
+.citizen-auth-otp-section > label {
+  margin-bottom: 0;
+}
+
+.citizen-auth-otp-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.citizen-auth-otp-row .citizen-auth-input {
+  min-width: 0;
+}
+
+.citizen-auth-otp-row .citizen-auth-input input {
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.citizen-auth-otp-section .citizen-auth-otp-button {
+  min-width: 112px;
+}
+
+.citizen-auth-otp-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 9px;
+  padding: 0 2px;
+
+  color: #8a819b;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.citizen-auth-otp-meta span:first-child {
+  color: #6d28d9;
+  font-weight: 800;
+}
+
+.citizen-auth-otp-meta span:last-child {
+  text-align: right;
+}
+
+@media (max-width: 560px) {
+  .citizen-auth-mobile-row,
+  .citizen-auth-otp-row {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-auth-otp-button,
+  .citizen-auth-otp-section .citizen-auth-otp-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .citizen-auth-otp-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .citizen-auth-otp-meta span:last-child {
+    text-align: left;
+  }
+}
+
+/* =========================================
+   PREMIUM MOBILE + OTP STACKED LAYOUT
+   ========================================= */
+
+.citizen-auth-mobile-row {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  width: 100% !important;
+  align-items: stretch !important;
+}
+
+.citizen-auth-mobile-row .citizen-auth-input {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.citizen-auth-mobile-row .citizen-auth-input input {
+  width: 100% !important;
+}
+
+.citizen-auth-mobile-row .citizen-auth-otp-button {
+  width: 100% !important;
+  min-height: 42px !important;
+  justify-content: center !important;
+}
+
+/* OTP card */
+.citizen-auth-otp-section {
+  margin-top: 12px !important;
+  padding: 14px !important;
+  border: 1px solid rgba(124, 58, 237, 0.14) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.88),
+    rgba(245,240,255,0.94)
+  ) !important;
+  box-shadow:
+    0 8px 22px rgba(79, 40, 150, 0.07),
+    inset 0 1px 0 rgba(255,255,255,0.9) !important;
+}
+
+.citizen-auth-otp-section label {
+  display: block !important;
+  width: 100% !important;
+}
+
+.citizen-auth-otp-row {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  width: 100% !important;
+  align-items: stretch !important;
+}
+
+.citizen-auth-otp-row .citizen-auth-input {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.citizen-auth-otp-row .citizen-auth-input input {
+  width: 100% !important;
+  min-height: 46px !important;
+  text-align: center !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.32em !important;
+  padding-left: 18px !important;
+  padding-right: 8px !important;
+}
+
+.citizen-auth-otp-row .citizen-auth-otp-button {
+  width: 100% !important;
+  min-height: 42px !important;
+  justify-content: center !important;
+}
+
+.citizen-auth-otp-meta {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  margin-top: 9px !important;
+  text-align: center !important;
+}
+
+.citizen-auth-otp-meta span:first-child {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #6d28d9 !important;
+}
+
+.citizen-auth-otp-meta span:last-child {
+  font-size: 10px !important;
+  color: #8b84a1 !important;
+}
+
+/* Better labels */
+.citizen-auth-mobile-row + .citizen-auth-otp-section {
+  animation: citizenOtpAppear 0.22s ease-out;
+}
+
+@keyframes citizenOtpAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Small screens */
+@media (max-width: 560px) {
+  .citizen-auth-otp-section {
+    padding: 12px !important;
+    border-radius: 12px !important;
+  }
+
+  .citizen-auth-otp-row .citizen-auth-input input {
+    font-size: 17px !important;
+    letter-spacing: 0.24em !important;
+  }
+}
+
+
+/* Registration OTP must sit below Mobile Number */
+.citizen-auth-mobile-row {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.citizen-auth-mobile-row .citizen-auth-input,
+.citizen-auth-mobile-row .citizen-auth-otp-button {
+  width: 100% !important;
+}
+
+/* Force OTP block to occupy the complete registration row */
+.citizen-auth-otp-section {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin-top: 8px !important;
+}
+
+.citizen-auth-otp-row {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 10px !important;
+}
+
+.citizen-auth-otp-row .citizen-auth-input,
+.citizen-auth-otp-row .citizen-auth-otp-button {
+  width: 100% !important;
+}
+
+.citizen-auth-otp-row .citizen-auth-input input {
+  width: 100% !important;
+  min-height: 46px !important;
+  text-align: center !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.28em !important;
+}
+
+/* Final OTP action */
+.citizen-auth-otp-row .citizen-auth-otp-button {
+  min-height: 44px !important;
+  justify-content: center !important;
+}
+
+/* Keep verified state clean */
+.citizen-auth-mobile-verified {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================
+   REGISTRATION FLOW - FULL WIDTH MOBILE/OTP
+   ========================================= */
+
+.citizen-auth-mobile-field {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.citizen-auth-otp-field {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+/* Mobile number vertically stacked */
+.citizen-auth-mobile-field .citizen-auth-mobile-row {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 10px !important;
+}
+
+.citizen-auth-mobile-field .citizen-auth-input {
+  width: 100% !important;
+}
+
+.citizen-auth-mobile-field .citizen-auth-input input {
+  width: 100% !important;
+}
+
+.citizen-auth-mobile-field .citizen-auth-otp-button {
+  width: 100% !important;
+  min-height: 44px !important;
+  justify-content: center !important;
+}
+
+/* OTP vertically stacked below mobile */
+.citizen-auth-otp-field {
+  margin-top: 2px !important;
+  box-sizing: border-box !important;
+}
+
+.citizen-auth-otp-field .citizen-auth-otp-row {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 10px !important;
+}
+
+.citizen-auth-otp-field .citizen-auth-input {
+  width: 100% !important;
+}
+
+.citizen-auth-otp-field .citizen-auth-input input {
+  width: 100% !important;
+  min-height: 46px !important;
+  text-align: center !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.28em !important;
+  box-sizing: border-box !important;
+}
+
+.citizen-auth-otp-field .citizen-auth-otp-button {
+  width: 100% !important;
+  min-height: 44px !important;
+  justify-content: center !important;
+}
+
+/* Verified message should also span the complete row */
+.citizen-auth-mobile-verified {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+

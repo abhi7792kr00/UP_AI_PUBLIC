@@ -1,0 +1,1144 @@
+block_code,block_name,district_code,tehsil_code,tehsil_name,resolution,source
+803,Achhnera,118,767,Kiraoli,derived_village,village_gram_panchayat_mapping.csv
+804,Akola,118,766,Agra,derived_village,village_gram_panchayat_mapping.csv
+804,Akola,118,767,Kiraoli,derived_village,village_gram_panchayat_mapping.csv
+805,Bah,118,770,Bah,derived_village,village_gram_panchayat_mapping.csv
+806,Barauli Ahir,118,766,Agra,derived_village,village_gram_panchayat_mapping.csv
+807,Bichpuri,118,766,Agra,derived_village,village_gram_panchayat_mapping.csv
+808,Etmadpur,118,765,Etmadpur,derived_village,village_gram_panchayat_mapping.csv
+809,Fatehabad,118,769,Fatehabad,derived_village,village_gram_panchayat_mapping.csv
+810,Fatehpur Sikri,118,767,Kiraoli,derived_village,village_gram_panchayat_mapping.csv
+811,Jagner,118,768,Kheragarh,derived_village,village_gram_panchayat_mapping.csv
+812,Jaitpur Kalan,118,770,Bah,derived_village,village_gram_panchayat_mapping.csv
+813,Khandauli,118,765,Etmadpur,derived_village,village_gram_panchayat_mapping.csv
+814,Kheragarh,118,768,Kheragarh,derived_village,village_gram_panchayat_mapping.csv
+815,Pinahat,118,770,Bah,derived_village,village_gram_panchayat_mapping.csv
+816,Saiyan,118,768,Kheragarh,derived_village,village_gram_panchayat_mapping.csv
+817,Shamsabad,118,769,Fatehabad,derived_village,village_gram_panchayat_mapping.csv
+818,Akrabad,119,755,Koil,derived_village,village_gram_panchayat_mapping.csv
+819,Atrauli,119,754,Atrauli,derived_village,village_gram_panchayat_mapping.csv
+820,Bijauli,119,754,Atrauli,derived_village,village_gram_panchayat_mapping.csv
+821,Chandaus,119,752,Khair,derived_village,village_gram_panchayat_mapping.csv
+821,Chandaus,119,753,Gabhana,derived_village,village_gram_panchayat_mapping.csv
+822,Dhanipur,119,755,Koil,derived_village,village_gram_panchayat_mapping.csv
+823,Gangiri,119,754,Atrauli,derived_village,village_gram_panchayat_mapping.csv
+824,Gonda,119,756,Iglas,derived_village,village_gram_panchayat_mapping.csv
+825,Iglas,119,756,Iglas,derived_village,village_gram_panchayat_mapping.csv
+826,Jawan Sikanderpur,119,753,Gabhana,derived_village,village_gram_panchayat_mapping.csv
+826,Jawan Sikanderpur,119,755,Koil,derived_village,village_gram_panchayat_mapping.csv
+827,Khair,119,752,Khair,derived_village,village_gram_panchayat_mapping.csv
+827,Khair,119,753,Gabhana,derived_village,village_gram_panchayat_mapping.csv
+828,Lodha,119,753,Gabhana,derived_village,village_gram_panchayat_mapping.csv
+828,Lodha,119,755,Koil,derived_village,village_gram_panchayat_mapping.csv
+829,Tappal,119,752,Khair,derived_village,village_gram_panchayat_mapping.csv
+830,Bahadurpur,120,889,Phulpur,exact,https://prayagraj.nic.in/development-block/
+831,Bahria,120,889,Phulpur,verified_name_variant,https://prayagraj.nic.in/development-block/
+832,Chaka,120,892,Karchhana,exact,https://prayagraj.nic.in/development-block/
+833,Dhanupur,120,893,Handia,exact,https://prayagraj.nic.in/development-block/
+834,Handia,120,893,Handia,exact,https://prayagraj.nic.in/development-block/
+835,Holagarh,120,888,Soraon,exact,https://prayagraj.nic.in/development-block/
+836,Jasra,120,891,Bara,exact,https://prayagraj.nic.in/development-block/
+837,Karchhana,120,892,Karchhana,exact,https://prayagraj.nic.in/development-block/
+838,Kaudhiyara,120,892,Karchhana,verified_name_variant,https://prayagraj.nic.in/development-block/
+839,Kaurihar,120,888,Soraon,exact,https://prayagraj.nic.in/development-block/
+839,Kaurihar,120,890,Allahabad,derived_village,village_gram_panchayat_mapping.csv
+840,Koraon,120,894,Meja,derived_village,village_gram_panchayat_mapping.csv
+840,Koraon,120,895,Koraon,exact,https://prayagraj.nic.in/development-block/
+841,Manda,120,894,Meja,exact,https://prayagraj.nic.in/development-block/
+841,Manda,120,895,Koraon,derived_village,village_gram_panchayat_mapping.csv
+842,Mauaima,120,888,Soraon,exact,https://prayagraj.nic.in/development-block/
+843,Meja,120,894,Meja,exact,https://prayagraj.nic.in/development-block/
+843,Meja,120,895,Koraon,derived_village,village_gram_panchayat_mapping.csv
+844,Phulpur,120,889,Phulpur,exact,https://prayagraj.nic.in/development-block/
+845,Pratappur,120,893,Handia,exact,https://prayagraj.nic.in/development-block/
+846,Saidabad,120,893,Handia,exact,https://prayagraj.nic.in/development-block/
+847,Shankargarh,120,891,Bara,exact,https://prayagraj.nic.in/development-block/
+848,Soraon,120,888,Soraon,exact,https://prayagraj.nic.in/development-block/
+849,Uruwan,120,894,Meja,verified_name_variant,https://prayagraj.nic.in/development-block/
+850,Akbarpur,121,910,Akbarpur,derived_village,village_gram_panchayat_mapping.csv
+851,Baskhari,121,907,Tanda,derived_village,village_gram_panchayat_mapping.csv
+852,Bhiti,121,911,Bhiti,derived_village,village_gram_panchayat_mapping.csv
+853,Bhiyawan,121,909,Jalalpur,derived_village,village_gram_panchayat_mapping.csv
+854,Jahangir Ganj,121,908,Allapur,derived_village,village_gram_panchayat_mapping.csv
+855,Jalal Pur,121,909,Jalalpur,derived_village,village_gram_panchayat_mapping.csv
+856,Katehari,121,910,Akbarpur,derived_village,village_gram_panchayat_mapping.csv
+856,Katehari,121,911,Bhiti,derived_village,village_gram_panchayat_mapping.csv
+857,Ram Nagar,121,908,Allapur,derived_village,village_gram_panchayat_mapping.csv
+858,Tanda,121,907,Tanda,derived_village,village_gram_panchayat_mapping.csv
+859,Achchalda,122,841,Bidhuna,derived_village,village_gram_panchayat_mapping.csv
+860,Ajitmal,122,842,Auraiya,derived_village,village_gram_panchayat_mapping.csv
+860,Ajitmal,122,6877,Ajitmal,derived_village,village_gram_panchayat_mapping.csv
+861,Auraiya,122,842,Auraiya,derived_village,village_gram_panchayat_mapping.csv
+861,Auraiya,122,6877,Ajitmal,derived_village,village_gram_panchayat_mapping.csv
+862,Bhagyanagar,122,842,Auraiya,derived_village,village_gram_panchayat_mapping.csv
+863,Bidhuna,122,841,Bidhuna,derived_village,village_gram_panchayat_mapping.csv
+864,Erwa Katra,122,841,Bidhuna,derived_village,village_gram_panchayat_mapping.csv
+865,Sahar,122,841,Bidhuna,derived_village,village_gram_panchayat_mapping.csv
+866,Ahiraula,123,964,Burhanpur,derived_village,village_gram_panchayat_mapping.csv
+866,Ahiraula,123,968,Phulpur,derived_village,village_gram_panchayat_mapping.csv
+867,Atraulia,123,964,Burhanpur,derived_village,village_gram_panchayat_mapping.csv
+868,Azmatgarh,123,965,Sagri,derived_village,village_gram_panchayat_mapping.csv
+869,Bilariyaganj,123,965,Sagri,derived_village,village_gram_panchayat_mapping.csv
+870,Haraiya,123,965,Sagri,derived_village,village_gram_panchayat_mapping.csv
+871,Jahanaganj,123,966,Azamgarh,derived_village,village_gram_panchayat_mapping.csv
+872,Koilsa,123,964,Burhanpur,derived_village,village_gram_panchayat_mapping.csv
+873,Lalganj,123,969,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+874,Mahrajganj,123,965,Sagri,derived_village,village_gram_panchayat_mapping.csv
+875,Martinganj,123,968,Phulpur,derived_village,village_gram_panchayat_mapping.csv
+875,Martinganj,123,6165,Martinganjon,derived_village,village_gram_panchayat_mapping.csv
+876,Mehnagar,123,970,Mehnagar,derived_village,village_gram_panchayat_mapping.csv
+877,Mirzapur,123,967,Nizamabad,derived_village,village_gram_panchayat_mapping.csv
+878,Mohammadpur,123,967,Nizamabad,derived_village,village_gram_panchayat_mapping.csv
+878,Mohammadpur,123,970,Mehnagar,derived_village,village_gram_panchayat_mapping.csv
+878,Mohammadpur,123,6165,Martinganjon,derived_village,village_gram_panchayat_mapping.csv
+879,Palhana,123,969,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+879,Palhana,123,970,Mehnagar,derived_village,village_gram_panchayat_mapping.csv
+880,Palhani,123,966,Azamgarh,derived_village,village_gram_panchayat_mapping.csv
+880,Palhani,123,967,Nizamabad,derived_village,village_gram_panchayat_mapping.csv
+881,Pawai,123,968,Phulpur,derived_village,village_gram_panchayat_mapping.csv
+881,Pawai,123,6165,Martinganjon,derived_village,village_gram_panchayat_mapping.csv
+882,Phulpur,123,968,Phulpur,derived_village,village_gram_panchayat_mapping.csv
+882,Phulpur,123,6165,Martinganjon,derived_village,village_gram_panchayat_mapping.csv
+883,Rani Ki Sarai,123,966,Azamgarh,derived_village,village_gram_panchayat_mapping.csv
+883,Rani Ki Sarai,123,967,Nizamabad,derived_village,village_gram_panchayat_mapping.csv
+884,Sathiyaon,123,966,Azamgarh,derived_village,village_gram_panchayat_mapping.csv
+885,Tahbarpur,123,966,Azamgarh,derived_village,village_gram_panchayat_mapping.csv
+885,Tahbarpur,123,967,Nizamabad,derived_village,village_gram_panchayat_mapping.csv
+886,Tarwa,123,969,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+886,Tarwa,123,970,Mehnagar,derived_village,village_gram_panchayat_mapping.csv
+887,Thekma,123,969,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+887,Thekma,123,6165,Martinganjon,derived_village,village_gram_panchayat_mapping.csv
+888,Baghpat,124,736,Baghpat,derived_village,village_gram_panchayat_mapping.csv
+889,Baraut,124,735,Baraut,derived_village,village_gram_panchayat_mapping.csv
+890,Binauli,124,735,Baraut,derived_village,village_gram_panchayat_mapping.csv
+891,Chhaprauli,124,735,Baraut,derived_village,village_gram_panchayat_mapping.csv
+892,Khekra,124,737,Khekada,derived_village,village_gram_panchayat_mapping.csv
+893,Pilana,124,736,Baghpat,derived_village,village_gram_panchayat_mapping.csv
+894,Balaha,125,919,Nanpara,derived_village,village_gram_panchayat_mapping.csv
+894,Balaha,125,6862,Mihinpurwa Motipur,derived_village,village_gram_panchayat_mapping.csv
+895,Chitaura,125,921,Bahraich,derived_village,village_gram_panchayat_mapping.csv
+895,Chitaura,125,6861,Payagpur,derived_village,village_gram_panchayat_mapping.csv
+896,Huzoorpur,125,921,Bahraich,derived_village,village_gram_panchayat_mapping.csv
+896,Huzoorpur,125,922,Kaiserganj,derived_village,village_gram_panchayat_mapping.csv
+896,Huzoorpur,125,6861,Payagpur,derived_village,village_gram_panchayat_mapping.csv
+897,Jarwal,125,922,Kaiserganj,derived_village,village_gram_panchayat_mapping.csv
+898,Kaisarganj,125,922,Kaiserganj,derived_village,village_gram_panchayat_mapping.csv
+899,Mahasi,125,920,Mahasi,derived_village,village_gram_panchayat_mapping.csv
+900,Mihinpurwa,125,919,Nanpara,derived_village,village_gram_panchayat_mapping.csv
+900,Mihinpurwa,125,921,Bahraich,derived_village,village_gram_panchayat_mapping.csv
+900,Mihinpurwa,125,6862,Mihinpurwa Motipur,derived_village,village_gram_panchayat_mapping.csv
+901,Nawabganj,125,919,Nanpara,derived_village,village_gram_panchayat_mapping.csv
+901,Nawabganj,125,921,Bahraich,derived_village,village_gram_panchayat_mapping.csv
+901,Nawabganj,125,6862,Mihinpurwa Motipur,derived_village,village_gram_panchayat_mapping.csv
+902,Phakharpur,125,920,Mahasi,derived_village,village_gram_panchayat_mapping.csv
+902,Phakharpur,125,922,Kaiserganj,derived_village,village_gram_panchayat_mapping.csv
+903,Payagpur,125,6861,Payagpur,derived_village,village_gram_panchayat_mapping.csv
+904,Risia,125,919,Nanpara,derived_village,village_gram_panchayat_mapping.csv
+904,Risia,125,921,Bahraich,derived_village,village_gram_panchayat_mapping.csv
+904,Risia,125,6862,Mihinpurwa Motipur,derived_village,village_gram_panchayat_mapping.csv
+905,Shivpur,125,919,Nanpara,derived_village,village_gram_panchayat_mapping.csv
+905,Shivpur,125,920,Mahasi,derived_village,village_gram_panchayat_mapping.csv
+906,Tejwapur,125,920,Mahasi,derived_village,village_gram_panchayat_mapping.csv
+906,Tejwapur,125,921,Bahraich,derived_village,village_gram_panchayat_mapping.csv
+906,Tejwapur,125,922,Kaiserganj,derived_village,village_gram_panchayat_mapping.csv
+907,Visheshwarganj,125,921,Bahraich,derived_village,village_gram_panchayat_mapping.csv
+907,Visheshwarganj,125,6861,Payagpur,derived_village,village_gram_panchayat_mapping.csv
+908,Bairia,126,978,Ballia,derived_village,village_gram_panchayat_mapping.csv
+908,Bairia,126,980,Bairia,derived_village,village_gram_panchayat_mapping.csv
+909,Bansdih,126,979,Bansdih,derived_village,village_gram_panchayat_mapping.csv
+910,Belhari,126,978,Ballia,derived_village,village_gram_panchayat_mapping.csv
+911,Beruarbari,126,979,Bansdih,derived_village,village_gram_panchayat_mapping.csv
+912,Chilkahar,126,977,Rasra,derived_village,village_gram_panchayat_mapping.csv
+913,Dubhar,126,978,Ballia,derived_village,village_gram_panchayat_mapping.csv
+914,Garwar,126,978,Ballia,derived_village,village_gram_panchayat_mapping.csv
+915,Hanumanganj,126,978,Ballia,derived_village,village_gram_panchayat_mapping.csv
+916,Maniar,126,976,Sikanderpur,derived_village,village_gram_panchayat_mapping.csv
+916,Maniar,126,979,Bansdih,derived_village,village_gram_panchayat_mapping.csv
+917,Murlichhapra,126,980,Bairia,derived_village,village_gram_panchayat_mapping.csv
+918,Nagra,126,975,Belthara Road,derived_village,village_gram_panchayat_mapping.csv
+918,Nagra,126,977,Rasra,derived_village,village_gram_panchayat_mapping.csv
+919,Navanagar,126,976,Sikanderpur,derived_village,village_gram_panchayat_mapping.csv
+920,Pandah,126,976,Sikanderpur,derived_village,village_gram_panchayat_mapping.csv
+921,Rasra,126,977,Rasra,derived_village,village_gram_panchayat_mapping.csv
+922,Reoti,126,979,Bansdih,derived_village,village_gram_panchayat_mapping.csv
+922,Reoti,126,980,Bairia,derived_village,village_gram_panchayat_mapping.csv
+923,Siar,126,975,Belthara Road,derived_village,village_gram_panchayat_mapping.csv
+924,Sohanv,126,978,Ballia,derived_village,village_gram_panchayat_mapping.csv
+925,Balrampur,127,925,Balrampur,derived_village,village_gram_panchayat_mapping.csv
+926,Gaindas Bujurg,127,927,Utraula,derived_village,village_gram_panchayat_mapping.csv
+927,Gaisri,127,926,Tulsipur,derived_village,village_gram_panchayat_mapping.csv
+928,Harriya Satgharwa,127,925,Balrampur,derived_village,village_gram_panchayat_mapping.csv
+929,Pachpedwa,127,926,Tulsipur,derived_village,village_gram_panchayat_mapping.csv
+930,Rehera Bazaar,127,927,Utraula,derived_village,village_gram_panchayat_mapping.csv
+931,Shriduttganj,127,927,Utraula,derived_village,village_gram_panchayat_mapping.csv
+932,Tulsipur,127,926,Tulsipur,derived_village,village_gram_panchayat_mapping.csv
+933,Utraula,127,927,Utraula,derived_village,village_gram_panchayat_mapping.csv
+934,Baberu,128,872,Baberu,derived_village,village_gram_panchayat_mapping.csv
+935,Badokhar Khurd,128,871,Banda,derived_village,village_gram_panchayat_mapping.csv
+936,Bisanda,128,872,Baberu,derived_village,village_gram_panchayat_mapping.csv
+936,Bisanda,128,873,Atarra,derived_village,village_gram_panchayat_mapping.csv
+937,Jaspura,128,6157,Pailani,derived_village,village_gram_panchayat_mapping.csv
+938,Kamasin,128,872,Baberu,derived_village,village_gram_panchayat_mapping.csv
+939,Mahuva,128,873,Atarra,derived_village,village_gram_panchayat_mapping.csv
+939,Mahuva,128,874,Naraini,derived_village,village_gram_panchayat_mapping.csv
+940,Naraini,128,873,Atarra,derived_village,village_gram_panchayat_mapping.csv
+940,Naraini,128,874,Naraini,derived_village,village_gram_panchayat_mapping.csv
+941,Tindwari,128,871,Banda,derived_village,village_gram_panchayat_mapping.csv
+941,Tindwari,128,6157,Pailani,derived_village,village_gram_panchayat_mapping.csv
+942,Bani Kodar,129,900,Ramsanehighat,derived_village,village_gram_panchayat_mapping.csv
+943,Banki,129,898,Nawabganj,derived_village,village_gram_panchayat_mapping.csv
+944,Dariyabad,129,899,Sirauli Gauspur,derived_village,village_gram_panchayat_mapping.csv
+944,Dariyabad,129,900,Ramsanehighat,derived_village,village_gram_panchayat_mapping.csv
+945,Dewa,129,898,Nawabganj,derived_village,village_gram_panchayat_mapping.csv
+946,Fatehpur,129,896,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+947,Haidargarh,129,901,Haidergarh,derived_village,village_gram_panchayat_mapping.csv
+948,Harakh,129,898,Nawabganj,derived_village,village_gram_panchayat_mapping.csv
+949,Masauli,129,898,Nawabganj,derived_village,village_gram_panchayat_mapping.csv
+951,Nindaura,129,896,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+952,Puredalai,129,899,Sirauli Gauspur,derived_village,village_gram_panchayat_mapping.csv
+952,Puredalai,129,900,Ramsanehighat,derived_village,village_gram_panchayat_mapping.csv
+953,Ramnagar,129,897,Ramnagar,derived_village,village_gram_panchayat_mapping.csv
+953,Ramnagar,129,899,Sirauli Gauspur,derived_village,village_gram_panchayat_mapping.csv
+954,Rudauli,140,902,Rudauli,derived_village,village_gram_panchayat_mapping.csv
+955,Sidhaur,129,901,Haidergarh,derived_village,village_gram_panchayat_mapping.csv
+956,Sirauli Gauspur,129,897,Ramnagar,derived_village,village_gram_panchayat_mapping.csv
+956,Sirauli Gauspur,129,899,Sirauli Gauspur,derived_village,village_gram_panchayat_mapping.csv
+957,Suratganj,129,896,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+957,Suratganj,129,897,Ramnagar,derived_village,village_gram_panchayat_mapping.csv
+958,Trivediganj,129,901,Haidergarh,derived_village,village_gram_panchayat_mapping.csv
+959,Aalampur Jafarabad,130,786,Aonla,derived_village,village_gram_panchayat_mapping.csv
+960,Baheri,130,784,Baheri,derived_village,village_gram_panchayat_mapping.csv
+961,Bhadpura,130,788,Nawabganj,derived_village,village_gram_panchayat_mapping.csv
+962,Bhojipura,130,785,Meerganj,derived_village,village_gram_panchayat_mapping.csv
+962,Bhojipura,130,787,Bareilly,derived_village,village_gram_panchayat_mapping.csv
+963,Bhuta,130,789,Faridpur,derived_village,village_gram_panchayat_mapping.csv
+964,Bithiri Chainpur,130,787,Bareilly,derived_village,village_gram_panchayat_mapping.csv
+965,Damkhauda,130,784,Baheri,derived_village,village_gram_panchayat_mapping.csv
+966,Faridpur,130,789,Faridpur,derived_village,village_gram_panchayat_mapping.csv
+967,Fatehganj West,130,785,Meerganj,derived_village,village_gram_panchayat_mapping.csv
+967,Fatehganj West,130,787,Bareilly,derived_village,village_gram_panchayat_mapping.csv
+968,Kyara,130,785,Meerganj,derived_village,village_gram_panchayat_mapping.csv
+968,Kyara,130,787,Bareilly,derived_village,village_gram_panchayat_mapping.csv
+969,Majhgawan,130,786,Aonla,derived_village,village_gram_panchayat_mapping.csv
+970,Mirganj,130,785,Meerganj,derived_village,village_gram_panchayat_mapping.csv
+971,Nawabganj,130,788,Nawabganj,derived_village,village_gram_panchayat_mapping.csv
+972,Ramnagar,130,786,Aonla,derived_village,village_gram_panchayat_mapping.csv
+973,Shergarh,130,784,Baheri,derived_village,village_gram_panchayat_mapping.csv
+973,Shergarh,130,785,Meerganj,derived_village,village_gram_panchayat_mapping.csv
+974,Bahadurpur,131,939,Basti,derived_village,village_gram_panchayat_mapping.csv
+975,Bankati,131,939,Basti,derived_village,village_gram_panchayat_mapping.csv
+976,Basti,131,939,Basti,derived_village,village_gram_panchayat_mapping.csv
+977,Dubauliya,131,938,Harraiya,derived_village,village_gram_panchayat_mapping.csv
+978,Gaur,131,938,Harraiya,derived_village,village_gram_panchayat_mapping.csv
+979,Harraiya,131,938,Harraiya,derived_village,village_gram_panchayat_mapping.csv
+980,Kaptanganj,131,938,Harraiya,derived_village,village_gram_panchayat_mapping.csv
+981,Kudaraha,131,939,Basti,derived_village,village_gram_panchayat_mapping.csv
+982,Paras Rampur,131,938,Harraiya,derived_village,village_gram_panchayat_mapping.csv
+983,Ramnagar,131,937,Bhanpur,derived_village,village_gram_panchayat_mapping.csv
+984,Rudauli,131,940,Rudhauli,derived_village,village_gram_panchayat_mapping.csv
+985,Saltaua Gopal Pur,131,937,Bhanpur,derived_village,village_gram_panchayat_mapping.csv
+986,Sau Ghat,131,939,Basti,derived_village,village_gram_panchayat_mapping.csv
+986,Sau Ghat,131,940,Rudhauli,derived_village,village_gram_panchayat_mapping.csv
+987,Vikram Jot,131,938,Harraiya,derived_village,village_gram_panchayat_mapping.csv
+988,Afzalgarh,132,714,Nagina,derived_village,village_gram_panchayat_mapping.csv
+988,Afzalgarh,132,715,Dhampur,derived_village,village_gram_panchayat_mapping.csv
+989,Budhanpur Seohara,132,715,Dhampur,derived_village,village_gram_panchayat_mapping.csv
+990,Dhampur,132,715,Dhampur,derived_village,village_gram_panchayat_mapping.csv
+991,Haldaur(Khari Jhalu),132,713,Bijnor,derived_village,village_gram_panchayat_mapping.csv
+991,Haldaur(Khari Jhalu),132,716,Chandpur,derived_village,village_gram_panchayat_mapping.csv
+992,Jalilpur,132,716,Chandpur,derived_village,village_gram_panchayat_mapping.csv
+993,Kiratpur,132,712,Najibabad,derived_village,village_gram_panchayat_mapping.csv
+994,Kotwali,132,714,Nagina,derived_village,village_gram_panchayat_mapping.csv
+995,Mohammedpur Deomal,132,713,Bijnor,derived_village,village_gram_panchayat_mapping.csv
+996,Najibabad,132,712,Najibabad,derived_village,village_gram_panchayat_mapping.csv
+997,Nehtaur,132,715,Dhampur,derived_village,village_gram_panchayat_mapping.csv
+998,Noorpur,132,716,Chandpur,derived_village,village_gram_panchayat_mapping.csv
+999,Ambiapur,133,780,Bilsi,derived_village,village_gram_panchayat_mapping.csv
+1000,Asafpur,133,779,Bisauli,derived_village,village_gram_panchayat_mapping.csv
+1001,Bisauli,133,779,Bisauli,derived_village,village_gram_panchayat_mapping.csv
+1001,Bisauli,133,780,Bilsi,derived_village,village_gram_panchayat_mapping.csv
+1002,Dahgavan,133,781,Sahaswan,derived_village,village_gram_panchayat_mapping.csv
+1003,Dataganj,133,783,Dataganj,derived_village,village_gram_panchayat_mapping.csv
+1004,Gunnaur,659,778,Gunnaur,derived_village,village_gram_panchayat_mapping.csv
+1005,Islamnagar,133,779,Bisauli,derived_village,village_gram_panchayat_mapping.csv
+1005,Islamnagar,133,780,Bilsi,derived_village,village_gram_panchayat_mapping.csv
+1006,Jagat,133,782,Budaun,derived_village,village_gram_panchayat_mapping.csv
+1007,Junawai,659,778,Gunnaur,derived_village,village_gram_panchayat_mapping.csv
+1008,Mion,133,782,Budaun,derived_village,village_gram_panchayat_mapping.csv
+1008,Mion,133,783,Dataganj,derived_village,village_gram_panchayat_mapping.csv
+1009,Qadar Chowk,133,782,Budaun,derived_village,village_gram_panchayat_mapping.csv
+1010,Rajpura,659,778,Gunnaur,derived_village,village_gram_panchayat_mapping.csv
+1011,Sahaswan,133,780,Bilsi,derived_village,village_gram_panchayat_mapping.csv
+1011,Sahaswan,133,781,Sahaswan,derived_village,village_gram_panchayat_mapping.csv
+1012,Salarpur,133,782,Budaun,derived_village,village_gram_panchayat_mapping.csv
+1013,Samrer,133,783,Dataganj,derived_village,village_gram_panchayat_mapping.csv
+1014,Ujhani,133,782,Budaun,derived_village,village_gram_panchayat_mapping.csv
+1015,Usawan,133,783,Dataganj,derived_village,village_gram_panchayat_mapping.csv
+1016,Wazirganj,133,779,Bisauli,derived_village,village_gram_panchayat_mapping.csv
+1017,Agauta,134,746,Bulandshahr,derived_village,village_gram_panchayat_mapping.csv
+1018,Anupshahr,134,748,Anupshahr,derived_village,village_gram_panchayat_mapping.csv
+1019,Araniya,134,751,Khurja,derived_village,village_gram_panchayat_mapping.csv
+1020,Bhawan Bahadur Nagar,134,746,Bulandshahr,derived_village,village_gram_panchayat_mapping.csv
+1020,Bhawan Bahadur Nagar,134,747,Siana,derived_village,village_gram_panchayat_mapping.csv
+1021,Bulandshahr,134,746,Bulandshahr,derived_village,village_gram_panchayat_mapping.csv
+1022,Danpur,134,749,Debai,derived_village,village_gram_panchayat_mapping.csv
+1023,Dibai,134,749,Debai,derived_village,village_gram_panchayat_mapping.csv
+1024,Gulaothi,134,745,Sikandrabad,derived_village,village_gram_panchayat_mapping.csv
+1024,Gulaothi,134,746,Bulandshahr,derived_village,village_gram_panchayat_mapping.csv
+1025,Jahangirabad,134,747,Siana,derived_village,village_gram_panchayat_mapping.csv
+1025,Jahangirabad,134,748,Anupshahr,derived_village,village_gram_panchayat_mapping.csv
+1026,Khurja,134,751,Khurja,derived_village,village_gram_panchayat_mapping.csv
+1027,Lakhaothi,134,746,Bulandshahr,derived_village,village_gram_panchayat_mapping.csv
+1028,Pahasu,134,750,Shikarpur,derived_village,village_gram_panchayat_mapping.csv
+1029,Shikarpur,134,750,Shikarpur,derived_village,village_gram_panchayat_mapping.csv
+1030,Sikandrabad,134,745,Sikandrabad,derived_village,village_gram_panchayat_mapping.csv
+1031,Syana,134,747,Siana,derived_village,village_gram_panchayat_mapping.csv
+1032,Unchagaon,134,747,Siana,derived_village,village_gram_panchayat_mapping.csv
+1033,Berahani,135,993,Chandauli,derived_village,village_gram_panchayat_mapping.csv
+1034,Chahniya,135,992,Sakaldiha,derived_village,village_gram_panchayat_mapping.csv
+1034,Chahniya,135,6869,Pandit Deendayal Upadhyay Nagar,derived_village,village_gram_panchayat_mapping.csv
+1035,Chakiya,135,994,Chakia,derived_village,village_gram_panchayat_mapping.csv
+1036,Chandauli,135,993,Chandauli,derived_village,village_gram_panchayat_mapping.csv
+1037,Dhanapur,135,992,Sakaldiha,derived_village,village_gram_panchayat_mapping.csv
+1038,Naugarh,135,6870,Naugarh,derived_village,village_gram_panchayat_mapping.csv
+1039,Niyamatabad,135,993,Chandauli,derived_village,village_gram_panchayat_mapping.csv
+1039,Niyamatabad,135,6869,Pandit Deendayal Upadhyay Nagar,derived_village,village_gram_panchayat_mapping.csv
+1040,Sahabganj,135,994,Chakia,derived_village,village_gram_panchayat_mapping.csv
+1041,Sakaldiha,135,992,Sakaldiha,derived_village,village_gram_panchayat_mapping.csv
+1041,Sakaldiha,135,6869,Pandit Deendayal Upadhyay Nagar,derived_village,village_gram_panchayat_mapping.csv
+1042,Karwi,136,875,Karwi,derived_village,village_gram_panchayat_mapping.csv
+1042,Karwi,136,876,Mau,derived_village,village_gram_panchayat_mapping.csv
+1042,Karwi,136,5930,Manikpur,derived_village,village_gram_panchayat_mapping.csv
+1043,Manikpur,136,5930,Manikpur,derived_village,village_gram_panchayat_mapping.csv
+1043,Manikpur,136,6156,Rajapur,derived_village,village_gram_panchayat_mapping.csv
+1044,Mau,136,876,Mau,derived_village,village_gram_panchayat_mapping.csv
+1045,Pahari,136,875,Karwi,derived_village,village_gram_panchayat_mapping.csv
+1045,Pahari,136,6156,Rajapur,derived_village,village_gram_panchayat_mapping.csv
+1046,Ramnagar,136,876,Mau,derived_village,village_gram_panchayat_mapping.csv
+1046,Ramnagar,136,6156,Rajapur,derived_village,village_gram_panchayat_mapping.csv
+1047,Baitalpur,137,959,Deoria,derived_village,village_gram_panchayat_mapping.csv
+1047,Baitalpur,137,960,Rudrapur,derived_village,village_gram_panchayat_mapping.csv
+1048,Bankata,137,963,Bhatpar Rani,derived_village,village_gram_panchayat_mapping.csv
+1049,Barhaj,137,961,Barhaj,derived_village,village_gram_panchayat_mapping.csv
+1050,Bhagalpur,137,961,Barhaj,derived_village,village_gram_panchayat_mapping.csv
+1050,Bhagalpur,137,962,Salempur,derived_village,village_gram_panchayat_mapping.csv
+1051,Bhaluani,137,960,Rudrapur,derived_village,village_gram_panchayat_mapping.csv
+1051,Bhaluani,137,961,Barhaj,derived_village,village_gram_panchayat_mapping.csv
+1051,Bhaluani,137,962,Salempur,derived_village,village_gram_panchayat_mapping.csv
+1052,Bhatni,137,962,Salempur,derived_village,village_gram_panchayat_mapping.csv
+1052,Bhatni,137,963,Bhatpar Rani,derived_village,village_gram_panchayat_mapping.csv
+1053,Bhatpar Rani,137,963,Bhatpar Rani,derived_village,village_gram_panchayat_mapping.csv
+1054,Deoria Sadar,137,959,Deoria,derived_village,village_gram_panchayat_mapping.csv
+1054,Deoria Sadar,137,960,Rudrapur,derived_village,village_gram_panchayat_mapping.csv
+1055,Desai Deoria,137,959,Deoria,derived_village,village_gram_panchayat_mapping.csv
+1056,Gauri Bazar,137,959,Deoria,derived_village,village_gram_panchayat_mapping.csv
+1056,Gauri Bazar,137,960,Rudrapur,derived_village,village_gram_panchayat_mapping.csv
+1056,Gauri Bazar,137,962,Salempur,derived_village,village_gram_panchayat_mapping.csv
+1057,Lar,137,962,Salempur,derived_village,village_gram_panchayat_mapping.csv
+1057,Lar,137,963,Bhatpar Rani,derived_village,village_gram_panchayat_mapping.csv
+1058,Pathar Dewa,137,959,Deoria,derived_village,village_gram_panchayat_mapping.csv
+1059,Rampur Karkhana,137,959,Deoria,derived_village,village_gram_panchayat_mapping.csv
+1060,Rudrapur,137,960,Rudrapur,derived_village,village_gram_panchayat_mapping.csv
+1061,Salempur,137,962,Salempur,derived_village,village_gram_panchayat_mapping.csv
+1061,Salempur,137,963,Bhatpar Rani,derived_village,village_gram_panchayat_mapping.csv
+1062,Tarkalua,137,959,Deoria,derived_village,village_gram_panchayat_mapping.csv
+1062,Tarkalua,137,961,Barhaj,derived_village,village_gram_panchayat_mapping.csv
+1063,Aliganj,138,1007,Aliganj,derived_village,village_gram_panchayat_mapping.csv
+1064,Amanpur,633,1011,Sahawar,derived_village,village_gram_panchayat_mapping.csv
+1065,Awagarh,138,1009,Jalesar,derived_village,village_gram_panchayat_mapping.csv
+1066,Ganj Dundwara,633,1012,Patiyali,derived_village,village_gram_panchayat_mapping.csv
+1067,Jaithara,138,1007,Aliganj,derived_village,village_gram_panchayat_mapping.csv
+1068,Jalesar,138,1009,Jalesar,derived_village,village_gram_panchayat_mapping.csv
+1069,Kasganj,633,1010,Kasganj,derived_village,village_gram_panchayat_mapping.csv
+1070,Marehra,138,1008,Etah,derived_village,village_gram_panchayat_mapping.csv
+1071,Nidhauli Kalan,138,1008,Etah,derived_village,village_gram_panchayat_mapping.csv
+1072,Patiyali,633,1012,Patiyali,derived_village,village_gram_panchayat_mapping.csv
+1073,Sahawar,633,1011,Sahawar,derived_village,village_gram_panchayat_mapping.csv
+1074,Sakit,138,1008,Etah,derived_village,village_gram_panchayat_mapping.csv
+1075,Shitalpur,138,1008,Etah,derived_village,village_gram_panchayat_mapping.csv
+1076,Sidhpura,633,1012,Patiyali,derived_village,village_gram_panchayat_mapping.csv
+1077,Soron,633,1010,Kasganj,derived_village,village_gram_panchayat_mapping.csv
+1078,Barhpura,139,838,Etawah,derived_village,village_gram_panchayat_mapping.csv
+1079,Basrehar,139,838,Etawah,derived_village,village_gram_panchayat_mapping.csv
+1080,Bharthana,139,839,Bharthana,derived_village,village_gram_panchayat_mapping.csv
+1081,Chakarnagar,139,840,Chakarnagar,derived_village,village_gram_panchayat_mapping.csv
+1082,Jaswantnagar,139,836,Jaswantnagar,derived_village,village_gram_panchayat_mapping.csv
+1083,Mahewa,139,839,Bharthana,derived_village,village_gram_panchayat_mapping.csv
+1083,Mahewa,139,840,Chakarnagar,derived_village,village_gram_panchayat_mapping.csv
+1084,Sefai,139,837,Saifai,derived_village,village_gram_panchayat_mapping.csv
+1085,Takha,139,6158,Takha,derived_village,village_gram_panchayat_mapping.csv
+1086,Amaniganj,140,903,Milkipur,derived_village,village_gram_panchayat_mapping.csv
+1087,Bikapur,140,906,Bikapur,derived_village,village_gram_panchayat_mapping.csv
+1088,Hariyangatanganj,140,903,Milkipur,derived_village,village_gram_panchayat_mapping.csv
+1088,Hariyangatanganj,140,906,Bikapur,derived_village,village_gram_panchayat_mapping.csv
+1089,Masodha,140,904,Sohawal,derived_village,village_gram_panchayat_mapping.csv
+1089,Masodha,140,905,Faizabad,derived_village,village_gram_panchayat_mapping.csv
+1090,Mawai,140,902,Rudauli,derived_village,village_gram_panchayat_mapping.csv
+1091,Maya Bazar,140,905,Faizabad,derived_village,village_gram_panchayat_mapping.csv
+1092,Milkipur,140,903,Milkipur,derived_village,village_gram_panchayat_mapping.csv
+1093,Pura Bazar,140,905,Faizabad,derived_village,village_gram_panchayat_mapping.csv
+1094,Sohawal,140,904,Sohawal,derived_village,village_gram_panchayat_mapping.csv
+1095,Tarun,140,906,Bikapur,derived_village,village_gram_panchayat_mapping.csv
+1096,Barhpur,141,832,Farrukhabad,derived_village,village_gram_panchayat_mapping.csv
+1097,Kaimganj,141,830,Kaimganj,derived_village,village_gram_panchayat_mapping.csv
+1098,Kamalganj,141,831,Amritpur,derived_village,village_gram_panchayat_mapping.csv
+1098,Kamalganj,141,832,Farrukhabad,derived_village,village_gram_panchayat_mapping.csv
+1099,Mohamdabad,141,832,Farrukhabad,derived_village,village_gram_panchayat_mapping.csv
+1100,Nawabganj,141,830,Kaimganj,derived_village,village_gram_panchayat_mapping.csv
+1101,Rajepur,141,831,Amritpur,derived_village,village_gram_panchayat_mapping.csv
+1102,Shamsabad,141,830,Kaimganj,derived_village,village_gram_panchayat_mapping.csv
+1103,Airayan,142,879,Khaga,derived_village,village_gram_panchayat_mapping.csv
+1104,Amauli,142,877,Bindki,derived_village,village_gram_panchayat_mapping.csv
+1105,Asothar,142,878,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+1106,Bahua,142,878,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+1107,Bhitaura,142,878,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+1108,Devmai,142,877,Bindki,derived_village,village_gram_panchayat_mapping.csv
+1108,Devmai,142,878,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+1109,Dhata,142,879,Khaga,derived_village,village_gram_panchayat_mapping.csv
+1110,Haswa,142,878,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+1111,Hathgaon,142,879,Khaga,derived_village,village_gram_panchayat_mapping.csv
+1112,Khajuha,142,877,Bindki,derived_village,village_gram_panchayat_mapping.csv
+1112,Khajuha,142,878,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+1112,Khajuha,142,879,Khaga,derived_village,village_gram_panchayat_mapping.csv
+1113,Malwan,142,877,Bindki,derived_village,village_gram_panchayat_mapping.csv
+1113,Malwan,142,879,Khaga,derived_village,village_gram_panchayat_mapping.csv
+1114,Telyani,142,878,Fatehpur,derived_village,village_gram_panchayat_mapping.csv
+1115,Vijayipur,142,879,Khaga,derived_village,village_gram_panchayat_mapping.csv
+1116,Araon,143,774,Shikohabad,derived_village,village_gram_panchayat_mapping.csv
+1116,Araon,143,6161,Sirsaganj,derived_village,village_gram_panchayat_mapping.csv
+1117,Eka,143,773,Jasrana,derived_village,village_gram_panchayat_mapping.csv
+1118,Firozabad,143,771,Tundla,derived_village,village_gram_panchayat_mapping.csv
+1118,Firozabad,143,772,Firozabad,derived_village,village_gram_panchayat_mapping.csv
+1119,Hathwant,143,773,Jasrana,derived_village,village_gram_panchayat_mapping.csv
+1119,Hathwant,143,774,Shikohabad,derived_village,village_gram_panchayat_mapping.csv
+1120,Jasrana,143,773,Jasrana,derived_village,village_gram_panchayat_mapping.csv
+1121,Madanpur,143,774,Shikohabad,derived_village,village_gram_panchayat_mapping.csv
+1121,Madanpur,143,6161,Sirsaganj,derived_village,village_gram_panchayat_mapping.csv
+1122,Narkhi,143,771,Tundla,derived_village,village_gram_panchayat_mapping.csv
+1122,Narkhi,143,772,Firozabad,derived_village,village_gram_panchayat_mapping.csv
+1123,Shikohabad,143,774,Shikohabad,derived_village,village_gram_panchayat_mapping.csv
+1124,Tundla,143,771,Tundla,derived_village,village_gram_panchayat_mapping.csv
+1125,Bisrakh,144,742,Dadri,derived_village,village_gram_panchayat_mapping.csv
+1126,Dadri,144,742,Dadri,derived_village,village_gram_panchayat_mapping.csv
+1126,Dadri,144,743,Gautam Buddha Nagar,derived_village,village_gram_panchayat_mapping.csv
+1128,Jewar,144,743,Gautam Buddha Nagar,derived_village,village_gram_panchayat_mapping.csv
+1128,Jewar,144,744,Jewar,derived_village,village_gram_panchayat_mapping.csv
+1129,Bhojpur,145,738,Modinagar,derived_village,village_gram_panchayat_mapping.csv
+1130,Dhaulana,661,6032,Dhaulana,derived_village,village_gram_panchayat_mapping.csv
+1131,Garh Mukteshwar,661,741,Garhmukteshwar,derived_village,village_gram_panchayat_mapping.csv
+1132,Hapur,661,740,Hapur,derived_village,village_gram_panchayat_mapping.csv
+1132,Hapur,661,6032,Dhaulana,derived_village,village_gram_panchayat_mapping.csv
+1133,Loni,145,739,Ghaziabad,derived_village,village_gram_panchayat_mapping.csv
+1133,Loni,145,6089,Loni,derived_village,village_gram_panchayat_mapping.csv
+1134,Muradnagar,145,738,Modinagar,derived_village,village_gram_panchayat_mapping.csv
+1135,Rajapur,145,738,Modinagar,derived_village,village_gram_panchayat_mapping.csv
+1135,Rajapur,145,739,Ghaziabad,derived_village,village_gram_panchayat_mapping.csv
+1136,Simbhawali,661,740,Hapur,derived_village,village_gram_panchayat_mapping.csv
+1136,Simbhawali,661,741,Garhmukteshwar,derived_village,village_gram_panchayat_mapping.csv
+1137,Bhadaura,146,991,Zamania,derived_village,village_gram_panchayat_mapping.csv
+1137,Bhadaura,146,6835,Sewarai,derived_village,village_gram_panchayat_mapping.csv
+1138,Bhanwarkol,146,990,Mohammadabad,derived_village,village_gram_panchayat_mapping.csv
+1139,Devkali,146,988,Saidpur,derived_village,village_gram_panchayat_mapping.csv
+1140,Ghazipur,146,989,Ghazipur,derived_village,village_gram_panchayat_mapping.csv
+1141,Jakhania,146,987,Jakhania,derived_village,village_gram_panchayat_mapping.csv
+1142,Karanda,146,989,Ghazipur,derived_village,village_gram_panchayat_mapping.csv
+1143,Kasimabad,146,990,Mohammadabad,derived_village,village_gram_panchayat_mapping.csv
+1143,Kasimabad,146,6834,Kasimabad,derived_village,village_gram_panchayat_mapping.csv
+1144,Manihari,146,987,Jakhania,derived_village,village_gram_panchayat_mapping.csv
+1144,Manihari,146,988,Saidpur,derived_village,village_gram_panchayat_mapping.csv
+1145,Mardah,146,989,Ghazipur,derived_village,village_gram_panchayat_mapping.csv
+1145,Mardah,146,6834,Kasimabad,derived_village,village_gram_panchayat_mapping.csv
+1146,Mohammadabad,146,990,Mohammadabad,derived_village,village_gram_panchayat_mapping.csv
+1146,Mohammadabad,146,6834,Kasimabad,derived_village,village_gram_panchayat_mapping.csv
+1147,Revatipur,146,991,Zamania,derived_village,village_gram_panchayat_mapping.csv
+1147,Revatipur,146,6835,Sewarai,derived_village,village_gram_panchayat_mapping.csv
+1148,Sadat,146,987,Jakhania,derived_village,village_gram_panchayat_mapping.csv
+1148,Sadat,146,988,Saidpur,derived_village,village_gram_panchayat_mapping.csv
+1149,Saidpur,146,988,Saidpur,derived_village,village_gram_panchayat_mapping.csv
+1150,Varachakwar,146,990,Mohammadabad,derived_village,village_gram_panchayat_mapping.csv
+1150,Varachakwar,146,6834,Kasimabad,derived_village,village_gram_panchayat_mapping.csv
+1151,Virno,146,989,Ghazipur,derived_village,village_gram_panchayat_mapping.csv
+1151,Virno,146,6834,Kasimabad,derived_village,village_gram_panchayat_mapping.csv
+1152,Zamania,146,991,Zamania,derived_village,village_gram_panchayat_mapping.csv
+1152,Zamania,146,6835,Sewarai,derived_village,village_gram_panchayat_mapping.csv
+1153,Babhanjot,147,931,Mankapur,derived_village,village_gram_panchayat_mapping.csv
+1154,Belsar,147,930,Tarabganj,derived_village,village_gram_panchayat_mapping.csv
+1155,Chhapia,147,931,Mankapur,derived_village,village_gram_panchayat_mapping.csv
+1156,Colonelganj,147,929,Colonelganj,derived_village,village_gram_panchayat_mapping.csv
+1157,Haldharmau,147,929,Colonelganj,derived_village,village_gram_panchayat_mapping.csv
+1158,Itiathok,147,928,Gonda,derived_village,village_gram_panchayat_mapping.csv
+1159,Jhanjhari,147,928,Gonda,derived_village,village_gram_panchayat_mapping.csv
+1160,Katra Bazar,147,929,Colonelganj,derived_village,village_gram_panchayat_mapping.csv
+1161,Mankapur,147,931,Mankapur,derived_village,village_gram_panchayat_mapping.csv
+1162,Mujehana,147,928,Gonda,derived_village,village_gram_panchayat_mapping.csv
+1163,Nawabganj,147,930,Tarabganj,derived_village,village_gram_panchayat_mapping.csv
+1164,Pandri Kripal,147,928,Gonda,derived_village,village_gram_panchayat_mapping.csv
+1165,Paraspur,147,929,Colonelganj,derived_village,village_gram_panchayat_mapping.csv
+1166,Rupaideeh,147,928,Gonda,derived_village,village_gram_panchayat_mapping.csv
+1167,Tarabganj,147,930,Tarabganj,derived_village,village_gram_panchayat_mapping.csv
+1168,Wazirganj,147,930,Tarabganj,derived_village,village_gram_panchayat_mapping.csv
+1169,Bansgaon,148,952,Bansgaon,derived_village,village_gram_panchayat_mapping.csv
+1169,Bansgaon,148,953,Khajni,derived_village,village_gram_panchayat_mapping.csv
+1170,Barhalganj,148,954,Gola,derived_village,village_gram_panchayat_mapping.csv
+1171,Belghat,148,953,Khajni,derived_village,village_gram_panchayat_mapping.csv
+1171,Belghat,148,954,Gola,derived_village,village_gram_panchayat_mapping.csv
+1172,Bhathat,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1173,Brahmpur,148,951,Chauri Chaura,derived_village,village_gram_panchayat_mapping.csv
+1174,Campierganj,148,948,Campierganj,derived_village,village_gram_panchayat_mapping.csv
+1175,Chargawan,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1176,Gagaha,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1176,Gagaha,148,952,Bansgaon,derived_village,village_gram_panchayat_mapping.csv
+1176,Gagaha,148,954,Gola,derived_village,village_gram_panchayat_mapping.csv
+1177,Gola,148,954,Gola,derived_village,village_gram_panchayat_mapping.csv
+1178,Jangal Kaudia,148,948,Campierganj,derived_village,village_gram_panchayat_mapping.csv
+1178,Jangal Kaudia,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1179,Kauri Ram,148,952,Bansgaon,derived_village,village_gram_panchayat_mapping.csv
+1180,Khajni,148,953,Khajni,derived_village,village_gram_panchayat_mapping.csv
+1181,Khorabar,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1181,Khorabar,148,951,Chauri Chaura,derived_village,village_gram_panchayat_mapping.csv
+1182,Pali,148,949,Sahjanwa,derived_village,village_gram_panchayat_mapping.csv
+1183,Pipraich,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1183,Pipraich,148,951,Chauri Chaura,derived_village,village_gram_panchayat_mapping.csv
+1184,Piprauli,148,949,Sahjanwa,derived_village,village_gram_panchayat_mapping.csv
+1184,Piprauli,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1185,Sahjanawa,148,949,Sahjanwa,derived_village,village_gram_panchayat_mapping.csv
+1185,Sahjanawa,148,953,Khajni,derived_village,village_gram_panchayat_mapping.csv
+1186,Sardarnagar,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv
+1186,Sardarnagar,148,951,Chauri Chaura,derived_village,village_gram_panchayat_mapping.csv
+1187,Uruwa,148,952,Bansgaon,derived_village,village_gram_panchayat_mapping.csv
+1187,Uruwa,148,953,Khajni,derived_village,village_gram_panchayat_mapping.csv
+1187,Uruwa,148,954,Gola,derived_village,village_gram_panchayat_mapping.csv
+1188,Gohand,149,865,Rath,derived_village,village_gram_panchayat_mapping.csv
+1188,Gohand,149,866,Sarila,derived_village,village_gram_panchayat_mapping.csv
+1189,Kurara,149,864,Hamirpur,derived_village,village_gram_panchayat_mapping.csv
+1190,Maudaha,149,867,Maudaha,derived_village,village_gram_panchayat_mapping.csv
+1191,Muskara,149,867,Maudaha,derived_village,village_gram_panchayat_mapping.csv
+1192,Rath,149,865,Rath,derived_village,village_gram_panchayat_mapping.csv
+1193,Sarila,149,866,Sarila,derived_village,village_gram_panchayat_mapping.csv
+1194,Sumerpur,149,864,Hamirpur,derived_village,village_gram_panchayat_mapping.csv
+1195,Ahirori,150,811,Hardoi,derived_village,village_gram_panchayat_mapping.csv
+1196,Bawan,150,810,Sawayajpur,derived_village,village_gram_panchayat_mapping.csv
+1196,Bawan,150,811,Hardoi,derived_village,village_gram_panchayat_mapping.csv
+1197,Behendar,150,813,Sandila,derived_village,village_gram_panchayat_mapping.csv
+1198,Bharawan,150,813,Sandila,derived_village,village_gram_panchayat_mapping.csv
+1199,Bharkhani,150,809,Shahabad,derived_village,village_gram_panchayat_mapping.csv
+1199,Bharkhani,150,810,Sawayajpur,derived_village,village_gram_panchayat_mapping.csv
+1200,Bilgram,150,810,Sawayajpur,derived_village,village_gram_panchayat_mapping.csv
+1200,Bilgram,150,812,Bilgram,derived_village,village_gram_panchayat_mapping.csv
+1201,Hariyawan,150,811,Hardoi,derived_village,village_gram_panchayat_mapping.csv
+1202,Harpalpur,150,810,Sawayajpur,derived_village,village_gram_panchayat_mapping.csv
+1203,Kachauna,150,813,Sandila,derived_village,village_gram_panchayat_mapping.csv
+1204,Kothawan,150,813,Sandila,derived_village,village_gram_panchayat_mapping.csv
+1205,Madhoganj,150,812,Bilgram,derived_village,village_gram_panchayat_mapping.csv
+1206,Mallawan,150,812,Bilgram,derived_village,village_gram_panchayat_mapping.csv
+1207,Pihani,150,809,Shahabad,derived_village,village_gram_panchayat_mapping.csv
+1208,Sandi,150,810,Sawayajpur,derived_village,village_gram_panchayat_mapping.csv
+1208,Sandi,150,812,Bilgram,derived_village,village_gram_panchayat_mapping.csv
+1209,Sandila,150,813,Sandila,derived_village,village_gram_panchayat_mapping.csv
+1210,Shahabad,150,809,Shahabad,derived_village,village_gram_panchayat_mapping.csv
+1211,Sursa,150,811,Hardoi,derived_village,village_gram_panchayat_mapping.csv
+1212,Tandiyawan,150,811,Hardoi,derived_village,village_gram_panchayat_mapping.csv
+1213,Todarpur,150,809,Shahabad,derived_village,village_gram_panchayat_mapping.csv
+1214,Dakore,151,854,Orai,derived_village,village_gram_panchayat_mapping.csv
+1215,Jalaun,151,852,Jalaun,derived_village,village_gram_panchayat_mapping.csv
+1216,Kadaura,151,853,Kalpi,derived_village,village_gram_panchayat_mapping.csv
+1217,Konch,151,855,Konch,derived_village,village_gram_panchayat_mapping.csv
+1218,Kuthaund,151,851,Madhogarh,derived_village,village_gram_panchayat_mapping.csv
+1218,Kuthaund,151,852,Jalaun,derived_village,village_gram_panchayat_mapping.csv
+1219,Madhogarh,151,851,Madhogarh,derived_village,village_gram_panchayat_mapping.csv
+1219,Madhogarh,151,852,Jalaun,derived_village,village_gram_panchayat_mapping.csv
+1220,Maheva,151,853,Kalpi,derived_village,village_gram_panchayat_mapping.csv
+1221,Nadigaon,151,851,Madhogarh,derived_village,village_gram_panchayat_mapping.csv
+1221,Nadigaon,151,855,Konch,derived_village,village_gram_panchayat_mapping.csv
+1222,Rampura,151,851,Madhogarh,derived_village,village_gram_panchayat_mapping.csv
+1223,Badla Pur,152,982,Badlapur,derived_village,village_gram_panchayat_mapping.csv
+1224,Baksha,152,982,Badlapur,derived_village,village_gram_panchayat_mapping.csv
+1224,Baksha,152,984,Jaunpur,derived_village,village_gram_panchayat_mapping.csv
+1225,Barasathi,152,983,Machhlishahr,derived_village,village_gram_panchayat_mapping.csv
+1225,Barasathi,152,985,Mariahu,derived_village,village_gram_panchayat_mapping.csv
+1226,Dharma Pur,152,984,Jaunpur,derived_village,village_gram_panchayat_mapping.csv
+1227,Dobhi,152,986,Kerakat,derived_village,village_gram_panchayat_mapping.csv
+1228,Jalal Pur,152,986,Kerakat,derived_village,village_gram_panchayat_mapping.csv
+1229,Karanja Kala,152,981,Shahganj,derived_village,village_gram_panchayat_mapping.csv
+1229,Karanja Kala,152,984,Jaunpur,derived_village,village_gram_panchayat_mapping.csv
+1230,Kerakat,152,986,Kerakat,derived_village,village_gram_panchayat_mapping.csv
+1231,Khuthan,152,981,Shahganj,derived_village,village_gram_panchayat_mapping.csv
+1232,Machchali Shahar,152,983,Machhlishahr,derived_village,village_gram_panchayat_mapping.csv
+1233,Maharaj Ganj,152,982,Badlapur,derived_village,village_gram_panchayat_mapping.csv
+1234,Mariyahu,152,983,Machhlishahr,derived_village,village_gram_panchayat_mapping.csv
+1234,Mariyahu,152,985,Mariahu,derived_village,village_gram_panchayat_mapping.csv
+1235,Mufti Ganj,152,986,Kerakat,derived_village,village_gram_panchayat_mapping.csv
+1236,Mungra Badshah Pur,152,983,Machhlishahr,derived_village,village_gram_panchayat_mapping.csv
+1237,Ram Nagar,152,985,Mariahu,derived_village,village_gram_panchayat_mapping.csv
+1238,Ram Pur,152,985,Mariahu,derived_village,village_gram_panchayat_mapping.csv
+1239,Shah Ganj,152,981,Shahganj,derived_village,village_gram_panchayat_mapping.csv
+1239,Shah Ganj,152,984,Jaunpur,derived_village,village_gram_panchayat_mapping.csv
+1240,Sikrara,152,984,Jaunpur,derived_village,village_gram_panchayat_mapping.csv
+1241,Sirkoni,152,984,Jaunpur,derived_village,village_gram_panchayat_mapping.csv
+1242,Suitha Kala,152,981,Shahganj,derived_village,village_gram_panchayat_mapping.csv
+1243,Sujan Ganj,152,983,Machhlishahr,derived_village,village_gram_panchayat_mapping.csv
+1244,Babina,153,860,Jhansi,derived_village,village_gram_panchayat_mapping.csv
+1245,Badagaon,153,860,Jhansi,derived_village,village_gram_panchayat_mapping.csv
+1246,Bamaur,153,857,Garautha,derived_village,village_gram_panchayat_mapping.csv
+1246,Bamaur,153,858,Tahrauli,derived_village,village_gram_panchayat_mapping.csv
+1247,Bangra,153,858,Tahrauli,derived_village,village_gram_panchayat_mapping.csv
+1247,Bangra,153,859,Mauranipur,derived_village,village_gram_panchayat_mapping.csv
+1248,Chirgaon,153,856,Moth,derived_village,village_gram_panchayat_mapping.csv
+1248,Chirgaon,153,858,Tahrauli,derived_village,village_gram_panchayat_mapping.csv
+1249,Gursarai,153,857,Garautha,derived_village,village_gram_panchayat_mapping.csv
+1249,Gursarai,153,858,Tahrauli,derived_village,village_gram_panchayat_mapping.csv
+1250,Mauranipur,153,859,Mauranipur,derived_village,village_gram_panchayat_mapping.csv
+1251,Moth,153,856,Moth,derived_village,village_gram_panchayat_mapping.csv
+1252,Amroha,154,730,Amroha,derived_village,village_gram_panchayat_mapping.csv
+1252,Amroha,154,6831,Naugawan Sadat,derived_village,village_gram_panchayat_mapping.csv
+1253,Dhanaura,154,729,Dhanaura,derived_village,village_gram_panchayat_mapping.csv
+1254,Gajraula,154,729,Dhanaura,derived_village,village_gram_panchayat_mapping.csv
+1254,Gajraula,154,731,Hasanpur,derived_village,village_gram_panchayat_mapping.csv
+1255,Gangeshwari,154,731,Hasanpur,derived_village,village_gram_panchayat_mapping.csv
+1256,Hasanpur,154,731,Hasanpur,derived_village,village_gram_panchayat_mapping.csv
+1257,Joya,154,729,Dhanaura,derived_village,village_gram_panchayat_mapping.csv
+1257,Joya,154,730,Amroha,derived_village,village_gram_panchayat_mapping.csv
+1257,Joya,154,6831,Naugawan Sadat,derived_village,village_gram_panchayat_mapping.csv
+1258,Chhibramau,155,833,Chhibramau,derived_village,village_gram_panchayat_mapping.csv
+1259,Gughrapur,155,833,Chhibramau,derived_village,village_gram_panchayat_mapping.csv
+1259,Gughrapur,155,834,Kannauj,derived_village,village_gram_panchayat_mapping.csv
+1260,Haseran,155,835,Tirwa,derived_village,village_gram_panchayat_mapping.csv
+1261,Jalalabad,155,834,Kannauj,derived_village,village_gram_panchayat_mapping.csv
+1262,Kannauj,155,834,Kannauj,derived_village,village_gram_panchayat_mapping.csv
+1263,Saurikh,155,833,Chhibramau,derived_village,village_gram_panchayat_mapping.csv
+1264,Talgram,155,833,Chhibramau,derived_village,village_gram_panchayat_mapping.csv
+1265,Umarda,155,835,Tirwa,derived_village,village_gram_panchayat_mapping.csv
+1266,Akbarpur,156,845,Akbarpur,derived_village,village_gram_panchayat_mapping.csv
+1266,Akbarpur,156,6871,Maitha,derived_village,village_gram_panchayat_mapping.csv
+1267,Amrodha,156,846,Bhognipur,derived_village,village_gram_panchayat_mapping.csv
+1268,Derapur,156,844,Derapur,derived_village,village_gram_panchayat_mapping.csv
+1269,Jhinjhak,156,843,Rasulabad,derived_village,village_gram_panchayat_mapping.csv
+1269,Jhinjhak,156,844,Derapur,derived_village,village_gram_panchayat_mapping.csv
+1270,Maitha,156,845,Akbarpur,derived_village,village_gram_panchayat_mapping.csv
+1270,Maitha,156,6871,Maitha,derived_village,village_gram_panchayat_mapping.csv
+1271,Malasa,156,846,Bhognipur,derived_village,village_gram_panchayat_mapping.csv
+1272,Rajpur,156,847,Sikandra,derived_village,village_gram_panchayat_mapping.csv
+1273,Rasulabad,156,843,Rasulabad,derived_village,village_gram_panchayat_mapping.csv
+1274,Sandalpur,156,847,Sikandra,derived_village,village_gram_panchayat_mapping.csv
+1275,Sarbankhera,156,845,Akbarpur,derived_village,village_gram_panchayat_mapping.csv
+1275,Sarbankhera,156,6871,Maitha,derived_village,village_gram_panchayat_mapping.csv
+1276,Bhitargaon,157,850,Ghatampur,derived_village,village_gram_panchayat_mapping.csv
+1276,Bhitargaon,157,6163,Narwal,exact,https://kanpurnagar.nic.in/subdivision-blocks/
+1277,Bilhaur,157,848,Bilhaur,exact,https://kanpurnagar.nic.in/subdivision-blocks/
+1278,Chaubeypur,157,848,Bilhaur,exact,https://kanpurnagar.nic.in/subdivision-blocks/
+1279,Ghatampur,157,850,Ghatampur,exact,https://kanpurnagar.nic.in/subdivision-blocks/
+1280,Kakwan,157,848,Bilhaur,exact,https://kanpurnagar.nic.in/subdivision-blocks/
+1281,Kalyanpur,157,849,Kanpur,verified_name_variant,https://kanpurnagar.nic.in/subdivision-blocks/
+1282,Patara,157,850,Ghatampur,exact,https://kanpurnagar.nic.in/subdivision-blocks/
+1283,Sarsol,157,6163,Narwal,verified_name_variant,https://kanpurnagar.nic.in/subdivision-blocks/
+1284,Shivrajpur,157,848,Bilhaur,exact,https://kanpurnagar.nic.in/subdivision-blocks/
+1285,Vidhunu,157,849,Kanpur,verified_name_variant,https://kanpurnagar.nic.in/subdivision-blocks/
+1285,Vidhunu,157,6163,Narwal,derived_village,village_gram_panchayat_mapping.csv
+1286,Chail,158,887,Chail,derived_village,village_gram_panchayat_mapping.csv
+1287,Kara,158,885,Sirathu,derived_village,village_gram_panchayat_mapping.csv
+1288,Kaushambi,158,886,Manjhanpur,derived_village,village_gram_panchayat_mapping.csv
+1289,Manjhanpur,158,886,Manjhanpur,derived_village,village_gram_panchayat_mapping.csv
+1290,Mooratganj,158,887,Chail,derived_village,village_gram_panchayat_mapping.csv
+1291,Nevada,158,887,Chail,derived_village,village_gram_panchayat_mapping.csv
+1292,Sarsawan,158,886,Manjhanpur,derived_village,village_gram_panchayat_mapping.csv
+1293,Sirathu,158,885,Sirathu,derived_village,village_gram_panchayat_mapping.csv
+1294,Bankeyganj,159,799,Gola Gokaran Nath,derived_village,village_gram_panchayat_mapping.csv
+1294,Bankeyganj,159,801,Lakhimpur,derived_village,village_gram_panchayat_mapping.csv
+1294,Bankeyganj,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1295,Behjam,159,801,Lakhimpur,derived_village,village_gram_panchayat_mapping.csv
+1295,Behjam,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1296,Bijuwa,159,798,Palia,derived_village,village_gram_panchayat_mapping.csv
+1296,Bijuwa,159,799,Gola Gokaran Nath,derived_village,village_gram_panchayat_mapping.csv
+1296,Bijuwa,159,800,Mohammdi,derived_village,village_gram_panchayat_mapping.csv
+1296,Bijuwa,159,801,Lakhimpur,derived_village,village_gram_panchayat_mapping.csv
+1296,Bijuwa,159,802,Dhaurahara,derived_village,village_gram_panchayat_mapping.csv
+1296,Bijuwa,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1297,Dhaurhara,159,802,Dhaurahara,derived_village,village_gram_panchayat_mapping.csv
+1297,Dhaurhara,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1298,Isanagar,159,802,Dhaurahara,derived_village,village_gram_panchayat_mapping.csv
+1298,Isanagar,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1299,Kumbhigola,159,797,Nighasan,derived_village,village_gram_panchayat_mapping.csv
+1299,Kumbhigola,159,799,Gola Gokaran Nath,derived_village,village_gram_panchayat_mapping.csv
+1299,Kumbhigola,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1300,Lakhimpur,159,797,Nighasan,derived_village,village_gram_panchayat_mapping.csv
+1300,Lakhimpur,159,801,Lakhimpur,derived_village,village_gram_panchayat_mapping.csv
+1300,Lakhimpur,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1301,Mitauli,159,800,Mohammdi,derived_village,village_gram_panchayat_mapping.csv
+1301,Mitauli,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1302,Mohammadi,159,800,Mohammdi,derived_village,village_gram_panchayat_mapping.csv
+1302,Mohammadi,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1303,Nakaha,159,801,Lakhimpur,derived_village,village_gram_panchayat_mapping.csv
+1304,Nighasan,159,797,Nighasan,derived_village,village_gram_panchayat_mapping.csv
+1304,Nighasan,159,802,Dhaurahara,derived_village,village_gram_panchayat_mapping.csv
+1305,Palia,159,798,Palia,derived_village,village_gram_panchayat_mapping.csv
+1306,Pasgawan,159,799,Gola Gokaran Nath,derived_village,village_gram_panchayat_mapping.csv
+1306,Pasgawan,159,800,Mohammdi,derived_village,village_gram_panchayat_mapping.csv
+1306,Pasgawan,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1307,Phoolbehar,159,801,Lakhimpur,derived_village,village_gram_panchayat_mapping.csv
+1308,Ramia Behar,159,797,Nighasan,derived_village,village_gram_panchayat_mapping.csv
+1308,Ramia Behar,159,802,Dhaurahara,derived_village,village_gram_panchayat_mapping.csv
+1308,Ramia Behar,159,6875,Mitauli,derived_village,village_gram_panchayat_mapping.csv
+1309,Dudhahi,160,958,Tamkuhi Raj,derived_village,village_gram_panchayat_mapping.csv
+1310,Fazilnagar,160,957,Kasya,derived_village,village_gram_panchayat_mapping.csv
+1310,Fazilnagar,160,958,Tamkuhi Raj,derived_village,village_gram_panchayat_mapping.csv
+1311,Hata,160,956,Hata,derived_village,village_gram_panchayat_mapping.csv
+1311,Hata,160,957,Kasya,derived_village,village_gram_panchayat_mapping.csv
+1312,Kaptainganj,160,956,Hata,derived_village,village_gram_panchayat_mapping.csv
+1312,Kaptainganj,160,958,Tamkuhi Raj,derived_village,village_gram_panchayat_mapping.csv
+1312,Kaptainganj,160,6879,Kaptanganj,derived_village,village_gram_panchayat_mapping.csv
+1313,Kasaya,160,957,Kasya,derived_village,village_gram_panchayat_mapping.csv
+1314,Khadda,160,6878,Khadda,derived_village,village_gram_panchayat_mapping.csv
+1315,Motichak,160,956,Hata,derived_village,village_gram_panchayat_mapping.csv
+1315,Motichak,160,957,Kasya,derived_village,village_gram_panchayat_mapping.csv
+1315,Motichak,160,6879,Kaptanganj,derived_village,village_gram_panchayat_mapping.csv
+1316,Nebua Naurangia,160,955,Padrauna,derived_village,village_gram_panchayat_mapping.csv
+1316,Nebua Naurangia,160,6878,Khadda,derived_village,village_gram_panchayat_mapping.csv
+1317,Padrauna,160,955,Padrauna,derived_village,village_gram_panchayat_mapping.csv
+1317,Padrauna,160,957,Kasya,derived_village,village_gram_panchayat_mapping.csv
+1318,Ramkola,160,956,Hata,derived_village,village_gram_panchayat_mapping.csv
+1318,Ramkola,160,957,Kasya,derived_village,village_gram_panchayat_mapping.csv
+1318,Ramkola,160,958,Tamkuhi Raj,derived_village,village_gram_panchayat_mapping.csv
+1318,Ramkola,160,6879,Kaptanganj,derived_village,village_gram_panchayat_mapping.csv
+1319,Seorahi,160,958,Tamkuhi Raj,derived_village,village_gram_panchayat_mapping.csv
+1320,Sukrauli,160,956,Hata,derived_village,village_gram_panchayat_mapping.csv
+1320,Sukrauli,160,958,Tamkuhi Raj,derived_village,village_gram_panchayat_mapping.csv
+1321,Tamkuhiraj,160,956,Hata,derived_village,village_gram_panchayat_mapping.csv
+1321,Tamkuhiraj,160,957,Kasya,derived_village,village_gram_panchayat_mapping.csv
+1321,Tamkuhiraj,160,958,Tamkuhi Raj,derived_village,village_gram_panchayat_mapping.csv
+1322,Vishunpura,160,955,Padrauna,derived_village,village_gram_panchayat_mapping.csv
+1322,Vishunpura,160,956,Hata,derived_village,village_gram_panchayat_mapping.csv
+1323,Bar,161,861,Talbehat,derived_village,village_gram_panchayat_mapping.csv
+1323,Bar,161,863,Mahroni,derived_village,village_gram_panchayat_mapping.csv
+1323,Bar,161,6369,Mdawara,derived_village,village_gram_panchayat_mapping.csv
+1324,Birdha,161,862,Lalitpur,derived_village,village_gram_panchayat_mapping.csv
+1324,Birdha,161,6881,Pali,derived_village,village_gram_panchayat_mapping.csv
+1325,Jakhaura,161,861,Talbehat,derived_village,village_gram_panchayat_mapping.csv
+1325,Jakhaura,161,862,Lalitpur,derived_village,village_gram_panchayat_mapping.csv
+1326,Mandawara,161,863,Mahroni,derived_village,village_gram_panchayat_mapping.csv
+1326,Mandawara,161,6369,Mdawara,derived_village,village_gram_panchayat_mapping.csv
+1326,Mandawara,161,6881,Pali,derived_village,village_gram_panchayat_mapping.csv
+1327,Mehroni,161,863,Mahroni,derived_village,village_gram_panchayat_mapping.csv
+1327,Mehroni,161,6369,Mdawara,derived_village,village_gram_panchayat_mapping.csv
+1327,Mehroni,161,6881,Pali,derived_village,village_gram_panchayat_mapping.csv
+1328,Talbehat,161,861,Talbehat,derived_village,village_gram_panchayat_mapping.csv
+1329,Bakshi-Ka-Talab,162,820,Bakshi Ka Talab,derived_village,village_gram_panchayat_mapping.csv
+1330,Chinhat,162,820,Bakshi Ka Talab,derived_village,village_gram_panchayat_mapping.csv
+1330,Chinhat,162,821,Sadar,derived_village,village_gram_panchayat_mapping.csv
+1330,Chinhat,162,6094,Sarojani Nagar,derived_village,village_gram_panchayat_mapping.csv
+1331,Gosaiganj,162,822,Mohanlalganj,derived_village,village_gram_panchayat_mapping.csv
+1332,Kakori,162,821,Sadar,derived_village,village_gram_panchayat_mapping.csv
+1332,Kakori,162,6094,Sarojani Nagar,derived_village,village_gram_panchayat_mapping.csv
+1333,Mal,162,819,Malihabad,derived_village,village_gram_panchayat_mapping.csv
+1334,Malihabad,162,819,Malihabad,derived_village,village_gram_panchayat_mapping.csv
+1335,Mohanlalganj,162,822,Mohanlalganj,derived_village,village_gram_panchayat_mapping.csv
+1336,Sarojaninagar,162,6094,Sarojani Nagar,derived_village,village_gram_panchayat_mapping.csv
+1337,Hasayan,163,758,Sikandra Rao,derived_village,village_gram_panchayat_mapping.csv
+1338,Hathras,163,759,Hathras,derived_village,village_gram_panchayat_mapping.csv
+1339,Mursan,163,759,Hathras,derived_village,village_gram_panchayat_mapping.csv
+1340,Sadabad,163,760,Sadabad,derived_village,village_gram_panchayat_mapping.csv
+1341,Sasni,163,757,Sasni,derived_village,village_gram_panchayat_mapping.csv
+1342,Sehpau,163,760,Sadabad,derived_village,village_gram_panchayat_mapping.csv
+1343,Sikandrarao,163,758,Sikandra Rao,derived_village,village_gram_panchayat_mapping.csv
+1344,Bridgemanganj,164,946,Pharenda,derived_village,village_gram_panchayat_mapping.csv
+1345,Dhani,164,946,Pharenda,derived_village,village_gram_panchayat_mapping.csv
+1346,Ghughli,164,947,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1347,Lakshmipur,164,944,Nautanwa,derived_village,village_gram_panchayat_mapping.csv
+1348,Mahrajganj,164,947,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1349,Mithaura,164,945,Nichlaul,derived_village,village_gram_panchayat_mapping.csv
+1349,Mithaura,164,947,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1350,Nautanwa,164,944,Nautanwa,derived_village,village_gram_panchayat_mapping.csv
+1351,Nichlaul,164,945,Nichlaul,derived_village,village_gram_panchayat_mapping.csv
+1352,Paniyara,164,947,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1353,Partawal,164,947,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1354,Pharenda,164,944,Nautanwa,derived_village,village_gram_panchayat_mapping.csv
+1354,Pharenda,164,946,Pharenda,derived_village,village_gram_panchayat_mapping.csv
+1355,Siswa,164,945,Nichlaul,derived_village,village_gram_panchayat_mapping.csv
+1355,Siswa,164,947,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1356,Charkhari,165,869,Charkhari,derived_village,village_gram_panchayat_mapping.csv
+1357,Jaitpur,165,868,Kulpahar,derived_village,village_gram_panchayat_mapping.csv
+1358,Kabrai,165,870,Mahoba,derived_village,village_gram_panchayat_mapping.csv
+1359,Panwari,165,868,Kulpahar,derived_village,village_gram_panchayat_mapping.csv
+1360,Barnahal,166,776,Karhal,derived_village,village_gram_panchayat_mapping.csv
+1360,Barnahal,166,6873,Ghiror,derived_village,village_gram_panchayat_mapping.csv
+1361,Bewar,166,777,Bhogaon,derived_village,village_gram_panchayat_mapping.csv
+1361,Bewar,166,6872,Kishni,derived_village,village_gram_panchayat_mapping.csv
+1362,Ghiror,166,775,Mainpuri,derived_village,village_gram_panchayat_mapping.csv
+1362,Ghiror,166,6873,Ghiror,derived_village,village_gram_panchayat_mapping.csv
+1362,Ghiror,166,6874,Kurawali,derived_village,village_gram_panchayat_mapping.csv
+1363,Jageer,166,777,Bhogaon,derived_village,village_gram_panchayat_mapping.csv
+1364,Karhal,166,776,Karhal,derived_village,village_gram_panchayat_mapping.csv
+1364,Karhal,166,6872,Kishni,derived_village,village_gram_panchayat_mapping.csv
+1365,Kishni,166,777,Bhogaon,derived_village,village_gram_panchayat_mapping.csv
+1365,Kishni,166,6872,Kishni,derived_village,village_gram_panchayat_mapping.csv
+1366,Kuraoli,166,775,Mainpuri,derived_village,village_gram_panchayat_mapping.csv
+1366,Kuraoli,166,6874,Kurawali,derived_village,village_gram_panchayat_mapping.csv
+1367,Mainpuri,166,775,Mainpuri,derived_village,village_gram_panchayat_mapping.csv
+1367,Mainpuri,166,6874,Kurawali,derived_village,village_gram_panchayat_mapping.csv
+1368,Sultanganj,166,777,Bhogaon,derived_village,village_gram_panchayat_mapping.csv
+1368,Sultanganj,166,6874,Kurawali,derived_village,village_gram_panchayat_mapping.csv
+1369,Baldeo,167,763,Mahavan,derived_village,village_gram_panchayat_mapping.csv
+1370,Chaumuha,167,761,Chhata,derived_village,village_gram_panchayat_mapping.csv
+1370,Chaumuha,167,6832,Govardhan,derived_village,village_gram_panchayat_mapping.csv
+1371,Chhata,167,761,Chhata,derived_village,village_gram_panchayat_mapping.csv
+1372,Farah,167,764,Mathura,derived_village,village_gram_panchayat_mapping.csv
+1372,Farah,167,6832,Govardhan,derived_village,village_gram_panchayat_mapping.csv
+1373,Govardhan,167,6832,Govardhan,derived_village,village_gram_panchayat_mapping.csv
+1374,Mat,167,762,Mat,derived_village,village_gram_panchayat_mapping.csv
+1375,Mathura,167,764,Mathura,derived_village,village_gram_panchayat_mapping.csv
+1375,Mathura,167,6832,Govardhan,derived_village,village_gram_panchayat_mapping.csv
+1376,Nandgaon,167,761,Chhata,derived_village,village_gram_panchayat_mapping.csv
+1376,Nandgaon,167,6832,Govardhan,derived_village,village_gram_panchayat_mapping.csv
+1377,Nohjhil,167,762,Mat,derived_village,village_gram_panchayat_mapping.csv
+1378,Raya,167,762,Mat,derived_village,village_gram_panchayat_mapping.csv
+1378,Raya,167,763,Mahavan,derived_village,village_gram_panchayat_mapping.csv
+1379,Badraon,168,971,Ghosi,derived_village,village_gram_panchayat_mapping.csv
+1380,Dohri Ghat,168,971,Ghosi,derived_village,village_gram_panchayat_mapping.csv
+1380,Dohri Ghat,168,972,Madhuban,derived_village,village_gram_panchayat_mapping.csv
+1381,Fatehpur Madaun,168,972,Madhuban,derived_village,village_gram_panchayat_mapping.csv
+1382,Ghosi,168,971,Ghosi,derived_village,village_gram_panchayat_mapping.csv
+1382,Ghosi,168,972,Madhuban,derived_village,village_gram_panchayat_mapping.csv
+1383,Kopaganj,168,973,Maunath Bhanjan,derived_village,village_gram_panchayat_mapping.csv
+1384,Mohammadabad Gohana,168,974,Muhammadabad Gohna,derived_village,village_gram_panchayat_mapping.csv
+1385,Pardaha,168,973,Maunath Bhanjan,derived_village,village_gram_panchayat_mapping.csv
+1386,Ranipur,168,974,Muhammadabad Gohna,derived_village,village_gram_panchayat_mapping.csv
+1387,Ratanpura,168,973,Maunath Bhanjan,derived_village,village_gram_panchayat_mapping.csv
+1388,Daurala,169,732,Sardhana,derived_village,village_gram_panchayat_mapping.csv
+1389,Hastinapur,169,733,Mawana,derived_village,village_gram_panchayat_mapping.csv
+1390,Janikhurd,169,734,Meerut,derived_village,village_gram_panchayat_mapping.csv
+1391,Kharkhoda,169,734,Meerut,derived_village,village_gram_panchayat_mapping.csv
+1392,Machra,169,733,Mawana,derived_village,village_gram_panchayat_mapping.csv
+1393,Mawana Kalan,169,733,Mawana,derived_village,village_gram_panchayat_mapping.csv
+1394,Meerut,169,734,Meerut,derived_village,village_gram_panchayat_mapping.csv
+1395,Parikshitgarh,169,733,Mawana,derived_village,village_gram_panchayat_mapping.csv
+1396,Rajpura,169,734,Meerut,derived_village,village_gram_panchayat_mapping.csv
+1397,Rohta,169,734,Meerut,derived_village,village_gram_panchayat_mapping.csv
+1398,Sardhana,169,732,Sardhana,derived_village,village_gram_panchayat_mapping.csv
+1399,Sarurpur Khurd,169,732,Sardhana,derived_village,village_gram_panchayat_mapping.csv
+1400,Chhanvey,170,1000,Mirzapur,derived_village,village_gram_panchayat_mapping.csv
+1400,Chhanvey,170,1001,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1401,Hallia,170,1001,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1402,Jamalpur,170,1003,Chunar,derived_village,village_gram_panchayat_mapping.csv
+1403,Kon,170,1000,Mirzapur,derived_village,village_gram_panchayat_mapping.csv
+1404,Lalganj,170,1001,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1405,Majhawa,170,1000,Mirzapur,derived_village,village_gram_panchayat_mapping.csv
+1406,Nagar (City),170,1000,Mirzapur,derived_village,village_gram_panchayat_mapping.csv
+1407,Narainpur,170,1003,Chunar,derived_village,village_gram_panchayat_mapping.csv
+1408,Pahari,170,1000,Mirzapur,derived_village,village_gram_panchayat_mapping.csv
+1409,Patehra,170,1002,Marihan,derived_village,village_gram_panchayat_mapping.csv
+1410,Rajgarh,170,1002,Marihan,derived_village,village_gram_panchayat_mapping.csv
+1410,Rajgarh,170,1003,Chunar,derived_village,village_gram_panchayat_mapping.csv
+1411,Shikhar,170,1003,Chunar,derived_village,village_gram_panchayat_mapping.csv
+1412,Asmauli,659,721,Sambhal,derived_village,village_gram_panchayat_mapping.csv
+1413,Bahjoi,659,722,Chandausi,derived_village,village_gram_panchayat_mapping.csv
+1414,Baniyakhera,659,722,Chandausi,derived_village,village_gram_panchayat_mapping.csv
+1415,Bhagatpur Tanda,171,719,Moradabad,derived_village,village_gram_panchayat_mapping.csv
+1416,Bilari,171,720,Bilari,derived_village,village_gram_panchayat_mapping.csv
+1417,Chhajlet,171,718,Kanth,derived_village,village_gram_panchayat_mapping.csv
+1418,Dilari,171,717,Thakurdwara,derived_village,village_gram_panchayat_mapping.csv
+1418,Dilari,171,718,Kanth,derived_village,village_gram_panchayat_mapping.csv
+1419,Kundarki,171,720,Bilari,derived_village,village_gram_panchayat_mapping.csv
+1420,Moradabad,171,719,Moradabad,derived_village,village_gram_panchayat_mapping.csv
+1421,Munda Pandey,171,719,Moradabad,derived_village,village_gram_panchayat_mapping.csv
+1422,Panwasa,659,721,Sambhal,derived_village,village_gram_panchayat_mapping.csv
+1422,Panwasa,659,722,Chandausi,derived_village,village_gram_panchayat_mapping.csv
+1423,Sambhal,659,721,Sambhal,derived_village,village_gram_panchayat_mapping.csv
+1424,Thakurdwara,171,717,Thakurdwara,derived_village,village_gram_panchayat_mapping.csv
+1424,Thakurdwara,171,718,Kanth,derived_village,village_gram_panchayat_mapping.csv
+1425,Baghara,172,708,Muzaffarnagar,derived_village,village_gram_panchayat_mapping.csv
+1426,Budhana,172,709,Budhana,derived_village,village_gram_panchayat_mapping.csv
+1427,Charthawal,172,708,Muzaffarnagar,derived_village,village_gram_panchayat_mapping.csv
+1428,Jansath,172,711,Jansath,derived_village,village_gram_panchayat_mapping.csv
+1429,Kairana,660,706,Kairana,derived_village,village_gram_panchayat_mapping.csv
+1429,Kairana,660,707,Shamli,derived_village,village_gram_panchayat_mapping.csv
+1430,Kandhla,660,706,Kairana,derived_village,village_gram_panchayat_mapping.csv
+1430,Kandhla,660,707,Shamli,derived_village,village_gram_panchayat_mapping.csv
+1431,Khatauli,172,710,Khatauli,derived_village,village_gram_panchayat_mapping.csv
+1431,Khatauli,172,711,Jansath,derived_village,village_gram_panchayat_mapping.csv
+1432,Morna,172,711,Jansath,derived_village,village_gram_panchayat_mapping.csv
+1433,Muzaffarnagar,172,708,Muzaffarnagar,derived_village,village_gram_panchayat_mapping.csv
+1434,Purkaji,172,708,Muzaffarnagar,derived_village,village_gram_panchayat_mapping.csv
+1435,Shahpur,172,709,Budhana,derived_village,village_gram_panchayat_mapping.csv
+1435,Shahpur,172,710,Khatauli,derived_village,village_gram_panchayat_mapping.csv
+1436,Shamli,660,707,Shamli,derived_village,village_gram_panchayat_mapping.csv
+1437,Thana Bhawan,660,707,Shamli,derived_village,village_gram_panchayat_mapping.csv
+1437,Thana Bhawan,660,6159,Un,derived_village,village_gram_panchayat_mapping.csv
+1438,Un,660,706,Kairana,derived_village,village_gram_panchayat_mapping.csv
+1438,Un,660,707,Shamli,derived_village,village_gram_panchayat_mapping.csv
+1438,Un,660,6159,Un,derived_village,village_gram_panchayat_mapping.csv
+1439,Amariya,173,790,Pilibhit,derived_village,village_gram_panchayat_mapping.csv
+1439,Amariya,173,6867,Amariya,derived_village,village_gram_panchayat_mapping.csv
+1440,Barkhera,173,791,Bisalpur,derived_village,village_gram_panchayat_mapping.csv
+1441,Bilsanda,173,791,Bisalpur,derived_village,village_gram_panchayat_mapping.csv
+1442,Bisalpur,173,791,Bisalpur,derived_village,village_gram_panchayat_mapping.csv
+1443,Lalaurikhera,173,790,Pilibhit,derived_village,village_gram_panchayat_mapping.csv
+1444,Marori,173,790,Pilibhit,derived_village,village_gram_panchayat_mapping.csv
+1444,Marori,173,6867,Amariya,derived_village,village_gram_panchayat_mapping.csv
+1445,Puranpur,173,792,Puranpur,derived_village,village_gram_panchayat_mapping.csv
+1445,Puranpur,173,6866,Kalinagar,derived_village,village_gram_panchayat_mapping.csv
+1446,Aspur Deosara,174,883,Patti,derived_village,village_gram_panchayat_mapping.csv
+1447,Baba Belkharnath Dham,174,883,Patti,derived_village,village_gram_panchayat_mapping.csv
+1447,Baba Belkharnath Dham,174,884,Raniganj,derived_village,village_gram_panchayat_mapping.csv
+1448,Babaganj,174,880,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1448,Babaganj,174,881,Kunda,derived_village,village_gram_panchayat_mapping.csv
+1449,Bihar,174,881,Kunda,derived_village,village_gram_panchayat_mapping.csv
+1450,Gaura,174,884,Raniganj,derived_village,village_gram_panchayat_mapping.csv
+1451,Kalakankar,174,881,Kunda,derived_village,village_gram_panchayat_mapping.csv
+1452,Kunda,174,881,Kunda,derived_village,village_gram_panchayat_mapping.csv
+1453,Lakshamanpur,174,880,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1454,Lalganj,174,880,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1455,Magraura,174,883,Patti,derived_village,village_gram_panchayat_mapping.csv
+1456,Mandhata,174,882,Pratapgarh,derived_village,village_gram_panchayat_mapping.csv
+1456,Mandhata,174,884,Raniganj,derived_village,village_gram_panchayat_mapping.csv
+1457,Patti,174,883,Patti,derived_village,village_gram_panchayat_mapping.csv
+1458,Pratapgarh (Sadar),174,882,Pratapgarh,derived_village,village_gram_panchayat_mapping.csv
+1458,Pratapgarh (Sadar),174,884,Raniganj,derived_village,village_gram_panchayat_mapping.csv
+1459,Rampur Sanramgarh,174,880,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1459,Rampur Sanramgarh,174,881,Kunda,derived_village,village_gram_panchayat_mapping.csv
+1460,Sandwa Chandrika,174,882,Pratapgarh,derived_village,village_gram_panchayat_mapping.csv
+1461,Sangipur,174,880,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1462,Shivgarh,174,884,Raniganj,derived_village,village_gram_panchayat_mapping.csv
+1463,Amawan,175,823,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1463,Amawan,175,825,Rae Bareli,derived_village,village_gram_panchayat_mapping.csv
+1464,Bachharawan,175,823,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1465,Bahadurpur,640,824,Tiloi,derived_village,village_gram_panchayat_mapping.csv
+1466,Chhatoh,175,829,Salon,derived_village,village_gram_panchayat_mapping.csv
+1467,Dalmau,175,827,Dalmau,derived_village,village_gram_panchayat_mapping.csv
+1468,Deenshah Gaura,175,827,Dalmau,derived_village,village_gram_panchayat_mapping.csv
+1469,Dih,175,829,Salon,derived_village,village_gram_panchayat_mapping.csv
+1470,Harchandpur,175,825,Rae Bareli,derived_village,village_gram_panchayat_mapping.csv
+1471,Jagatpur,175,828,Unchahar,derived_village,village_gram_panchayat_mapping.csv
+1472,Khiron,175,826,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1473,Lalganj,175,826,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1474,Mahrajganj,175,823,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1475,Rahi,175,825,Rae Bareli,derived_village,village_gram_panchayat_mapping.csv
+1476,Rohania,175,828,Unchahar,derived_village,village_gram_panchayat_mapping.csv
+1477,Salon,175,829,Salon,derived_village,village_gram_panchayat_mapping.csv
+1478,Sareni,175,826,Lalganj,derived_village,village_gram_panchayat_mapping.csv
+1479,Sataon,175,825,Rae Bareli,derived_village,village_gram_panchayat_mapping.csv
+1480,Shivgarh,175,823,Maharajganj,derived_village,village_gram_panchayat_mapping.csv
+1481,Singhpur,640,824,Tiloi,derived_village,village_gram_panchayat_mapping.csv
+1482,Tiloi,640,824,Tiloi,derived_village,village_gram_panchayat_mapping.csv
+1483,Unchahar,175,828,Unchahar,derived_village,village_gram_panchayat_mapping.csv
+1484,Bilaspur,176,723,Suar,derived_village,village_gram_panchayat_mapping.csv
+1484,Bilaspur,176,725,Bilaspur,derived_village,village_gram_panchayat_mapping.csv
+1485,Chamraon,176,726,Rampur,derived_village,village_gram_panchayat_mapping.csv
+1486,Milak,176,728,Milak,derived_village,village_gram_panchayat_mapping.csv
+1487,Saidnagar,176,724,Tanda,derived_village,village_gram_panchayat_mapping.csv
+1487,Saidnagar,176,726,Rampur,derived_village,village_gram_panchayat_mapping.csv
+1488,Shahabad,176,727,Shahabad,derived_village,village_gram_panchayat_mapping.csv
+1489,Suar,176,723,Suar,derived_village,village_gram_panchayat_mapping.csv
+1489,Suar,176,724,Tanda,derived_village,village_gram_panchayat_mapping.csv
+1490,Ballia Kheri,177,702,Saharanpur,derived_village,village_gram_panchayat_mapping.csv
+1491,Deoband,177,704,Deoband,derived_village,village_gram_panchayat_mapping.csv
+1492,Gangoh,177,703,Nakur,derived_village,village_gram_panchayat_mapping.csv
+1493,Muzaffarabad,177,701,Behat,derived_village,village_gram_panchayat_mapping.csv
+1493,Muzaffarabad,177,702,Saharanpur,derived_village,village_gram_panchayat_mapping.csv
+1494,Nagal,177,704,Deoband,derived_village,village_gram_panchayat_mapping.csv
+1495,Nakur,177,703,Nakur,derived_village,village_gram_panchayat_mapping.csv
+1496,Nanauta,177,705,Rampur Maniharan,derived_village,village_gram_panchayat_mapping.csv
+1497,Puwarka,177,702,Saharanpur,derived_village,village_gram_panchayat_mapping.csv
+1498,Rampur Maniharan,177,705,Rampur Maniharan,derived_village,village_gram_panchayat_mapping.csv
+1499,Sadauli Qadeem,177,701,Behat,derived_village,village_gram_panchayat_mapping.csv
+1500,Sarsawan,177,702,Saharanpur,derived_village,village_gram_panchayat_mapping.csv
+1500,Sarsawan,177,703,Nakur,derived_village,village_gram_panchayat_mapping.csv
+1501,Baghauli,178,942,Khalilabad,derived_village,village_gram_panchayat_mapping.csv
+1502,Belhar Kala,178,941,Mehdawal,derived_village,village_gram_panchayat_mapping.csv
+1502,Belhar Kala,178,942,Khalilabad,derived_village,village_gram_panchayat_mapping.csv
+1503,Hainsar Bazar,178,943,Ghanghata,derived_village,village_gram_panchayat_mapping.csv
+1504,Khalilabad,178,942,Khalilabad,derived_village,village_gram_panchayat_mapping.csv
+1505,Mehdawal,178,941,Mehdawal,derived_village,village_gram_panchayat_mapping.csv
+1506,Nath Nagar,178,943,Ghanghata,derived_village,village_gram_panchayat_mapping.csv
+1507,Pauli,178,943,Ghanghata,derived_village,village_gram_panchayat_mapping.csv
+1508,Santha,178,941,Mehdawal,derived_village,village_gram_panchayat_mapping.csv
+1509,Semariyawan,178,942,Khalilabad,derived_village,village_gram_panchayat_mapping.csv
+1510,Abhauli,179,997,Bhadohi,derived_village,village_gram_panchayat_mapping.csv
+1510,Abhauli,179,998,Gyanpur,derived_village,village_gram_panchayat_mapping.csv
+1511,Aurai,179,998,Gyanpur,derived_village,village_gram_panchayat_mapping.csv
+1511,Aurai,179,999,Aurai,derived_village,village_gram_panchayat_mapping.csv
+1512,Bhadohi,179,997,Bhadohi,derived_village,village_gram_panchayat_mapping.csv
+1512,Bhadohi,179,999,Aurai,derived_village,village_gram_panchayat_mapping.csv
+1513,Deegh,179,998,Gyanpur,derived_village,village_gram_panchayat_mapping.csv
+1514,Gyanpur,179,997,Bhadohi,derived_village,village_gram_panchayat_mapping.csv
+1514,Gyanpur,179,998,Gyanpur,derived_village,village_gram_panchayat_mapping.csv
+1515,Suriyavan,179,997,Bhadohi,derived_village,village_gram_panchayat_mapping.csv
+1516,Banda,180,793,Powayan,derived_village,village_gram_panchayat_mapping.csv
+1517,Bhawal Khera,180,795,Shahjahanpur,derived_village,village_gram_panchayat_mapping.csv
+1518,Dadrol,180,795,Shahjahanpur,derived_village,village_gram_panchayat_mapping.csv
+1519,Jaitipur,180,794,Tilhar,derived_village,village_gram_panchayat_mapping.csv
+1520,Jalalabad,180,796,Jalalabad,derived_village,village_gram_panchayat_mapping.csv
+1520,Jalalabad,180,6882,Kalan,derived_village,village_gram_panchayat_mapping.csv
+1521,Kalan,180,6882,Kalan,derived_village,village_gram_panchayat_mapping.csv
+1522,Kanth,180,795,Shahjahanpur,derived_village,village_gram_panchayat_mapping.csv
+1523,Khudaganj Katra,180,794,Tilhar,derived_village,village_gram_panchayat_mapping.csv
+1524,Khutar,180,793,Powayan,derived_village,village_gram_panchayat_mapping.csv
+1525,Madnapur,180,794,Tilhar,derived_village,village_gram_panchayat_mapping.csv
+1525,Madnapur,180,795,Shahjahanpur,derived_village,village_gram_panchayat_mapping.csv
+1525,Madnapur,180,796,Jalalabad,derived_village,village_gram_panchayat_mapping.csv
+1526,Mirzapur,180,796,Jalalabad,derived_village,village_gram_panchayat_mapping.csv
+1526,Mirzapur,180,6882,Kalan,derived_village,village_gram_panchayat_mapping.csv
+1527,Nigohi,180,794,Tilhar,derived_village,village_gram_panchayat_mapping.csv
+1528,Powayan,180,793,Powayan,derived_village,village_gram_panchayat_mapping.csv
+1529,Sindhauli,180,793,Powayan,derived_village,village_gram_panchayat_mapping.csv
+1530,Tilhar,180,794,Tilhar,derived_village,village_gram_panchayat_mapping.csv
+1531,Ekona,181,924,Ikauna,derived_village,village_gram_panchayat_mapping.csv
+1532,Gilaula,181,924,Ikauna,derived_village,village_gram_panchayat_mapping.csv
+1532,Gilaula,181,6164,Jamunaha,derived_village,village_gram_panchayat_mapping.csv
+1533,Hariharpur Rani,181,923,Bhinga,derived_village,village_gram_panchayat_mapping.csv
+1534,Jamunaha,181,923,Bhinga,derived_village,village_gram_panchayat_mapping.csv
+1534,Jamunaha,181,6164,Jamunaha,derived_village,village_gram_panchayat_mapping.csv
+1535,Sirsiya,181,923,Bhinga,derived_village,village_gram_panchayat_mapping.csv
+1536,Bansi,182,934,Bansi,derived_village,village_gram_panchayat_mapping.csv
+1537,Barhni,182,932,Shohratgarh,derived_village,village_gram_panchayat_mapping.csv
+1538,Bhanwapur,182,935,Itwa,derived_village,village_gram_panchayat_mapping.csv
+1538,Bhanwapur,182,936,Domariyaganj,derived_village,village_gram_panchayat_mapping.csv
+1539,Birdpur,182,932,Shohratgarh,derived_village,village_gram_panchayat_mapping.csv
+1539,Birdpur,182,933,Naugarh,derived_village,village_gram_panchayat_mapping.csv
+1540,Domariyaganj,182,936,Domariyaganj,derived_village,village_gram_panchayat_mapping.csv
+1541,Itwa,182,935,Itwa,derived_village,village_gram_panchayat_mapping.csv
+1542,Jogia,182,932,Shohratgarh,derived_village,village_gram_panchayat_mapping.csv
+1542,Jogia,182,933,Naugarh,derived_village,village_gram_panchayat_mapping.csv
+1543,Khesraha,182,934,Bansi,derived_village,village_gram_panchayat_mapping.csv
+1544,Khuniyaon,182,935,Itwa,derived_village,village_gram_panchayat_mapping.csv
+1544,Khuniyaon,182,936,Domariyaganj,derived_village,village_gram_panchayat_mapping.csv
+1545,Lotan,182,933,Naugarh,derived_village,village_gram_panchayat_mapping.csv
+1546,Mithwal,182,934,Bansi,derived_village,village_gram_panchayat_mapping.csv
+1547,Naugarh,182,932,Shohratgarh,derived_village,village_gram_panchayat_mapping.csv
+1547,Naugarh,182,933,Naugarh,derived_village,village_gram_panchayat_mapping.csv
+1548,Shoharatgarh,182,932,Shohratgarh,derived_village,village_gram_panchayat_mapping.csv
+1549,Uska Bazar,182,933,Naugarh,derived_village,village_gram_panchayat_mapping.csv
+1550,Ailiya,183,804,Sitapur,derived_village,village_gram_panchayat_mapping.csv
+1550,Ailiya,183,806,Biswan,derived_village,village_gram_panchayat_mapping.csv
+1550,Ailiya,183,808,Sidhauli,derived_village,village_gram_panchayat_mapping.csv
+1550,Ailiya,183,6880,Maholi,derived_village,village_gram_panchayat_mapping.csv
+1551,Behta,183,805,Laharpur,derived_village,village_gram_panchayat_mapping.csv
+1551,Behta,183,806,Biswan,derived_village,village_gram_panchayat_mapping.csv
+1551,Behta,183,808,Sidhauli,derived_village,village_gram_panchayat_mapping.csv
+1552,Biswan,183,805,Laharpur,derived_village,village_gram_panchayat_mapping.csv
+1552,Biswan,183,806,Biswan,derived_village,village_gram_panchayat_mapping.csv
+1553,Gondlamau,183,803,Misrikh,derived_village,village_gram_panchayat_mapping.csv
+1553,Gondlamau,183,808,Sidhauli,derived_village,village_gram_panchayat_mapping.csv
+1554,Hargaon,183,804,Sitapur,derived_village,village_gram_panchayat_mapping.csv
+1554,Hargaon,183,805,Laharpur,derived_village,village_gram_panchayat_mapping.csv
+1554,Hargaon,183,6880,Maholi,derived_village,village_gram_panchayat_mapping.csv
+1555,Kasmanda,183,808,Sidhauli,derived_village,village_gram_panchayat_mapping.csv
+1556,Khairabad,183,803,Misrikh,derived_village,village_gram_panchayat_mapping.csv
+1556,Khairabad,183,804,Sitapur,derived_village,village_gram_panchayat_mapping.csv
+1557,Laharpur,183,805,Laharpur,derived_village,village_gram_panchayat_mapping.csv
+1557,Laharpur,183,806,Biswan,derived_village,village_gram_panchayat_mapping.csv
+1557,Laharpur,183,808,Sidhauli,derived_village,village_gram_panchayat_mapping.csv
+1558,Machhrehta,183,803,Misrikh,derived_village,village_gram_panchayat_mapping.csv
+1559,Mahmudabad,183,807,Mahmudabad,derived_village,village_gram_panchayat_mapping.csv
+1560,Maholi,183,803,Misrikh,derived_village,village_gram_panchayat_mapping.csv
+1560,Maholi,183,6880,Maholi,derived_village,village_gram_panchayat_mapping.csv
+1561,Misrikh,183,803,Misrikh,derived_village,village_gram_panchayat_mapping.csv
+1561,Misrikh,183,6880,Maholi,derived_village,village_gram_panchayat_mapping.csv
+1562,Pahala,183,807,Mahmudabad,derived_village,village_gram_panchayat_mapping.csv
+1562,Pahala,183,808,Sidhauli,derived_village,village_gram_panchayat_mapping.csv
+1563,Parsendi,183,804,Sitapur,derived_village,village_gram_panchayat_mapping.csv
+1563,Parsendi,183,805,Laharpur,derived_village,village_gram_panchayat_mapping.csv
+1564,Pisawan,183,803,Misrikh,derived_village,village_gram_panchayat_mapping.csv
+1564,Pisawan,183,6880,Maholi,derived_village,village_gram_panchayat_mapping.csv
+1565,Rampur Mathura,183,807,Mahmudabad,derived_village,village_gram_panchayat_mapping.csv
+1566,Reusa,183,805,Laharpur,derived_village,village_gram_panchayat_mapping.csv
+1566,Reusa,183,806,Biswan,derived_village,village_gram_panchayat_mapping.csv
+1567,Sakran,183,805,Laharpur,derived_village,village_gram_panchayat_mapping.csv
+1567,Sakran,183,806,Biswan,derived_village,village_gram_panchayat_mapping.csv
+1568,Sidhauli,183,808,Sidhauli,derived_village,village_gram_panchayat_mapping.csv
+1569,Babhani,184,1006,Dudhi,derived_village,village_gram_panchayat_mapping.csv
+1570,Chatra,184,1005,Robertsganj,derived_village,village_gram_panchayat_mapping.csv
+1571,Chopan,184,1004,Ghorawal,derived_village,village_gram_panchayat_mapping.csv
+1571,Chopan,184,7127,Obra,derived_village,village_gram_panchayat_mapping.csv
+1572,Dudhi,184,1006,Dudhi,derived_village,village_gram_panchayat_mapping.csv
+1573,Ghorawal,184,1004,Ghorawal,derived_village,village_gram_panchayat_mapping.csv
+1573,Ghorawal,184,1005,Robertsganj,derived_village,village_gram_panchayat_mapping.csv
+1574,Myorpur,184,1006,Dudhi,derived_village,village_gram_panchayat_mapping.csv
+1575,Nagwa,184,1005,Robertsganj,derived_village,village_gram_panchayat_mapping.csv
+1576,Robertsganj,184,1005,Robertsganj,derived_village,village_gram_panchayat_mapping.csv
+1576,Robertsganj,184,7127,Obra,derived_village,village_gram_panchayat_mapping.csv
+1577,Akhand Nagar,185,918,Kadipur,derived_village,village_gram_panchayat_mapping.csv
+1578,Amethi,640,912,Musafirkhana,derived_village,village_gram_panchayat_mapping.csv
+1578,Amethi,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1578,Amethi,640,914,Amethi,derived_village,village_gram_panchayat_mapping.csv
+1579,Baldirai,185,915,Sultanpur,derived_village,village_gram_panchayat_mapping.csv
+1579,Baldirai,185,916,Jaisinghpur,derived_village,village_gram_panchayat_mapping.csv
+1579,Baldirai,185,918,Kadipur,derived_village,village_gram_panchayat_mapping.csv
+1579,Baldirai,185,6868,Baldirai,derived_village,village_gram_panchayat_mapping.csv
+1580,Bhadaiya,185,917,Lambhua,derived_village,village_gram_panchayat_mapping.csv
+1581,Bhadar,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1581,Bhadar,640,914,Amethi,derived_village,village_gram_panchayat_mapping.csv
+1582,Bhetua,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1582,Bhetua,640,914,Amethi,derived_village,village_gram_panchayat_mapping.csv
+1583,Dhanpatganj,185,6868,Baldirai,derived_village,village_gram_panchayat_mapping.csv
+1584,Dostpur,185,916,Jaisinghpur,derived_village,village_gram_panchayat_mapping.csv
+1584,Dostpur,185,918,Kadipur,derived_village,village_gram_panchayat_mapping.csv
+1585,Dubepur,185,915,Sultanpur,derived_village,village_gram_panchayat_mapping.csv
+1586,Gauriganj,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1586,Gauriganj,640,914,Amethi,derived_village,village_gram_panchayat_mapping.csv
+1587,Jagdishpur,640,912,Musafirkhana,derived_village,village_gram_panchayat_mapping.csv
+1588,Jaisinghpur,185,916,Jaisinghpur,derived_village,village_gram_panchayat_mapping.csv
+1589,Jamo,640,912,Musafirkhana,derived_village,village_gram_panchayat_mapping.csv
+1589,Jamo,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1589,Jamo,640,914,Amethi,derived_village,village_gram_panchayat_mapping.csv
+1590,Kadipur,185,918,Kadipur,derived_village,village_gram_panchayat_mapping.csv
+1591,Kurebhar,185,915,Sultanpur,derived_village,village_gram_panchayat_mapping.csv
+1591,Kurebhar,185,916,Jaisinghpur,derived_village,village_gram_panchayat_mapping.csv
+1592,Kurwar,185,915,Sultanpur,derived_village,village_gram_panchayat_mapping.csv
+1593,Lambhua,185,917,Lambhua,derived_village,village_gram_panchayat_mapping.csv
+1594,Motigarpur,185,916,Jaisinghpur,derived_village,village_gram_panchayat_mapping.csv
+1594,Motigarpur,185,918,Kadipur,derived_village,village_gram_panchayat_mapping.csv
+1595,Musafir Khana,640,912,Musafirkhana,derived_village,village_gram_panchayat_mapping.csv
+1595,Musafir Khana,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1596,P.P.Kamaicha,185,917,Lambhua,derived_village,village_gram_panchayat_mapping.csv
+1597,Sangrampur,640,912,Musafirkhana,derived_village,village_gram_panchayat_mapping.csv
+1597,Sangrampur,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1597,Sangrampur,640,914,Amethi,derived_village,village_gram_panchayat_mapping.csv
+1598,Shahgarh,640,912,Musafirkhana,derived_village,village_gram_panchayat_mapping.csv
+1598,Shahgarh,640,913,Gauriganj,derived_village,village_gram_panchayat_mapping.csv
+1598,Shahgarh,640,914,Amethi,derived_village,village_gram_panchayat_mapping.csv
+1599,Shukul Bazar,640,912,Musafirkhana,derived_village,village_gram_panchayat_mapping.csv
+1600,Asoha,186,817,Purwa,derived_village,village_gram_panchayat_mapping.csv
+1601,Auras,186,815,Hasanganj,derived_village,village_gram_panchayat_mapping.csv
+1602,Bangarmau,186,814,Safipur,derived_village,village_gram_panchayat_mapping.csv
+1602,Bangarmau,186,6160,Bangarmau,derived_village,village_gram_panchayat_mapping.csv
+1603,Bichhiya,186,816,Unnao,derived_village,village_gram_panchayat_mapping.csv
+1604,Bighapur,186,818,Bighapur,derived_village,village_gram_panchayat_mapping.csv
+1605,Fatehpur Chaurasi,186,814,Safipur,derived_village,village_gram_panchayat_mapping.csv
+1605,Fatehpur Chaurasi,186,6160,Bangarmau,derived_village,village_gram_panchayat_mapping.csv
+1606,Ganj Moradabad,186,814,Safipur,derived_village,village_gram_panchayat_mapping.csv
+1606,Ganj Moradabad,186,6160,Bangarmau,derived_village,village_gram_panchayat_mapping.csv
+1607,Hasanganj,186,815,Hasanganj,derived_village,village_gram_panchayat_mapping.csv
+1608,Hilauli,186,817,Purwa,derived_village,village_gram_panchayat_mapping.csv
+1609,Mianganj,186,815,Hasanganj,derived_village,village_gram_panchayat_mapping.csv
+1610,Nawabganj,186,815,Hasanganj,derived_village,village_gram_panchayat_mapping.csv
+1611,Purwa,186,817,Purwa,derived_village,village_gram_panchayat_mapping.csv
+1611,Purwa,186,818,Bighapur,derived_village,village_gram_panchayat_mapping.csv
+1612,Safipur,186,814,Safipur,derived_village,village_gram_panchayat_mapping.csv
+1612,Safipur,186,6160,Bangarmau,derived_village,village_gram_panchayat_mapping.csv
+1613,Sikandarpur Karan,186,816,Unnao,derived_village,village_gram_panchayat_mapping.csv
+1614,Sikandarpur Sarausi,186,816,Unnao,derived_village,village_gram_panchayat_mapping.csv
+1615,Sumerpur,186,818,Bighapur,derived_village,village_gram_panchayat_mapping.csv
+1616,Arajiline,187,996,Varanasi Sadar,derived_village,village_gram_panchayat_mapping.csv
+1616,Arajiline,187,6093,Rajatalab,derived_village,village_gram_panchayat_mapping.csv
+1617,Baragaon,187,995,Pindra,derived_village,village_gram_panchayat_mapping.csv
+1618,Chiraigaon,187,996,Varanasi Sadar,derived_village,village_gram_panchayat_mapping.csv
+1618,Chiraigaon,187,6093,Rajatalab,derived_village,village_gram_panchayat_mapping.csv
+1619,Cholapur,187,995,Pindra,derived_village,village_gram_panchayat_mapping.csv
+1619,Cholapur,187,996,Varanasi Sadar,derived_village,village_gram_panchayat_mapping.csv
+1619,Cholapur,187,6093,Rajatalab,derived_village,village_gram_panchayat_mapping.csv
+1620,Harahua,187,995,Pindra,derived_village,village_gram_panchayat_mapping.csv
+1620,Harahua,187,996,Varanasi Sadar,derived_village,village_gram_panchayat_mapping.csv
+1621,Kashi Vidyapeeth,187,996,Varanasi Sadar,derived_village,village_gram_panchayat_mapping.csv
+1621,Kashi Vidyapeeth,187,6093,Rajatalab,derived_village,village_gram_panchayat_mapping.csv
+1622,Pindra,187,995,Pindra,derived_village,village_gram_panchayat_mapping.csv
+1623,Sevapuri,187,996,Varanasi Sadar,derived_village,village_gram_panchayat_mapping.csv
+1623,Sevapuri,187,6093,Rajatalab,derived_village,village_gram_panchayat_mapping.csv
+6714,Karaudikala,185,918,Kadipur,derived_village,village_gram_panchayat_mapping.csv
+7359,Bhagwatpur,120,888,Soraon,verified_name_variant,https://prayagraj.nic.in/development-block/
+7360,Sahson,120,889,Phulpur,exact,https://prayagraj.nic.in/development-block/
+7361,Sringverpur Dham,120,888,Soraon,verified_name_variant,https://prayagraj.nic.in/development-block/
+7380,Kone,184,1006,Dudhi,derived_village,village_gram_panchayat_mapping.csv
+7380,Kone,184,7127,Obra,derived_village,village_gram_panchayat_mapping.csv
+7381,Karma,184,1004,Ghorawal,derived_village,village_gram_panchayat_mapping.csv
+7381,Karma,184,1005,Robertsganj,derived_village,village_gram_panchayat_mapping.csv
+7480,Bharohiya,148,948,Campierganj,derived_village,village_gram_panchayat_mapping.csv
+7480,Bharohiya,148,950,Gorakhpur,derived_village,village_gram_panchayat_mapping.csv

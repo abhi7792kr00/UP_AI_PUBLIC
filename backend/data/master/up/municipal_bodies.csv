@@ -1,0 +1,784 @@
+﻿local_body_type_code,local_body_type,local_body_code,local_body_name
+8,Cantonment Board,277255,Agra
+8,Cantonment Board,277256,Allahabad
+8,Cantonment Board,277288,Babina
+8,Cantonment Board,277258,Bareilly
+8,Cantonment Board,277263,Faizabad
+8,Cantonment Board,277266,Fategarh
+8,Cantonment Board,277293,Jhansi
+8,Cantonment Board,277264,Kanpur
+8,Cantonment Board,277269,Lucknow
+8,Cantonment Board,277270,Mathura
+8,Cantonment Board,277271,Meerut
+8,Cantonment Board,277277,Shahjahanpur
+8,Cantonment Board,277278,Varanasi
+4,Municipal Corporation,249062,Agra
+4,Municipal Corporation,249025,Aligarh
+4,Municipal Corporation,249391,Ayodhya
+4,Municipal Corporation,249149,Bareilly
+4,Municipal Corporation,249079,Firozabad
+4,Municipal Corporation,248988,Ghaziabad
+4,Municipal Corporation,249444,Gorakhpur
+4,Municipal Corporation,249314,Jhansi
+4,Municipal Corporation,249286,Kanpur
+4,Municipal Corporation,249234,Lucknow
+4,Municipal Corporation,249052,Mathura-Vrindavan
+4,Municipal Corporation,248964,Meerut
+4,Municipal Corporation,248929,Moradabad
+4,Municipal Corporation,249369,Prayagraj
+4,Municipal Corporation,248873,Saharanpur
+4,Municipal Corporation,297802,Shahjahanpur
+4,Municipal Corporation,249531,Varanasi
+5,Municipality,249066,Achhnera
+5,Municipality,248917,Afzalgarh
+5,Municipality,249545,Ahraura
+5,Municipality,249400,Akbarpur
+5,Municipality,249095,Aliganj
+5,Municipality,248950,Amroha
+5,Municipality,249011,Anupshahr
+5,Municipality,249145,Aonla
+5,Municipality,249339,Atarra
+5,Municipality,249022,Atrauli
+5,Municipality,249273,Auraiya
+5,Municipality,249477,Azamgarh
+5,Municipality,249428,Baansi
+5,Municipality,248947,Bachhraon
+5,Municipality,248973,Baghpat
+5,Municipality,249074,Bah
+5,Municipality,249135,Bahedi
+5,Municipality,248935,Bahjoi
+5,Municipality,249410,Bahraich
+5,Municipality,249497,Ballia
+5,Municipality,249414,Balrampur
+5,Municipality,249334,Banda
+5,Municipality,249212,Bangarmau
+5,Municipality,248972,Baraut
+5,Municipality,249311,Barua Sagar
+5,Municipality,249430,Basti
+5,Municipality,249353,Belha
+5,Municipality,249535,Bhadohi
+5,Municipality,249264,Bharthana
+5,Municipality,249361,Bharwari(Kaushambi)
+5,Municipality,297025,Bhinga
+5,Municipality,248910,Bijnor
+5,Municipality,248931,Bilari
+5,Municipality,249470,Bilariaganj
+5,Municipality,248941,Bilaspur
+5,Municipality,249203,Bilgram
+5,Municipality,249282,Bilhaur
+5,Municipality,249122,Bilsi
+5,Municipality,249345,Bindki
+5,Municipality,249162,Bisalpur
+5,Municipality,249118,Bisauli
+5,Municipality,249193,Biswan
+5,Municipality,249126,Budaun
+5,Municipality,249005,Bulandshahr
+5,Municipality,248937,Chandausi
+5,Municipality,248924,Chandpur
+5,Municipality,249330,Charkhari
+5,Municipality,249256,Chhibramau
+5,Municipality,249303,Chirgaon
+5,Municipality,249342,Chitrakoot Dham - Karwi
+5,Municipality,249543,Chunar
+5,Municipality,249421,Colonelganj
+5,Municipality,248996,Dadri
+5,Municipality,297026,Dataganj
+5,Municipality,249013,Debai
+5,Municipality,248882,Deoband
+5,Municipality,249460,Deoria
+5,Municipality,248919,Dhampur
+5,Municipality,248946,Dhanaura
+5,Municipality,249098,Etah
+5,Municipality,249262,Etawah
+5,Municipality,249059,Etmadpur
+5,Municipality,249156,Faridpur
+5,Municipality,249250,Farrukhabad
+5,Municipality,249068,Fatehpur Sikri
+5,Municipality,249347,Fatehpur(Fatehpur)
+5,Municipality,297027,Gajralua
+5,Municipality,297022,Gangaghat
+5,Municipality,248878,Gangoh
+5,Municipality,249090,Ganj Dundwara
+5,Municipality,248993,Garhmukteshwar
+5,Municipality,249462,Gaura Barhaj
+5,Municipality,276425,Gauriganj
+5,Municipality,249290,Ghatampur
+5,Municipality,249512,Ghazipur
+5,Municipality,249179,Gola Gokarannath
+5,Municipality,249419,Gonda
+5,Municipality,249537,Gopi Ganj
+5,Municipality,249006,Gulaothi
+5,Municipality,249254,Gursahaiganj
+5,Municipality,249305,Gursarai
+5,Municipality,248914,Haldaur
+5,Municipality,249322,Hamirpur
+5,Municipality,248991,Hapur
+5,Municipality,249201,Hardoi
+5,Municipality,248952,Hasanpur
+5,Municipality,297020,Hata
+5,Municipality,249037,Hathras
+5,Municipality,249012,Jahangirabad
+5,Municipality,249240,Jais
+5,Municipality,249174,Jalalabad
+5,Municipality,249399,Jalalpur
+5,Municipality,249294,Jalaun
+5,Municipality,249101,Jalesar
+5,Municipality,249261,Jaswantnagar
+5,Municipality,249505,Jaunpur
+5,Municipality,263354,Jhinjhak
+5,Municipality,249086,Kaasganj
+5,Municipality,249248,Kaimganj
+5,Municipality,248885,Kairana
+5,Municipality,249130,Kakrala
+5,Municipality,249295,Kalpi
+5,Municipality,248886,Kandhla
+5,Municipality,249259,Kannauj
+5,Municipality,249020,Khair
+5,Municipality,249188,Khairabad
+5,Municipality,249433,Khalilabad
+5,Municipality,248899,Khatauli
+5,Municipality,297023,Khekada
+5,Municipality,274820,Khoda Makanpur
+5,Municipality,249018,Khurja
+5,Municipality,248908,Kiratpur
+5,Municipality,249299,Konch
+5,Municipality,249041,Kosi Kalan
+5,Municipality,297024,Kushinagar
+5,Municipality,249191,Laharpur
+5,Municipality,249182,Lakhimpur
+5,Municipality,249318,Lalitpur
+5,Municipality,248985,Loni
+5,Municipality,249441,Maharajganj
+5,Municipality,249194,Mahmudabad
+5,Municipality,249331,Mahoba
+5,Municipality,249106,Mainpuri
+5,Municipality,249205,Mallawan
+5,Municipality,249359,Manjhanpur
+5,Municipality,249099,Marehra
+5,Municipality,249327,Maudaha
+5,Municipality,249488,Maunath Bhanjan
+5,Municipality,249308,Mauranipur
+5,Municipality,248961,Mawana
+5,Municipality,248945,Milak
+5,Municipality,249540,Mirzapur-Cum-Vindhyachal
+5,Municipality,249187,Misrikh Cum Neemsar
+5,Municipality,248981,Modinagar
+5,Municipality,249514,Mohammadabad(Gazipur)
+5,Municipality,249180,Mohammadi
+5,Municipality,249474,Mubarakpur
+5,Municipality,249503,Mungra Badshahpur
+5,Municipality,248983,Muradnagar
+5,Municipality,248895,Muzaffarnagar
+5,Municipality,248915,Nagina
+5,Municipality,248905,Najibabad
+5,Municipality,248876,Nakur
+5,Municipality,249408,Nanpara
+5,Municipality,249436,Nautanwa
+5,Municipality,301389,Nawabganj (Bara Banki)
+5,Municipality,249154,Nawabganj(Bareilly)
+5,Municipality,249422,Nawabganj(Gonda)
+5,Municipality,248920,Nehtaur
+5,Municipality,248923,Noorpur
+5,Municipality,249297,Orai
+5,Municipality,249452,Padrauna
+5,Municipality,249176,Palia Kalan
+5,Municipality,249198,Pihani
+5,Municipality,249160,Pilibhit
+5,Municipality,248990,Pilkhuwa
+5,Municipality,249167,Powayan
+5,Municipality,249518,Pt Deen Dayal Nagar(Mughalsarai)
+5,Municipality,249279,Pukhrayan
+5,Municipality,249165,Puranpur
+5,Municipality,249241,Rae Bareli
+5,Municipality,248943,Rampur
+5,Municipality,249495,Rasra
+5,Municipality,249326,Rath
+5,Municipality,249547,Robertsganj
+5,Municipality,249388,Rudauli
+5,Municipality,249123,Sahaswan
+5,Municipality,248934,Sambhal
+5,Municipality,249301,Samthar
+5,Municipality,249202,Sandi
+5,Municipality,249209,Sandila
+5,Municipality,248955,Sardhana
+5,Municipality,248875,Sarsawan
+5,Municipality,248921,Seohara
+5,Municipality,249197,Shahabad
+5,Municipality,249501,Shahganj
+5,Municipality,248888,Shamli
+5,Municipality,249071,Shamsabad
+5,Municipality,248918,Sherkot
+5,Municipality,249015,Shikarpur
+5,Municipality,249082,Shikohabad
+5,Municipality,249008,Siana
+5,Municipality,249427,Siddharth Nagar (Tetri Bazar)
+5,Municipality,249033,Sikandra Rao
+5,Municipality,249003,Sikandrabad
+5,Municipality,249083,Sirsaganj
+5,Municipality,249438,Siswa Bazar
+5,Municipality,249189,Sitapur
+5,Municipality,249084,Soron
+5,Municipality,248939,Suar
+5,Municipality,249404,Sultanpur
+5,Municipality,248940,Tanda
+5,Municipality,249396,Tanda (Ambedkar Nagar)
+5,Municipality,248925,Thakurdwara
+5,Municipality,249170,Tilhar
+5,Municipality,249075,Tundla
+5,Municipality,249125,Ujhani
+5,Municipality,249223,Unnao
+5,Municipality,249417,Utraula
+5,Municipality,249516,Zamania
+6,Notified Area Council,301242,Banaras Locomotive Works
+6,Notified Area Council,274823,Gnida
+6,Notified Area Council,301249,Grasim Industries Ltd
+6,Notified Area Council,301244,Hindalco Industries Ltd. Renukoot
+6,Notified Area Council,301241,Jhansi Railway Settlement
+6,Notified Area Council,301210,Noida
+6,Notified Area Council,301243,Pt. Deen Dayal Upadhyaya Nagar
+6,Notified Area Council,274822,Yeida
+7,Town Panchayat,297922,Achal Ganj
+7,Town Panchayat,249268,Achhalda
+7,Town Panchayat,249487,Adari
+7,Town Panchayat,248974,Agarwal Mandi
+7,Town Panchayat,297071,Agawanpur
+7,Town Panchayat,248887,Ailum
+7,Town Panchayat,297055,Ait
+7,Town Panchayat,249357,Ajhuwa
+7,Town Panchayat,249277,Akbarpur
+7,Town Panchayat,249175,Allahganj
+7,Town Panchayat,249131,Allapur
+7,Town Panchayat,249088,Amanpur
+7,Town Panchayat,248877,Ambehta
+7,Town Panchayat,249402,Amethi(Amethi)
+7,Town Panchayat,249236,Amethi(Lucknow)
+7,Town Panchayat,249484,Amila
+7,Town Panchayat,248975,Aminagar Sarai
+7,Town Panchayat,263353,Amraudhaa
+7,Town Panchayat,249439,Anandnagar
+7,Town Panchayat,299053,Anpara
+7,Town Panchayat,249352,Antu
+7,Town Panchayat,249398,Ashrafpur Kichhauchha
+7,Town Panchayat,297623,Asothar
+7,Town Panchayat,249270,Atasu
+7,Town Panchayat,249468,Atraulia
+7,Town Panchayat,249004,Aurangabad
+7,Town Panchayat,249217,Auras
+7,Town Panchayat,249102,Awagarh
+7,Town Panchayat,249472,Azmatgarh
+7,Town Panchayat,249269,Babarpur Ajitmal
+7,Town Panchayat,249336,Baberu
+7,Town Panchayat,297073,Babhnan Bazar
+7,Town Panchayat,263350,Babralaa
+7,Town Panchayat,248992,Babugarh
+7,Town Panchayat,249238,Bachhrawan
+7,Town Panchayat,249313,Bada Gaon
+7,Town Panchayat,249463,Badhani Bazar
+7,Town Panchayat,297056,Badhani Chafa
+7,Town Panchayat,263358,Badlapur
+7,Town Panchayat,297053,Baghnagar Urf Bakhira
+7,Town Panchayat,249513,Bahadurganj
+7,Town Panchayat,248959,Bahsuma
+7,Town Panchayat,249346,Bahuwa
+7,Town Panchayat,277185,Bairia
+7,Town Panchayat,300768,Baitalpur
+7,Town Panchayat,249046,Bajna
+7,Town Panchayat,249265,Bakewar
+7,Town Panchayat,249057,Baldeo
+7,Town Panchayat,248889,Banat
+7,Town Panchayat,297057,Banda
+7,Town Panchayat,249380,Banki
+7,Town Panchayat,289237,Bankti
+7,Town Panchayat,249498,Bansdih
+7,Town Panchayat,249448,Bansgaon
+7,Town Panchayat,297048,Banthra
+7,Town Panchayat,299018,Barauli
+7,Town Panchayat,249181,Barbar
+7,Town Panchayat,249450,Barhalganj
+7,Town Panchayat,301390,Barhni Bazar
+7,Town Panchayat,281989,Bariyarpur
+7,Town Panchayat,249161,Barkhera
+7,Town Panchayat,297058,Barnahal
+7,Town Panchayat,249043,Barsana
+7,Town Panchayat,248870,Behat
+7,Town Panchayat,297059,Belhar Kala
+7,Town Panchayat,277186,Belhara
+7,Town Panchayat,301014,Belsar
+7,Town Panchayat,249492,Belthara Road
+7,Town Panchayat,249208,Beniganj
+7,Town Panchayat,249031,Beswan
+7,Town Panchayat,249109,Bewar
+7,Town Panchayat,249389,Bhadarsa
+7,Town Panchayat,249229,Bhagwant Nagar
+7,Town Panchayat,300729,Bhaluani
+7,Town Panchayat,297060,Bhanpur Kaswa
+7,Town Panchayat,297061,Bharatbhari
+7,Town Panchayat,249374,Bharatganj
+7,Town Panchayat,249093,Bhargain
+7,Town Panchayat,249467,Bhatpar Rani
+7,Town Panchayat,249007,Bhawan Bahadur Nagar
+7,Town Panchayat,300719,Bhira
+7,Town Panchayat,249108,Bhogaon
+7,Town Panchayat,248928,Bhojpur Dharampur
+7,Town Panchayat,248902,Bhokarhedi
+7,Town Panchayat,249267,Bidhuna
+7,Town Panchayat,249228,Bighapur
+7,Town Panchayat,249393,Bikapur
+7,Town Panchayat,248997,Bilaspur
+7,Town Panchayat,249085,Bilram
+7,Town Panchayat,249163,Bilsanda
+7,Town Panchayat,249338,Bisanda Buzurg
+7,Town Panchayat,249144,Bisharatganj
+7,Town Panchayat,297050,Biskohar
+7,Town Panchayat,249285,Bithoor
+7,Town Panchayat,263351,Bkt
+7,Town Panchayat,297075,Boodhanpur
+7,Town Panchayat,297062,Brijmanganj
+7,Town Panchayat,248897,Budhana
+7,Town Panchayat,249009,Bugrasi
+7,Town Panchayat,297029,Campierganj
+7,Town Panchayat,249362,Chail
+7,Town Panchayat,249522,Chakia
+7,Town Panchayat,249520,Chandauli
+7,Town Panchayat,297076,Chandaus
+7,Town Panchayat,248894,Charthaval
+7,Town Panchayat,299009,Charwa
+7,Town Panchayat,298915,Chauk
+7,Town Panchayat,249045,Chaumuha
+7,Town Panchayat,248969,Chhaprauli
+7,Town Panchayat,249023,Chharra Rafatpur
+7,Town Panchayat,249044,Chhata
+7,Town Panchayat,249017,Chhatari
+7,Town Panchayat,297077,Chhitauni
+7,Town Panchayat,296986,Chhutmalpura
+7,Town Panchayat,277189,Chirayakot
+7,Town Panchayat,249496,Chitbara Gaon
+7,Town Panchayat,249549,Chopan
+7,Town Panchayat,249548,Chukradhumra
+7,Town Panchayat,299069,Dadiyal
+7,Town Panchayat,297063,Dahagwan
+7,Town Panchayat,297044,Dala Bazar
+7,Town Panchayat,249243,Dalmau
+7,Town Panchayat,248998,Dankaur
+7,Town Panchayat,297064,Daranagar
+7,Town Panchayat,249385,Dariyabad
+7,Town Panchayat,248989,Dasna
+7,Town Panchayat,248956,Daurala
+7,Town Panchayat,249060,Dayalbagh
+7,Town Panchayat,249138,Deoranian
+7,Town Panchayat,263348,Derapur
+7,Town Panchayat,300772,Derva(Pratapgarh)
+7,Town Panchayat,249378,Dewa
+7,Town Panchayat,290251,Dhakia
+7,Town Panchayat,299013,Dhakwa (Pratapgarh)
+7,Town Panchayat,301016,Dhanepur
+7,Town Panchayat,301363,Dharamsinghwa
+7,Town Panchayat,249147,Dhaura Tanda
+7,Town Panchayat,249185,Dhaurahara
+7,Town Panchayat,249272,Dibiyapur
+7,Town Panchayat,249515,Dildarnagar Fatehpur Bazar
+7,Town Panchayat,248971,Doghat
+7,Town Panchayat,249483,Dohrighat
+7,Town Panchayat,248145,Domariyaganj
+7,Town Panchayat,249406,Dostpur
+7,Town Panchayat,297078,Duddhi
+7,Town Panchayat,249551,Dudhi
+7,Town Panchayat,277188,Eka
+7,Town Panchayat,249263,Ekdil
+7,Town Panchayat,249304,Erich
+7,Town Panchayat,249116,Faizganj
+7,Town Panchayat,249058,Farah
+7,Town Panchayat,248982,Faridnagar
+7,Town Panchayat,249136,Faridpur(Bareilly)
+7,Town Panchayat,249080,Fariha
+7,Town Panchayat,249072,Fatehabad
+7,Town Panchayat,249142,Fatehganj Pashchimi
+7,Town Panchayat,249155,Fatehganj Purvi
+7,Town Panchayat,249213,Fatehpur Chaurasi
+7,Town Panchayat,249376,Fatehpur(Barabanki)
+7,Town Panchayat,297065,Fazilnagar
+7,Town Panchayat,297066,Gaayghat
+7,Town Panchayat,298115,Gabhana
+7,Town Panchayat,300512,Gaisari
+7,Town Panchayat,297031,Ganeshpur
+7,Town Panchayat,249524,Gangapur
+7,Town Panchayat,249211,Ganj Muradabad
+7,Town Panchayat,249306,Garautha
+7,Town Panchayat,248890,Garhi Pukhta
+7,Town Panchayat,300693,Garwara
+7,Town Panchayat,297034,Gaurabadshahpur
+7,Town Panchayat,249458,Gauri Bazar
+7,Town Panchayat,249112,Gawan
+7,Town Panchayat,300750,Ghaghsarabazar
+7,Town Panchayat,249105,Ghiraur
+7,Town Panchayat,249546,Ghorawal
+7,Town Panchayat,249485,Ghosi
+7,Town Panchayat,249539,Ghosia Bazar
+7,Town Panchayat,249440,Ghughuli
+7,Town Panchayat,249325,Gohand
+7,Town Panchayat,249055,Gokul
+7,Town Panchayat,249449,Gola Bazar
+7,Town Panchayat,249200,Gopamau
+7,Town Panchayat,249235,Gosainganj (Ayodhya)
+7,Town Panchayat,249392,Gosainganj (Lucknow)
+7,Town Panchayat,249050,Govardhan
+7,Town Panchayat,249157,Gularia Bhindara
+7,Town Panchayat,249128,Gulariya
+7,Town Panchayat,249114,Gunnaur
+7,Town Panchayat,249536,Gyanpur
+7,Town Panchayat,249387,Haidergarh
+7,Town Panchayat,300532,Hainsar Bazar Dhanghata
+7,Town Panchayat,249372,Handia
+7,Town Panchayat,249024,Harduaganj
+7,Town Panchayat,249190,Hargaon
+7,Town Panchayat,249435,Hariharpur
+7,Town Panchayat,301364,Harra
+7,Town Panchayat,249429,Harraiya
+7,Town Panchayat,249035,Hasayan
+7,Town Panchayat,248960,Hastinapur
+7,Town Panchayat,253113,Hathgam
+7,Town Panchayat,300707,Heeraganj Bazaar
+7,Town Panchayat,300779,Hetimpur
+7,Town Panchayat,249218,Hyderabad
+7,Town Panchayat,249030,Iglas
+7,Town Panchayat,249413,Ikauna
+7,Town Panchayat,249394,Iltifatganj Bazar
+7,Town Panchayat,249115,Islamnagar
+7,Town Panchayat,249232,Itaunja
+7,Town Panchayat,297067,Itwa
+7,Town Panchayat,249069,Jagner
+7,Town Panchayat,298935,Jahagirganj
+7,Town Panchayat,249159,Jahanabad
+7,Town Panchayat,301253,Jahanaganj
+7,Town Panchayat,249001,Jahangirpur
+7,Town Panchayat,249096,Jaithara
+7,Town Panchayat,248892,Jalalabad(Bijnor)
+7,Town Panchayat,248907,Jalalabad(Shamli)
+7,Town Panchayat,249026,Jalali
+7,Town Panchayat,249511,Jangipur
+7,Town Panchayat,248901,Jansath
+7,Town Panchayat,249411,Jarwal
+7,Town Panchayat,249081,Jasrana
+7,Town Panchayat,249019,Jatari
+7,Town Panchayat,299023,Jawan Sikandpur
+7,Town Panchayat,249002,Jewar
+7,Town Panchayat,248913,Jhalu
+7,Town Panchayat,248884,Jhinjhana
+7,Town Panchayat,249471,Jiyanpur
+7,Town Panchayat,248951,Joya
+7,Town Panchayat,249104,Jyoti Khuria
+7,Town Panchayat,249332,Kabrai
+7,Town Panchayat,297068,Kachgaon
+7,Town Panchayat,249207,Kachhauna Patseni
+7,Town Panchayat,249124,Kachhla
+7,Town Panchayat,249542,Kachhwa
+7,Town Panchayat,249296,Kadaura
+7,Town Panchayat,249407,Kadipur
+7,Town Panchayat,299017,Kaisharganj
+7,Town Panchayat,248999,Kakod
+7,Town Panchayat,249233,Kakori
+7,Town Panchayat,297807,Kalan
+7,Town Panchayat,249164,Kalinagar
+7,Town Panchayat,249252,Kamalganj
+7,Town Panchayat,249247,Kampil
+7,Town Panchayat,297864,Kanchausi
+7,Town Panchayat,248926,Kanth(Moradabad)
+7,Town Panchayat,249173,Kanth(Shahjhanpur)
+7,Town Panchayat,297051,Kapilavastu
+7,Town Panchayat,249454,Kaptanganj
+7,Town Panchayat,298096,Kaptanganj Basti
+7,Town Panchayat,249360,Karari
+7,Town Panchayat,249107,Karhal
+7,Town Panchayat,300833,Karikan Dhata
+7,Town Panchayat,248954,Karnawal
+7,Town Panchayat,297495,Kasba Sangrampur Urf Unwal
+7,Town Panchayat,249481,Katghar Lalganj
+7,Town Panchayat,249310,Kathera
+7,Town Panchayat,249169,Katra
+7,Town Panchayat,249420,Katra Bazar
+7,Town Panchayat,300776,Katra Gulab Singh
+7,Town Panchayat,249355,Katra Medniganj
+7,Town Panchayat,249027,Kauriaganj
+7,Town Panchayat,248942,Kemri
+7,Town Panchayat,249508,Kerakat
+7,Town Panchayat,249451,Khadda
+7,Town Panchayat,249348,Khaga
+7,Town Panchayat,249070,Khairragarh
+7,Town Panchayat,300839,Khakhareru
+7,Town Panchayat,249538,Khamaria
+7,Town Panchayat,249010,Khanpur
+7,Town Panchayat,249329,Kharela
+7,Town Panchayat,249418,Khargupur
+7,Town Panchayat,248968,Kharkhoda
+7,Town Panchayat,249183,Kheri
+7,Town Panchayat,249502,Kheta Sarai
+7,Town Panchayat,300652,Khimsepur
+7,Town Panchayat,297756,Khirauni(Suchittaganj)
+7,Town Panchayat,297079,Khiwai
+7,Town Panchayat,249168,Khudaganj
+7,Town Panchayat,249166,Khutar
+7,Town Panchayat,249067,Kiraoli
+7,Town Panchayat,249111,Kishni
+7,Town Panchayat,249349,Kishunpur
+7,Town Panchayat,248963,Kithaur
+7,Town Panchayat,249405,Koeripur
+7,Town Panchayat,297042,Kohdaur
+7,Town Panchayat,249486,Kopaganj
+7,Town Panchayat,249344,Kora Jahanabad
+7,Town Panchayat,249375,Koraon
+7,Town Panchayat,249298,Kotra
+7,Town Panchayat,249328,Kulpahar
+7,Town Panchayat,297758,Kumarganj
+7,Town Panchayat,249351,Kunda
+7,Town Panchayat,248930,Kundarki
+7,Town Panchayat,249127,Kunwargaon
+7,Town Panchayat,249103,Kuraoli
+7,Town Panchayat,249321,Kurara
+7,Town Panchayat,249216,Kursath (Hardoi)
+7,Town Panchayat,249206,Kursath (Unnao)
+7,Town Panchayat,299071,Kurthijafarpur
+7,Town Panchayat,249110,Kusmara
+7,Town Panchayat,277531,Laalganj
+7,Town Panchayat,249266,Lakhna
+7,Town Panchayat,249365,Lal Gopal Ganj
+7,Town Panchayat,249242,Lalganj
+7,Town Panchayat,297038,Lambhua
+7,Town Panchayat,249466,Lar
+7,Town Panchayat,248957,Lawar
+7,Town Panchayat,300865,Maa Kamakhya
+7,Town Panchayat,249504,Machhlishahr
+7,Town Panchayat,300789,Madanpur
+7,Town Panchayat,249204,Madhoganj
+7,Town Panchayat,249293,Madhogarh
+7,Town Panchayat,301254,Madhuban
+7,Town Panchayat,297033,Madrak
+7,Town Panchayat,249434,Maghar
+7,Town Panchayat,249056,Mahaban
+7,Town Panchayat,249239,Maharajganj(Azamgarh)
+7,Town Panchayat,249469,Maharajganj(Raibareilly)
+7,Town Panchayat,299027,Mahmoodpur Mafi
+7,Town Panchayat,249186,Maholi
+7,Town Panchayat,249231,Mahona
+7,Town Panchayat,249320,Mahroni
+7,Town Panchayat,263356,Mahul
+7,Town Panchayat,249178,Mailani
+7,Town Panchayat,249464,Majhauliraj
+7,Town Panchayat,297081,Makkhanpur
+7,Town Panchayat,249230,Malihabad
+7,Town Panchayat,248909,Mandawar
+7,Town Panchayat,300774,Mandhata(Pratapgarh)
+7,Town Panchayat,249341,Manikpur Sarhat (Chitrakoot)
+7,Town Panchayat,249350,Manikpur(Pratapgarh)
+7,Town Panchayat,249494,Maniyar
+7,Town Panchayat,249423,Mankapur
+7,Town Panchayat,249507,Mariahu
+7,Town Panchayat,300510,Martinganj
+7,Town Panchayat,248938,Maswasi
+7,Town Panchayat,249333,Mataundh
+7,Town Panchayat,300705,Mathauli
+7,Town Panchayat,249364,Mau Aima
+7,Town Panchayat,299010,Mau Mustkil
+7,Town Panchayat,249227,Maurawan
+7,Town Panchayat,248903,Meerapur
+7,Town Panchayat,249431,Mehdawal
+7,Town Panchayat,249482,Mehnagar
+7,Town Panchayat,249036,Mendu
+7,Town Panchayat,300930,Mihinpurwa
+7,Town Panchayat,249141,Mirganj
+7,Town Panchayat,300713,Mirhachi
+7,Town Panchayat,249490,Mohammadabad (Farrukhabad)
+7,Town Panchayat,249251,Mohammadabad Gohna
+7,Town Panchayat,249220,Mohan
+7,Town Panchayat,297039,Mohanlalganj
+7,Town Panchayat,249089,Mohanpur
+7,Town Panchayat,249302,Moth
+7,Town Panchayat,249447,Mundera Bazar
+7,Town Panchayat,298093,Munderwa
+7,Town Panchayat,249117,Mundia
+7,Town Panchayat,249038,Mursan
+7,Town Panchayat,249401,Musafirkhana
+7,Town Panchayat,297651,Musanagar
+7,Town Panchayat,249300,Nadigaon
+7,Town Panchayat,298095,Nagar Bazar
+7,Town Panchayat,297083,Nagra
+7,Town Panchayat,249237,Nagram
+7,Town Panchayat,249534,Nai Bazar
+7,Town Panchayat,248880,Nanauta
+7,Town Panchayat,249042,Nandgaon
+7,Town Panchayat,249340,Naraini
+7,Town Panchayat,248936,Narauli
+7,Town Panchayat,249014,Naraura
+7,Town Panchayat,297047,Narpat Nagar Doondawala
+7,Town Panchayat,297084,Nasirabad
+7,Town Panchayat,248949,Naugawan Sadat
+7,Town Panchayat,297735,Nawabganj
+7,Town Panchayat,249222,Nawabganj (Unnao)
+7,Town Panchayat,249437,Nichlaul
+7,Town Panchayat,249100,Nidhauli Kalan
+7,Town Panchayat,297085,Nighasan
+7,Town Panchayat,297049,Nigohi
+7,Town Panchayat,248978,Niwari
+7,Town Panchayat,249478,Nizamabad
+7,Town Panchayat,249158,Nyoria Husainpur
+7,Town Panchayat,249221,Nyotini
+7,Town Panchayat,249550,Obra
+7,Town Panchayat,249184,Oel Dhakwa
+7,Town Panchayat,249337,Oran
+7,Town Panchayat,249416,Pachperwa
+7,Town Panchayat,249016,Pahasu
+7,Town Panchayat,249195,Paintepur
+7,Town Panchayat,297046,Pakadia Naugawa
+7,Town Panchayat,290250,Pakbara
+7,Town Panchayat,249199,Pali (Hardoi)
+7,Town Panchayat,249319,Pali (Lalitpur)
+7,Town Panchayat,297041,Paniyara
+7,Town Panchayat,301245,Paraspur
+7,Town Panchayat,248962,Parikshitgarh
+7,Town Panchayat,249245,Parsadepur
+7,Town Panchayat,297040,Partawal
+7,Town Panchayat,300782,Pathardewa
+7,Town Panchayat,249091,Patiyali
+7,Town Panchayat,248977,Patla
+7,Town Panchayat,249356,Patti
+7,Town Panchayat,297070,Payagpur
+7,Town Panchayat,248958,Phalauda
+7,Town Panchayat,249271,Phaphund
+7,Town Panchayat,249480,Phoolpur
+7,Town Panchayat,249368,Phulpur
+7,Town Panchayat,249028,Pilkhana
+7,Town Panchayat,249073,Pinahat
+7,Town Panchayat,249442,Pipiganj
+7,Town Panchayat,249446,Pipraich
+7,Town Panchayat,249553,Pipri
+7,Town Panchayat,297045,Pisawa
+7,Town Panchayat,297086,Poorav Pashchim Shareera
+7,Town Panchayat,249354,Pratapgarh City
+7,Town Panchayat,297087,Prithviganj
+7,Town Panchayat,249034,Purdilnagar
+7,Town Panchayat,248893,Purquazi
+7,Town Panchayat,249226,Purwa
+7,Town Panchayat,249000,Rabupura
+7,Town Panchayat,249049,Radhakund
+7,Town Panchayat,249094,Raja Ka Rampur
+7,Town Panchayat,249343,Rajapur
+7,Town Panchayat,300509,Rajesultanpur
+7,Town Panchayat,297037,Rajpur
+7,Town Panchayat,299081,Ram Sanehi Ghat
+7,Town Panchayat,299012,Ramganj (Pratapgarh)
+7,Town Panchayat,249453,Ramkola
+7,Town Panchayat,249377,Ramnagar
+7,Town Panchayat,297088,Rampur (Jaunpur)
+7,Town Panchayat,249459,Rampur Karkhana
+7,Town Panchayat,248881,Rampur Maniharan
+7,Town Panchayat,249291,Rampura
+7,Town Panchayat,277192,Raniganj
+7,Town Panchayat,249309,Ranipur
+7,Town Panchayat,297089,Raniya
+7,Town Panchayat,263352,Rasulabaad(Kanpur Dehat)
+7,Town Panchayat,249219,Rasulabaad(Unnao)
+7,Town Panchayat,297820,Rataul
+7,Town Panchayat,297861,Ratsar Kala
+7,Town Panchayat,249047,Raya
+7,Town Panchayat,249552,Renukoot
+7,Town Panchayat,249500,Reoti
+7,Town Panchayat,249137,Richha
+7,Town Panchayat,249409,Risia Bazar
+7,Town Panchayat,249152,Rithora
+7,Town Panchayat,249121,Rudayan
+7,Town Panchayat,263359,Rudhauli Bazar
+7,Town Panchayat,249461,Rudrapur
+7,Town Panchayat,300511,Rupaideeha
+7,Town Panchayat,249276,Rura
+7,Town Panchayat,249039,Sadabad
+7,Town Panchayat,249509,Sadat
+7,Town Panchayat,249215,Safipur
+7,Town Panchayat,248904,Sahanpur
+7,Town Panchayat,248922,Sahaspur
+7,Town Panchayat,249499,Sahatwar
+7,Town Panchayat,249087,Sahawar
+7,Town Panchayat,249443,Sahjanwa
+7,Town Panchayat,249040,Sahpau
+7,Town Panchayat,297714,Said Nagli
+7,Town Panchayat,249119,Saidpur(Badaun)
+7,Town Panchayat,249510,Saidpur(Gazipur)
+7,Town Panchayat,297090,Saifani
+7,Town Panchayat,249153,Sainthal
+7,Town Panchayat,249521,Saiyad Raja
+7,Town Panchayat,249129,Sakhanu
+7,Town Panchayat,249097,Sakit
+7,Town Panchayat,249465,Salempur
+7,Town Panchayat,249246,Salon
+7,Town Panchayat,249253,Samdhan
+7,Town Panchayat,300651,Sankisa Basantpur
+7,Town Panchayat,249363,Sarai Aquil
+7,Town Panchayat,249479,Sarai Mir
+7,Town Panchayat,249324,Sarila
+7,Town Panchayat,249032,Sasni
+7,Town Panchayat,249381,Satrikh
+7,Town Panchayat,249051,Saunkh
+7,Town Panchayat,249257,Saurikh
+7,Town Panchayat,248967,Sewalkhas
+7,Town Panchayat,249457,Sewarhi
+7,Town Panchayat,248944,Shahbad
+7,Town Panchayat,249143,Shahi
+7,Town Panchayat,301349,Shahjaganpur
+7,Town Panchayat,248898,Shahpur
+7,Town Panchayat,297032,Shamshabad
+7,Town Panchayat,249370,Shankargarh
+7,Town Panchayat,249139,Shergarh
+7,Town Panchayat,249140,Shishgarh
+7,Town Panchayat,300739,Shivgarh
+7,Town Panchayat,249275,Shivli
+7,Town Panchayat,249283,Shivrajpur
+7,Town Panchayat,249426,Shohratgarh
+7,Town Panchayat,249386,Siddhaur
+7,Town Panchayat,249196,Sidhauli
+7,Town Panchayat,249092,Sidhpura
+7,Town Panchayat,263355,Sikandara
+7,Town Panchayat,249493,Sikanderpur (Ballia)
+7,Town Panchayat,249255,Sikanderpur (Kannauj)
+7,Town Panchayat,249177,Singahi Bhiraura
+7,Town Panchayat,249358,Sirathu
+7,Town Panchayat,249146,Sirauli
+7,Town Panchayat,249373,Sirsa
+7,Town Panchayat,248933,Sirsi
+7,Town Panchayat,248896,Sisauli
+7,Town Panchayat,277139,Sonauli
+7,Town Panchayat,253131,Subeha
+7,Town Panchayat,249412,Sukrauli
+7,Town Panchayat,248874,Sultanpur Chilkana
+7,Town Panchayat,249323,Sumerpur
+7,Town Panchayat,249533,Suriyawan
+7,Town Panchayat,297054,Suwansa Bazar
+7,Town Panchayat,249061,Swamibagh
+7,Town Panchayat,249317,Talbehat
+7,Town Panchayat,249258,Talgram
+7,Town Panchayat,249192,Tambaur Cum Ahmadabad
+7,Town Panchayat,297036,Tamkuhi Raj
+7,Town Panchayat,301012,Tarabganj
+7,Town Panchayat,300807,Tarkulwa
+7,Town Panchayat,248891,Thana Bhawan
+7,Town Panchayat,249151,Thiriya Nizamat Khan
+7,Town Panchayat,249384,Tikait Nagar
+7,Town Panchayat,248970,Tikri
+7,Town Panchayat,249335,Tindwari
+7,Town Panchayat,249260,Tirwaganj
+7,Town Panchayat,248879,Titron
+7,Town Panchayat,249307,Tondi Fatehpur
+7,Town Panchayat,249415,Tulsipur
+7,Town Panchayat,249214,Ugu
+7,Town Panchayat,248953,Ujhari
+7,Town Panchayat,249292,Umri
+7,Town Panchayat,248927,Umri Kalan
+7,Town Panchayat,249244,Unchahar
+7,Town Panchayat,248883,Unn
+7,Town Panchayat,300721,Uruwa Bazar
+7,Town Panchayat,249133,Usawan
+7,Town Panchayat,249134,Usehat
+7,Town Panchayat,257826,Uska Bazar
+7,Town Panchayat,249029,Vijaigarh
+7,Town Panchayat,270654,Walidpur
+7,Town Panchayat,248916,Warhapur
+7,Town Panchayat,249120,Wazirganj
+7,Town Panchayat,297091,Zafrabad
+7,Town Panchayat,249382,Zaidpur
