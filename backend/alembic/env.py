@@ -26,6 +26,14 @@ import database.models
 target_metadata = Base.metadata
 
 
+# Use DATABASE_URL from environment when provided.
+# Otherwise fall back to alembic.ini.
+database_url = os.getenv("DATABASE_URL")
+
+if database_url:
+    config.set_main_option("sqlalchemy.url", database_url)
+
+
 def run_migrations_offline() -> None:
     """Run migrations in offline mode."""
 
