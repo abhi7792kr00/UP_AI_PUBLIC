@@ -56,24 +56,21 @@ def upgrade() -> None:
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_complaint_subcategory_mappings_id'), 'complaint_subcategory_mappings', ['id'], unique=False)
-    with op.batch_alter_table(
+    op.add_column(
         "complaints",
-        recreate="always",
-    ) as batch_op:
-        batch_op.add_column(
-            sa.Column(
-                "subcategory_id",
-                sa.Integer(),
-                nullable=False,
-            )
-        )
+        sa.Column(
+            "subcategory_id",
+            sa.Integer(),
+            nullable=False,
+        ),
+    )
 
-        batch_op.create_foreign_key(
-            "fk_complaints_subcategory_id",
-            "complaint_subcategories",
-            ["subcategory_id"],
-            ["id"],
-        )
+    op.create_foreign_key(
+        "fk_complaints_subcategory_id",
+        "complaint_subcategories",
+        ["subcategory_id"],
+        ["id"],
+    )
     # ### end Alembic commands ###
 
 
