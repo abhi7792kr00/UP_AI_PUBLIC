@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.migration import run_database_migrations
 from fastapi.middleware.cors import CORSMiddleware
 
 # ============================================================
@@ -189,6 +190,11 @@ app = FastAPI(
     version="0.5.0",
     description="Uttar Pradesh Government AI Platform",
 )
+
+
+@app.on_event("startup")
+def startup_database_migration():
+    run_database_migrations()
 
 app.add_middleware(
     CORSMiddleware,
